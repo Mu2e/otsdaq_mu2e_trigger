@@ -1,0 +1,291 @@
+%MSG-i configureMessageFacility:  CorePropertySupervisorBase  01-Feb-2019 18:49:44 CST pre-events configureMessageFacility.cc:300
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  RunControlStateMachine  01-Feb-2019 18:49:44 CST pre-events configureMessageFacility.cc:300
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CoreSupervisorBase 01-Feb-2019 18:49:44 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  ConfigurationGUI 01-Feb-2019 18:49:44 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application ConfigurationGUI configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/ConfigurationGUI" pattern:"ConfigurationGUI-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  OtsConfigurationWizard  01-Feb-2019 18:49:44 CST pre-events configureMessageFacility.cc:300
+Message Facility Application OtsConfigurationWizard configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/OtsConfigurationWizard" pattern:"OtsConfigurationWizard-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CorePropertySupervisorBase  01-Feb-2019 18:49:44 CST pre-events configureMessageFacility.cc:300
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  RunControlStateMachine  01-Feb-2019 18:49:44 CST pre-events configureMessageFacility.cc:300
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CoreSupervisorBase 01-Feb-2019 18:49:44 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  ConsoleSupervisor 01-Feb-2019 18:49:44 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application ConsoleSupervisor configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/ConsoleSupervisor" pattern:"ConsoleSupervisor-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 18:49:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [157]	DEBUG messages look like this.
+%MSG
+%MSG-i Console:  Early 01-Feb-2019 18:49:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [158]	INFO messages look like this.
+%MSG
+%MSG-w Console:  Early 01-Feb-2019 18:49:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [159]	WARNING messages look like this.
+%MSG
+%MSG-e Console:  Early 01-Feb-2019 18:49:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [160]	ERROR messages look like this.
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 18:51:46 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 18:53:47 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(4)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(9)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(5)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 18:54:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(9)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 18:56:51 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 18:58:52 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 18:59:46 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 19:01:46 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 19:03:47 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 19:05:48 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:21 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:21 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:21 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(5)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:21 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:21 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(10)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:22 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:22 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:22 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(6)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:22 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:06:22 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(10)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 19:08:22 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:27 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:27 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:27 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(6)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:27 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:27 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(11)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:28 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:28 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:28 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(7)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:28 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:08:28 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(11)
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 19:10:28 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:57 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:57 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:57 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(7)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:57 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:57 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(12)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:58 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:58 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:58 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(8)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:58 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 01-Feb-2019 19:10:58 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(12)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:11:57 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:11:59 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4987] The new version of the &apos;TrackSeedFilterConfiguration&apos; table column info was saved, however errors were detected reading back the configuration &apos;TrackSeedFilterConfiguration&apos; after the save attempt:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:12:14 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:12:16 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4987] The new version of the &apos;TrackSeedFilterConfiguration&apos; table column info was saved, however errors were detected reading back the configuration &apos;TrackSeedFilterConfiguration&apos; after the save attempt:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:13:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:15:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:15:07 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getLinkToChoices' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2621] Error detected saving tree node!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:15:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:15:35 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:16:06 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:16:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:17:16 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:18:47 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:18:50 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-HelixParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:19:34 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:20:06 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-HelixParameterGroup&apos;.
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:20:40 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:20:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getTreeView' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [2367] Error detected generating XML tree!   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1103] Incompatible table for this group link. Table &apos;PARAMETER_CONFIGURATION&apos; is missing a GroupID column with data type &apos;GroupID-TimeClusterFilterParameterGroup&apos;.
+%MSG
+%MSG-d Console:  Early 01-Feb-2019 19:22:55 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:23:33 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:23:35 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4987] The new version of the &apos;TrackSeedFilterConfiguration&apos; table column info was saved, however errors were detected reading back the configuration &apos;TrackSeedFilterConfiguration&apos; after the save attempt:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:23:39 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:23:43 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4987] The new version of the &apos;TrackSeedFilterConfiguration&apos; table column info was saved, however errors were detected reading back the configuration &apos;TrackSeedFilterConfiguration&apos; after the save attempt:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:24:01 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:24:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4987] The new version of the &apos;TrackSeedFilterConfiguration&apos; table column info was saved, however errors were detected reading back the configuration &apos;TrackSeedFilterConfiguration&apos; after the save attempt:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:24:19 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getSpecificConfiguration' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4074] Column errors were allowed for this request, so maybe you can ignore this, but please note the following errors: :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:24:26 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getSpecificConfiguration' ERROR encountered: Error getting view! :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1   :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:24:52 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getConfigurations' ERROR encountered: Column errors were allowed for this request, but please note the following errors: :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:25:05 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getSpecificConfiguration' ERROR encountered: Error getting view! :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1   :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:25:40 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TrackSeedFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:25:42 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4987] The new version of the &apos;TrackSeedFilterConfiguration&apos; table column info was saved, however errors were detected reading back the configuration &apos;TrackSeedFilterConfiguration&apos; after the save attempt:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:26:48 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'getSpecificConfiguration' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4074] Column errors were allowed for this request, so maybe you can ignore this, but please note the following errors: :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:26:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/ParameterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 01-Feb-2019 19:26:58 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: :CfgGUI-ConfigurationGUISupervisor:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/ConfigurationGUI/ConfigurationGUISupervisor.cc [4987] The new version of the &apos;ParameterConfiguration&apos; table column info was saved, however errors were detected reading back the configuration &apos;ParameterConfiguration&apos; after the save attempt:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [167] Failed to load config group in ConfigurationManager::init() with name &apos;TriggerMenu_v12&apos; :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [518] Child Link ID Labels are not unique!There are 3 Child Link ID Labels and the unique count is 1
+%MSG

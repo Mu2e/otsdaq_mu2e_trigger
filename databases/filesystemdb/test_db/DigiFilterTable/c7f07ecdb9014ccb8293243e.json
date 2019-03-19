@@ -1,0 +1,134 @@
+{
+"document" : {
+"data" : {
+"NAME" : "DIGI_FILTER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1550258460,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LOW_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LINK_TO_DIGI_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_DIGI_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "minimumbiasSDCount",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "0",
+"LOW_LEVEL_PRESCALE_FACTOR" : "0",
+"LINK_TO_DIGI_FILTER_PARAMETER_TABLE" : "ParameterTable",
+"LINK_TO_DIGI_FILTER_PARAMETER_GROUP_ID" : "minimumbiasSDCount",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550258429"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-15T13:21:00.282-0600",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T13:21:00.283-0600"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-15T13:21:00.282-0600"
+},
+{
+"name" : "TriggerMenu_v57",
+"assigned" : "2019-02-15T13:21:07.598-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-02-15T13:21:00.282-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-15T13:21:00.282-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-15T13:21:00.283-0600",
+"value" : {
+"name" : "1",
+"assigned" : "2019-02-15T13:21:00.283-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-15T13:21:00.283-0600",
+"value" : {
+"name" : "DigiFilterTable",
+"assigned" : "2019-02-15T13:21:00.283-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-15T13:21:00.283-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T13:21:00.283-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-02-15T13:21:07.598-0600",
+"value" : {
+"name" : "TriggerMenu_v57",
+"assigned" : "2019-02-15T13:21:07.598-0600"
+}
+}
+],
+"created" : "2019-02-15T13:21:00.282-0600"
+},
+"_id" : {
+"$oid" : "c7f07ecdb9014ccb8293243e"
+},
+"collection" : "DigiFilterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

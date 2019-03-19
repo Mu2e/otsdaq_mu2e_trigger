@@ -1,0 +1,126 @@
+{
+"document" : {
+"data" : {
+"NAME" : "",
+"COMMENT" : "",
+"AUTHOR" : "",
+"CREATION_TIME" : 1548179458,
+"COL_TYPES" : {
+"UNUSED_UID" : "NUMBER",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"GROUP_CREATION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UNUSED_UID" : "0",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"GROUP_CREATION_TIME" : "1550258932"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-15T13:28:52.996-0600",
+"rawdata" : [
+
+]
+},
+"version" : "133",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T13:28:52.997-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-15T13:28:52.996-0600"
+},
+{
+"name" : "GroupAliasTreeEditWizBackbone_v47",
+"assigned" : "2019-02-15T13:28:53.019-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:28:52.996-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-15T13:28:52.996-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-15T13:28:52.997-0600",
+"value" : {
+"name" : "133",
+"assigned" : "2019-02-15T13:28:52.997-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-15T13:28:52.997-0600",
+"value" : {
+"name" : "ConfigurationGroupMetadata",
+"assigned" : "2019-02-15T13:28:52.997-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-15T13:28:52.997-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T13:28:52.997-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:28:53.019-0600",
+"value" : {
+"name" : "GroupAliasTreeEditWizBackbone_v47",
+"assigned" : "2019-02-15T13:28:53.019-0600"
+}
+}
+],
+"created" : "2019-02-15T13:28:52.996-0600"
+},
+"_id" : {
+"$oid" : "6c71762060c74522867f5746"
+},
+"collection" : "ConfigurationGroupMetadata",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

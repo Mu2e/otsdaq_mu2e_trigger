@@ -1,0 +1,192 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TRACK_SEED_FILTER_CONFIGURATION",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1550187124,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LOW_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "tprSeedDeM",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "1",
+"LOW_LEVEL_PRESCALE_FACTOR" : "1",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "tprSeedDeM",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "tprSeedDeM",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_GROUP_ID" : "tprSeedDeM",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550186743"
+},
+{
+"UID" : "tprSeedDeP",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "1",
+"LOW_LEVEL_PRESCALE_FACTOR" : "1",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "tprSeedDeP",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "tprSeedDeP",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_GROUP_ID" : "tprSeedDeP",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550186991"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-14T17:32:04.910-0600",
+"rawdata" : [
+
+]
+},
+"version" : "20",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-14T17:32:04.911-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-14T17:32:04.910-0600"
+},
+{
+"name" : "TriggerMenu_v42",
+"assigned" : "2019-02-14T17:32:05.568-0600"
+},
+{
+"name" : "TriggerMenu_v43",
+"assigned" : "2019-02-14T18:09:17.119-0600"
+},
+{
+"name" : "TriggerMenu_v44",
+"assigned" : "2019-02-15T10:38:25.327-0600"
+},
+{
+"name" : "TriggerMenu_v45",
+"assigned" : "2019-02-15T10:42:07.631-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-14T17:32:04.910-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-14T17:32:04.910-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-14T17:32:04.911-0600",
+"value" : {
+"name" : "20",
+"assigned" : "2019-02-14T17:32:04.911-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-14T17:32:04.911-0600",
+"value" : {
+"name" : "TrackSeedFilterConfiguration",
+"assigned" : "2019-02-14T17:32:04.911-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-14T17:32:04.911-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-14T17:32:04.911-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-14T17:32:05.568-0600",
+"value" : {
+"name" : "TriggerMenu_v42",
+"assigned" : "2019-02-14T17:32:05.568-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-14T18:09:17.119-0600",
+"value" : {
+"name" : "TriggerMenu_v43",
+"assigned" : "2019-02-14T18:09:17.119-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T10:38:25.327-0600",
+"value" : {
+"name" : "TriggerMenu_v44",
+"assigned" : "2019-02-15T10:38:25.327-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T10:42:07.631-0600",
+"value" : {
+"name" : "TriggerMenu_v45",
+"assigned" : "2019-02-15T10:42:07.631-0600"
+}
+}
+],
+"created" : "2019-02-14T17:32:04.910-0600"
+},
+"_id" : {
+"$oid" : "227b4478d4ca429d9e4179f9"
+},
+"collection" : "TrackSeedFilterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

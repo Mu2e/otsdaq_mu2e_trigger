@@ -1,0 +1,191 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TRIGGER_PATH_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1550256755,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"PATH_GROUP" : "VARCHAR2",
+"TRIGGER_NAME" : "VARCHAR2",
+"TRIGGER_TYPE" : "VARCHAR2",
+"LINK_TO_TRIGGER_TABLE_TABLE" : "VARCHAR2",
+"LINK_TO_TRIGGER_TABLE_UID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "tprSeedDeM",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "tprSeedDeM",
+"TRIGGER_TYPE" : "TrackSeed",
+"LINK_TO_TRIGGER_TABLE_TABLE" : "TrackSeedFilterTable",
+"LINK_TO_TRIGGER_TABLE_UID" : "tprSeedDeM",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550006891"
+},
+{
+"UID" : "tprSeedDeP",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "tprSeedDeP",
+"TRIGGER_TYPE" : "TrackSeed",
+"LINK_TO_TRIGGER_TABLE_TABLE" : "TrackSeedFilterTable",
+"LINK_TO_TRIGGER_TABLE_UID" : "tprSeedDeP",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550006898"
+},
+{
+"UID" : "cprSeedDeM",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "cprSeedDeM",
+"TRIGGER_TYPE" : "TrackSeed",
+"LINK_TO_TRIGGER_TABLE_TABLE" : "TrackSeedFilterTable",
+"LINK_TO_TRIGGER_TABLE_UID" : "cprSeedDeM",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550249153"
+},
+{
+"UID" : "cprSeedDeP",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "cprSeedDeP",
+"TRIGGER_TYPE" : "TrackSeed",
+"LINK_TO_TRIGGER_TABLE_TABLE" : "TrackSeedFilterTable",
+"LINK_TO_TRIGGER_TABLE_UID" : "cprSeedDeP",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550249180"
+},
+{
+"UID" : "tprHelixIPADeM",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "tprHelixIPADeM",
+"TRIGGER_TYPE" : "Helix",
+"LINK_TO_TRIGGER_TABLE_TABLE" : "HelixFilterTable",
+"LINK_TO_TRIGGER_TABLE_UID" : "tprHelixIPADeM",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550249395"
+},
+{
+"UID" : "unbiased",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "DEFAULT",
+"TRIGGER_TYPE" : "DEFAULT",
+"LINK_TO_TRIGGER_TABLE_TABLE" : "UnbiasedFilterTable",
+"LINK_TO_TRIGGER_TABLE_UID" : "unbiased",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550256745"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-15T12:52:35.468-0600",
+"rawdata" : [
+
+]
+},
+"version" : "17",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T12:52:35.469-0600"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-15T12:52:35.468-0600"
+},
+{
+"name" : "TriggerMenu_v53",
+"assigned" : "2019-02-15T12:52:36.228-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-02-15T12:52:35.468-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-15T12:52:35.468-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-15T12:52:35.468-0600",
+"value" : {
+"name" : "17",
+"assigned" : "2019-02-15T12:52:35.468-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-15T12:52:35.469-0600",
+"value" : {
+"name" : "TriggerPathTable",
+"assigned" : "2019-02-15T12:52:35.469-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-15T12:52:35.469-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T12:52:35.469-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-02-15T12:52:36.228-0600",
+"value" : {
+"name" : "TriggerMenu_v53",
+"assigned" : "2019-02-15T12:52:36.228-0600"
+}
+}
+],
+"created" : "2019-02-15T12:52:35.468-0600"
+},
+"_id" : {
+"$oid" : "cf26cd02f10b4fa38313408f"
+},
+"collection" : "TriggerPathTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

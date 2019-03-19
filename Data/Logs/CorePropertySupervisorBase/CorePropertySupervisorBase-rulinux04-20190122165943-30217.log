@@ -1,0 +1,159 @@
+%MSG-i configureMessageFacility:  CorePropertySupervisorBase  22-Jan-2019 16:59:43 CST pre-events configureMessageFacility.cc:300
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  RunControlStateMachine  22-Jan-2019 16:59:43 CST pre-events configureMessageFacility.cc:300
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CoreSupervisorBase 22-Jan-2019 16:59:43 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  ConfigurationGUI 22-Jan-2019 16:59:43 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application ConfigurationGUI configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/ConfigurationGUI" pattern:"ConfigurationGUI-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  OtsConfigurationWizard  22-Jan-2019 16:59:43 CST pre-events configureMessageFacility.cc:300
+Message Facility Application OtsConfigurationWizard configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/OtsConfigurationWizard" pattern:"OtsConfigurationWizard-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CorePropertySupervisorBase  22-Jan-2019 16:59:43 CST pre-events configureMessageFacility.cc:300
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  RunControlStateMachine  22-Jan-2019 16:59:43 CST pre-events configureMessageFacility.cc:300
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CoreSupervisorBase 22-Jan-2019 16:59:43 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  ConsoleSupervisor 22-Jan-2019 16:59:43 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application ConsoleSupervisor configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/ConsoleSupervisor" pattern:"ConsoleSupervisor-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 16:59:45 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 16:59:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [157]	DEBUG messages look like this.
+%MSG
+%MSG-i Console:  Early 22-Jan-2019 16:59:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [158]	INFO messages look like this.
+%MSG
+%MSG-w Console:  Early 22-Jan-2019 16:59:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [159]	WARNING messages look like this.
+%MSG
+%MSG-e Console:  Early 22-Jan-2019 16:59:45 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [160]	ERROR messages look like this.
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 17:01:46 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:10 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:10 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: testContext(2)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:10 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(2)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:10 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:10 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(5)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(2)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:02:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(5)
+%MSG
+%MSG-e ots:  Early 22-Jan-2019 17:02:55 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'activateConfigGroup' ERROR encountered: Warnings were found when activating group &apos;testContext(2)&apos;! Please see details below:    At node &apos;XDAQApplicationConfiguration&apos; with entry UID &apos;FESupervisor&apos; there is a disconnected child node at link column &apos;LinkToSupervisorConfiguration&apos; that points to table named &apos;FESupervisorConfiguration&apos; ... Note: It may be safe to ignore this error since the link&apos;s target table FESupervisorConfiguration is not a member of this group (and may not be loaded yet).  At node &apos;XDAQApplicationConfiguration&apos; with entry UID &apos;DataManagerSupervisor&apos; there is a disconnected child node at link column &apos;LinkToSupervisorConfiguration&apos; that points to table named &apos;DataManagerSupervisorConfiguration&apos; ... Note: It may be safe to ignore this error since the link&apos;s target table DataManagerSupervisorConfiguration is not a member of this group (and may not be loaded yet).  At node &apos;XDAQApplicationConfiguration&apos; with entry UID &apos;VisualSupervisor&apos; there is a disconnected child node at link column &apos;LinkToSupervisorConfiguration&apos; that points to table named &apos;DataManagerSupervisorConfiguration&apos; ... Note: It may be safe to ignore this error since the link&apos;s target table DataManagerSupervisorConfiguration is not a member of this group (and may not be loaded yet).
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:03:01 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:03:01 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: testContext(2)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:03:01 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(2)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:03:01 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 22-Jan-2019 17:03:01 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(5)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 17:05:02 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 17:07:03 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 17:09:04 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 17:11:05 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 17:13:06 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 18:05:08 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 19:05:11 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 20:05:13 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 21:05:16 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 22:05:18 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 22-Jan-2019 23:05:21 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 00:05:23 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 01:05:26 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 02:05:28 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 03:05:31 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 04:05:33 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 05:05:36 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 06:05:38 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 07:05:41 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 08:05:43 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 09:05:46 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG
+%MSG-d Console:  Early 23-Jan-2019 10:05:48 CST pre-events
+Console is alive and waiting a long time... (if no messages, next heartbeat is in approximately one hour)
+%MSG

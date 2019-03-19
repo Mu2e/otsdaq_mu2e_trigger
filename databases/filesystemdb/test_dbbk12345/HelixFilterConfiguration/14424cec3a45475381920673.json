@@ -1,0 +1,322 @@
+{
+"document" : {
+"data" : {
+"NAME" : "HELIX_FILTER_CONFIGURATION",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1550257969,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LOW_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LINK_TO_DIGI_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_DIGI_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "tprHelixIPADeM",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "1",
+"LOW_LEVEL_PRESCALE_FACTOR" : "1",
+"LINK_TO_DIGI_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_DIGI_FILTER_PARAMETER_GROUP_ID" : "tprHelixIPADeM",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "tprHelixIPADeM",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "tprHelixIPADeM",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550257852"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-15T13:12:49.325-0600",
+"rawdata" : [
+
+]
+},
+"version" : "3",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T13:12:49.326-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-15T13:12:49.325-0600"
+},
+{
+"name" : "TriggerMenu_v56",
+"assigned" : "2019-02-15T13:12:50.059-0600"
+},
+{
+"name" : "TriggerMenu_v57",
+"assigned" : "2019-02-15T13:21:07.620-0600"
+},
+{
+"name" : "TriggerMenu_v58",
+"assigned" : "2019-02-15T13:21:51.346-0600"
+},
+{
+"name" : "TriggerMenu_v59",
+"assigned" : "2019-02-15T13:28:52.027-0600"
+},
+{
+"name" : "TriggerMenu_v60",
+"assigned" : "2019-02-15T13:31:42.166-0600"
+},
+{
+"name" : "TriggerMenu_v61",
+"assigned" : "2019-02-15T14:13:20.450-0600"
+},
+{
+"name" : "TriggerMenu_v62",
+"assigned" : "2019-02-15T14:15:06.956-0600"
+},
+{
+"name" : "TriggerMenu_v63",
+"assigned" : "2019-02-15T14:16:13.653-0600"
+},
+{
+"name" : "TriggerMenu_v64",
+"assigned" : "2019-02-15T14:18:57.750-0600"
+},
+{
+"name" : "TriggerMenu_v65",
+"assigned" : "2019-02-15T14:24:40.882-0600"
+},
+{
+"name" : "TriggerMenu_v66",
+"assigned" : "2019-02-15T14:29:48.990-0600"
+},
+{
+"name" : "TriggerMenu_v67",
+"assigned" : "2019-03-08T14:51:38.907-0600"
+},
+{
+"name" : "TriggerMenu_v68",
+"assigned" : "2019-03-08T14:58:57.060-0600"
+},
+{
+"name" : "TriggerMenu_v69",
+"assigned" : "2019-03-08T15:02:41.336-0600"
+},
+{
+"name" : "TriggerMenu_v70",
+"assigned" : "2019-03-08T15:03:00.557-0600"
+},
+{
+"name" : "TriggerMenu_v71",
+"assigned" : "2019-03-08T15:11:13.245-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:12:49.325-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-15T13:12:49.325-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-15T13:12:49.325-0600",
+"value" : {
+"name" : "3",
+"assigned" : "2019-02-15T13:12:49.325-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-15T13:12:49.325-0600",
+"value" : {
+"name" : "HelixFilterConfiguration",
+"assigned" : "2019-02-15T13:12:49.325-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-15T13:12:49.326-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-15T13:12:49.326-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:12:50.059-0600",
+"value" : {
+"name" : "TriggerMenu_v56",
+"assigned" : "2019-02-15T13:12:50.059-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:21:07.620-0600",
+"value" : {
+"name" : "TriggerMenu_v57",
+"assigned" : "2019-02-15T13:21:07.620-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:21:51.346-0600",
+"value" : {
+"name" : "TriggerMenu_v58",
+"assigned" : "2019-02-15T13:21:51.346-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:28:52.027-0600",
+"value" : {
+"name" : "TriggerMenu_v59",
+"assigned" : "2019-02-15T13:28:52.027-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T13:31:42.166-0600",
+"value" : {
+"name" : "TriggerMenu_v60",
+"assigned" : "2019-02-15T13:31:42.166-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T14:13:20.450-0600",
+"value" : {
+"name" : "TriggerMenu_v61",
+"assigned" : "2019-02-15T14:13:20.450-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T14:15:06.956-0600",
+"value" : {
+"name" : "TriggerMenu_v62",
+"assigned" : "2019-02-15T14:15:06.956-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T14:16:13.653-0600",
+"value" : {
+"name" : "TriggerMenu_v63",
+"assigned" : "2019-02-15T14:16:13.653-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T14:18:57.750-0600",
+"value" : {
+"name" : "TriggerMenu_v64",
+"assigned" : "2019-02-15T14:18:57.750-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T14:24:40.882-0600",
+"value" : {
+"name" : "TriggerMenu_v65",
+"assigned" : "2019-02-15T14:24:40.882-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-15T14:29:48.990-0600",
+"value" : {
+"name" : "TriggerMenu_v66",
+"assigned" : "2019-02-15T14:29:48.990-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-08T14:51:38.907-0600",
+"value" : {
+"name" : "TriggerMenu_v67",
+"assigned" : "2019-03-08T14:51:38.907-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-08T14:58:57.060-0600",
+"value" : {
+"name" : "TriggerMenu_v68",
+"assigned" : "2019-03-08T14:58:57.060-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-08T15:02:41.336-0600",
+"value" : {
+"name" : "TriggerMenu_v69",
+"assigned" : "2019-03-08T15:02:41.336-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-08T15:03:00.557-0600",
+"value" : {
+"name" : "TriggerMenu_v70",
+"assigned" : "2019-03-08T15:03:00.557-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-08T15:11:13.245-0600",
+"value" : {
+"name" : "TriggerMenu_v71",
+"assigned" : "2019-03-08T15:11:13.245-0600"
+}
+}
+],
+"created" : "2019-02-15T13:12:49.325-0600"
+},
+"_id" : {
+"$oid" : "14424cec3a45475381920673"
+},
+"collection" : "HelixFilterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

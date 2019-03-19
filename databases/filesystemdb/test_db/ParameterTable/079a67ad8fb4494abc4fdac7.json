@@ -1,0 +1,176 @@
+{
+"document" : {
+"data" : {
+"NAME" : "PARAMETER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1549480124,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"HELIX_GROUP_ID" : "VARCHAR2",
+"GROUP_ID" : "VARCHAR2",
+"NAME" : "VARCHAR2",
+"VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "minNSh",
+"HELIX_GROUP_ID" : "",
+"GROUP_ID" : "",
+"NAME" : "TimeCluster_minNSh",
+"VALUE" : "10",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549479861"
+},
+{
+"UID" : "TPRHelixDeM_minNSh",
+"HELIX_GROUP_ID" : "TPRDeM",
+"GROUP_ID" : "",
+"NAME" : "minNSh",
+"VALUE" : "15",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549479985"
+},
+{
+"UID" : "TPRTimeCluster_minNSh",
+"HELIX_GROUP_ID" : "",
+"GROUP_ID" : "DEFAULT",
+"NAME" : "minNSh",
+"VALUE" : "10",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549479956"
+},
+{
+"UID" : "TPRHelixDeP_minNSh",
+"HELIX_GROUP_ID" : "TPRDeP",
+"GROUP_ID" : "",
+"NAME" : "minNSh",
+"VALUE" : "15",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480118"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-06T13:08:44.220-0600",
+"rawdata" : [
+
+]
+},
+"version" : "13",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-06T13:08:44.221-0600"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-06T13:08:44.221-0600"
+},
+{
+"name" : "TriggerMenu_v23",
+"assigned" : "2019-02-06T13:08:44.719-0600"
+},
+{
+"name" : "TriggerMenu_v24",
+"assigned" : "2019-02-06T13:09:16.190-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-02-06T13:08:44.221-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-06T13:08:44.221-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-06T13:08:44.221-0600",
+"value" : {
+"name" : "13",
+"assigned" : "2019-02-06T13:08:44.221-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-06T13:08:44.221-0600",
+"value" : {
+"name" : "ParameterTable",
+"assigned" : "2019-02-06T13:08:44.221-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-06T13:08:44.221-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-06T13:08:44.221-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-02-06T13:08:44.719-0600",
+"value" : {
+"name" : "TriggerMenu_v23",
+"assigned" : "2019-02-06T13:08:44.719-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-02-06T13:09:16.190-0600",
+"value" : {
+"name" : "TriggerMenu_v24",
+"assigned" : "2019-02-06T13:09:16.190-0600"
+}
+}
+],
+"created" : "2019-02-06T13:08:44.220-0600"
+},
+"_id" : {
+"$oid" : "079a67ad8fb4494abc4fdac7"
+},
+"collection" : "ParameterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

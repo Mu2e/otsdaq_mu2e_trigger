@@ -1,0 +1,171 @@
+%MSG-i configureMessageFacility:  CorePropertySupervisorBase  15-Feb-2019 12:28:05 CST pre-events configureMessageFacility.cc:300
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  RunControlStateMachine  15-Feb-2019 12:28:05 CST pre-events configureMessageFacility.cc:300
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CoreSupervisorBase 15-Feb-2019 12:28:05 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  ConfigurationGUI 15-Feb-2019 12:28:05 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application ConfigurationGUI configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/ConfigurationGUI" pattern:"ConfigurationGUI-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  OtsConfigurationWizard  15-Feb-2019 12:28:05 CST pre-events configureMessageFacility.cc:300
+Message Facility Application OtsConfigurationWizard configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/OtsConfigurationWizard" pattern:"OtsConfigurationWizard-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CorePropertySupervisorBase  15-Feb-2019 12:28:05 CST pre-events configureMessageFacility.cc:300
+Message Facility Application CorePropertySupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CorePropertySupervisorBase" pattern:"CorePropertySupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  RunControlStateMachine  15-Feb-2019 12:28:05 CST pre-events configureMessageFacility.cc:300
+Message Facility Application RunControlStateMachine configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/RunControlStateMachine" pattern:"RunControlStateMachine-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  CoreSupervisorBase 15-Feb-2019 12:28:05 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application CoreSupervisorBase configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/CoreSupervisorBase" pattern:"CoreSupervisorBase-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-i configureMessageFacility:  ConsoleSupervisor 15-Feb-2019 12:28:05 CST  pre-events configureMessageFacility.cc:300
+Message Facility Application ConsoleSupervisor configured with: debugModules:["*"] destinations:{file:{append:false directory:"/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/Logs/ConsoleSupervisor" pattern:"ConsoleSupervisor-%?H%t-%p.log" seperator:"-" threshold:"DEBUG" timestamp_pattern:"%Y%m%d%H%M%S" type:"GenFile"} udp:{host:"127.0.0.1" port:30000 threshold:"DEBUG" type:"UDP"}}
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:28:07 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:28:07 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [157]	DEBUG messages look like this.
+%MSG
+%MSG-i Console:  Early 15-Feb-2019 12:28:07 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [158]	INFO messages look like this.
+%MSG
+%MSG-w Console:  Early 15-Feb-2019 12:28:07 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [159]	WARNING messages look like this.
+%MSG
+%MSG-e Console:  Early 15-Feb-2019 12:28:07 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq_utilities/v2_01_00/src/otsdaq-utilities/Console/ConsoleSupervisor.cc [160]	ERROR messages look like this.
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:30:08 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:32:09 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:34:10 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:36:11 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:38:12 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-e ots:  Early 15-Feb-2019 12:47:39 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/ParameterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 15-Feb-2019 12:48:22 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/DigiFilterConfigurationInfo.xml&apos;)
+%MSG
+%MSG-e ots:  Early 15-Feb-2019 12:49:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'setAliasOfGroupMembers' ERROR encountered: Error saving new Version Alias view!  :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1164]  In view: VERSION_ALIASES_CONFIGURATION, Can&apos;t find column named &apos;VersionAliasId&apos; Existing columns:  VersionAliasUID  ConfigurationName  VersionAlias  Version  CommentDescription  Author  RecordInsertionTime
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: TableEditWizBackbone(21)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(51)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: TableEditWizBackbone(22)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:49:11 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(51)
+%MSG
+%MSG-e ots:  Early 15-Feb-2019 12:50:22 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TriggerPathConfigurationInfo.xml&apos;)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:51 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:51 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:51 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: TableEditWizBackbone(22)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:51 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:51 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(52)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:52 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:52 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:52 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: TableEditWizBackbone(23)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:52 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:51:52 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(52)
+%MSG
+%MSG-e ots:  Early 15-Feb-2019 12:52:36 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'activateConfigGroup' ERROR encountered: Error activating config group &apos;TriggerMenu(53).&apos; Please see details below:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [1030] Error detected calling TopLevelTriggerConfiguration.init()!   :ConfigurationTree:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationTree.cc [1007]   Error occurred descending from node &apos;unbiased&apos; in table &apos;UnbiasedFilterConfiguration&apos; looking for child &apos;LowLevelPrescaleFactor&apos;   --- Additional error detail:   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1164]  In view: UNBIASED_FILTER_CONFIGURATION, Can&apos;t find column named &apos;LowLevelPrescaleFactor&apos; Existing columns:  UID  HighLevelPrescaleFactor  CommentDescription  Author  RecordInsertionTime   0# ots::ConfigurationTree::getNode(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, bool) const in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationInterface.so  1# ots::TopLevelTriggerConfiguration::createPrescaleEpilog(std::basic_ofstream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;&amp;, ots::ConfigurationTree) in /home/gianipez/ots/build_slf7.x86_64/otsdaq_demo/lib/libotsdaq-demo_ConfigurationPluginDataFormats_TopLevelTriggerConfiguration_configuration.so  2# ots::TopLevelTriggerConfiguration::init(ots::ConfigurationManager*) in /home/gianipez/ots/build_slf7.x86_64/otsdaq_demo/lib/libotsdaq-demo_ConfigurationPluginDataFormats_TopLevelTriggerConfiguration_configuration.so  3# ots::ConfigurationManager::loadConfigurationGroup(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, ots::ConfigurationGroupKey, bool, std::map&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, ots::ConfigurationVersion, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, ots::ConfigurationVersion&gt; &gt; &gt;*, ots::ProgressBar*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, bool, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationInterface.so  4# ots::ConfigurationManagerRW::activateConfigurationGroup(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, ots::ConfigurationGroupKey, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationInterface.so  5# ots::ConfigurationGUISupervisor::request(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, cgicc::Cgicc&amp;, ots::HttpXmlDocument&amp;, ots::WebUsers::RequestUserInfo const&amp;) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq_utilities/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationGUI.so  6# ots::CoreSupervisorBase::requestWrapper(xgi::Input*, xgi::Output*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libCoreSupervisors.so  7# xgi::Method&lt;ots::CoreSupervisorBase&gt;::invoke(xgi::Input*, xgi::Output*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libCoreSupervisors.so  8# executive::XgiDispatcher::processIncomingMessage(xgi::Input*, xgi::Output*) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libexecutive.so  9# pt::http::ReceiverLoop::onRequest(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libpthttp.so 10# pt::http::ReceiverLoop::process(toolbox::task::WorkLoop*) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libpthttp.so 11# toolbox::task::WaitingWorkLoop::process() in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libtoolbox.so 12# toolbox::task::WorkLoop::run() in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libtoolbox.so 13# toolbox::task::thread_func(void*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libtoolbox.so 14# 0x00007F4D461A6DD5 in /lib64/libpthread.so.0 15# clone in /lib64/libc.so.6
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:52:37 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:52:37 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:52:37 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: GroupAliasTreeEditWizBackbone(41)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:52:37 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:52:37 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(52)
+%MSG
+%MSG-d Console:  Early 15-Feb-2019 12:54:37 CST pre-events
+Console is alive and waiting... (if no messages, next heartbeat is in approximately two minutes)
+%MSG
+%MSG-e ots:  Early 15-Feb-2019 12:55:01 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'activateConfigGroup' ERROR encountered: Error activating config group &apos;TriggerMenu(53).&apos; Please see details below:  :ConfigurationManager:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManager.cc [1030] Error detected calling TopLevelTriggerConfiguration.init()!   :ConfigurationTree:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationTree.cc [1007]   Error occurred descending from node &apos;unbiased&apos; in table &apos;UnbiasedFilterConfiguration&apos; looking for child &apos;LowLevelPrescaleFactor&apos;   --- Additional error detail:   :ConfigurationView:/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationDataFormats/ConfigurationView.cc [1164]  In view: UNBIASED_FILTER_CONFIGURATION, Can&apos;t find column named &apos;LowLevelPrescaleFactor&apos; Existing columns:  UID  HighLevelPrescaleFactor  CommentDescription  Author  RecordInsertionTime   0# ots::ConfigurationTree::getNode(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, bool) const in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationInterface.so  1# ots::TopLevelTriggerConfiguration::createPrescaleEpilog(std::basic_ofstream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;&amp;, ots::ConfigurationTree) in /home/gianipez/ots/build_slf7.x86_64/otsdaq_demo/lib/libotsdaq-demo_ConfigurationPluginDataFormats_TopLevelTriggerConfiguration_configuration.so  2# ots::TopLevelTriggerConfiguration::init(ots::ConfigurationManager*) in /home/gianipez/ots/build_slf7.x86_64/otsdaq_demo/lib/libotsdaq-demo_ConfigurationPluginDataFormats_TopLevelTriggerConfiguration_configuration.so  3# ots::ConfigurationManager::loadConfigurationGroup(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, ots::ConfigurationGroupKey, bool, std::map&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, ots::ConfigurationVersion, std::less&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, ots::ConfigurationVersion&gt; &gt; &gt;*, ots::ProgressBar*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*, bool, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationInterface.so  4# ots::ConfigurationManagerRW::activateConfigurationGroup(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, ots::ConfigurationGroupKey, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationInterface.so  5# ots::ConfigurationGUISupervisor::request(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, cgicc::Cgicc&amp;, ots::HttpXmlDocument&amp;, ots::WebUsers::RequestUserInfo const&amp;) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq_utilities/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libConfigurationGUI.so  6# ots::CoreSupervisorBase::requestWrapper(xgi::Input*, xgi::Output*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libCoreSupervisors.so  7# xgi::Method&lt;ots::CoreSupervisorBase&gt;::invoke(xgi::Input*, xgi::Output*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/otsdaq/v2_01_00/slf7.x86_64.e15.s64.prof/lib/libCoreSupervisors.so  8# executive::XgiDispatcher::processIncomingMessage(xgi::Input*, xgi::Output*) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libexecutive.so  9# pt::http::ReceiverLoop::onRequest(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libpthttp.so 10# pt::http::ReceiverLoop::process(toolbox::task::WorkLoop*) in //cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libpthttp.so 11# toolbox::task::WaitingWorkLoop::process() in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libtoolbox.so 12# toolbox::task::WorkLoop::run() in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libtoolbox.so 13# toolbox::task::thread_func(void*) in /cvmfs/fermilab.opensciencegrid.org/products/artdaq/xdaq/v14_4_0b/Linux64bit+3.10-2.17-e15-prof/lib/libtoolbox.so 14# 0x00007F4D461A6DD5 in /lib64/libpthread.so.0 15# clone in /lib64/libc.so.6
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:55:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [348]	Updating persistent active groups to /home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ServiceData/ActiveConfigurationGroups.cfg ...
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:55:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [371]	Active Context: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:55:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [373]	Active Backbone: TableEditWizBackbone(24)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:55:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [375]	Active Iterate: (-1)
+%MSG
+%MSG-i ConfigurationManagerRW:  Early 15-Feb-2019 12:55:02 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/ConfigurationInterface/ConfigurationManagerRW.cc [377]	Active Configuration: TriggerMenu(52)
+%MSG
+%MSG-e ots:  Early 15-Feb-2019 12:56:08 CST pre-events
+/scratch/workspace/otsdaq-release-build/SLF7/s64-e15-prof/build/otsdaq/v2_01_00/src/otsdaq-core/CoreSupervisors/CoreSupervisorBase.cc [140]	'saveConfigurationInfo' ERROR encountered: File already exists! (&apos;/home/gianipez/ots/srcs/otsdaq_demo/NoGitData/ConfigurationInfo/TriggerPathConfigurationInfo.xml&apos;)
+%MSG

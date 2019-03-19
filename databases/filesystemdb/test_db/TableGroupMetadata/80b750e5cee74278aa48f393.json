@@ -1,0 +1,126 @@
+{
+"document" : {
+"data" : {
+"NAME" : "",
+"COMMENT" : "",
+"AUTHOR" : "",
+"CREATION_TIME" : 1548179458,
+"COL_TYPES" : {
+"UNUSED_UID" : "NUMBER",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"GROUP_CREATION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UNUSED_UID" : "0",
+"COMMENT_DESCRIPTION" : "",
+"AUTHOR" : "admin",
+"GROUP_CREATION_TIME" : "1549068890"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-01T18:54:50.519-0600",
+"rawdata" : [
+
+]
+},
+"version" : "20",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-01T18:54:50.519-0600"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-01T18:54:50.519-0600"
+},
+{
+"name" : "GroupAliasTreeEditWizBackbone_v5",
+"assigned" : "2019-02-01T18:54:50.537-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-02-01T18:54:50.519-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-01T18:54:50.519-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-01T18:54:50.519-0600",
+"value" : {
+"name" : "20",
+"assigned" : "2019-02-01T18:54:50.519-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-01T18:54:50.519-0600",
+"value" : {
+"name" : "TableGroupMetadata",
+"assigned" : "2019-02-01T18:54:50.519-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-01T18:54:50.519-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-01T18:54:50.519-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-02-01T18:54:50.537-0600",
+"value" : {
+"name" : "GroupAliasTreeEditWizBackbone_v5",
+"assigned" : "2019-02-01T18:54:50.537-0600"
+}
+}
+],
+"created" : "2019-02-01T18:54:50.519-0600"
+},
+"_id" : {
+"$oid" : "80b750e5cee74278aa48f393"
+},
+"collection" : "TableGroupMetadata",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}
