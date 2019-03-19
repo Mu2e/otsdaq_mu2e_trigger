@@ -1,4 +1,4 @@
-#include "otsdaq-demo/TablePluginDataFormats/TopLevelTriggerTable.h"
+#include "otsdaq-trigger/TablePluginDataFormats/TopLevelTriggerTable.h"
 #include "otsdaq-core/Macros/TablePluginMacros.h"
 #include "otsdaq-core/ConfigurationInterface/ConfigurationManager.h"
 
@@ -70,19 +70,35 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	__COUT__ << "*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*" << std::endl;
 	__COUT__ << configManager->__SELF_NODE__ << std::endl;
 
-	//	triggerFclFile << configManager->__SELF_NODE__ << std::endl;
-
 	auto childrenMap = configManager->__SELF_NODE__.getChildren();
+	__COUT__ <<"printing children content"<<__E__;
+	__COUT__ <<"children map size"<<childrenMap.size() << __E__;
+
 	for (auto &topLevelPair : childrenMap)
 	  {
+	    __COUT__       << "Main table name '" << topLevelPair.first << "'" << __E__;
+	    auto triggerPaths = topLevelPair.second.getNode("LinkToTriggerPathsTable").getChildren();
+	    for (auto &triggerPathPair : triggerPaths)
+	      {
+		__COUT__       << "children LOOP" << __E__;		
+		__COUT__       << "children Path '" << triggerPathPair.first << "'" << __E__;
+	      }
+	  }
+	__COUT__ <<"children map printed..." <<__E__;
+
+	for (auto &topLevelPair : childrenMap)
+	  {
+	    __COUT__       << "top LOOP" << __E__;
 	    __COUT__       << "Top Level '" << topLevelPair.first << "'" << __E__;
 	    // triggerFclFile << "Top Level '" << topLevelPair.first << "'" << __E__; 
 	    // triggerFclFile << "Node name '" << topLevelPair.second << "'" << __E__; 
 
 	    auto triggerPaths = topLevelPair.second.getNode("LinkToTriggerPathsTable").getChildren();
-
+	    size_t children_map_size = triggerPaths.size();
+	    size_t counter(0);
 	    for (auto &triggerPathPair : triggerPaths)
 	      {
+		__COUT__       << "internal LOOP" << __E__;		
 		__COUT__       << "Trigger Path '" << triggerPathPair.first << "'" << __E__;
 		__COUT__       << "Trigger Name '" << triggerPathPair.second.getNode("TriggerName").getValue() << "'" << __E__;
 
@@ -123,13 +139,25 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 		    createDigiCountFiltersEpilog  (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);		    
 		  }
 
+		__COUT__ <<" closing epilogFclFile" <<__E__;
+		  
 		epilogFclFile.close();
+		__COUT__ << "epilogFclFile closed... " << __E__;
 		
+		++counter;
+		__COUT__ <<"counter = " << counter <<", map-size = " << children_map_size <<__E__;
+		// if (counter == children_map_size-2) break;
 	      }//end loop over triggerPathPair
+	    
+	    __COUT__ <<" end of main LOOP" <<__E__;
+	   
 	  }//end loop over topLevelPair
+
+	__COUT__ << "loop completed closed... " << __E__;
 
 
 	triggerFclFile.close();
+	__COUT__ << "triggerFclFile closed... " << __E__;
 
 	//const XDAQContext *contextConfig = configManager->__GET_CONFIG__(XDAQContext);
 	
@@ -353,6 +381,8 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
 
       subEpilogFclFile.open(singlePathPairFclName);
 
+      __COUT__    << "singlePathPairFclName opened" << __E__;
+
       if (!subEpilogFclFile.is_open())
 	{
 	  __COUT__       << "file: " <<singlePathPairFclName << " not opened" << __E__;
@@ -360,6 +390,8 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
       else
 	{
 	  auto   filterConf = timeClusterConf.getChildren();
+	  __COUT__    << "took the children from TimeClusterConf" <<__E__;
+	  
 	  for (auto &params: filterConf) 
 	    {
 	      __COUT__ << filtNames[i] <<" conf: " << params.first  << __E__;
@@ -372,6 +404,10 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
 	    }
 	  subEpilogFclFile.close();
 	}
+
+      __COUT__    << "singlePathPairFclName closed..." << __E__;
+
+
     }
 }
 

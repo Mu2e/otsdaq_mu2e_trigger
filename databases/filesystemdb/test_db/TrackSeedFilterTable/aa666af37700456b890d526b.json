@@ -308,6 +308,22 @@
 "name" : "TriggerMenu_v75",
 "assigned" : "2019-03-08T16:02:49.775-0600"
 }
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-19T11:50:40.653-0500",
+"value" : {
+"name" : "TriggerMenu_v76",
+"assigned" : "2019-03-19T11:50:40.652-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-19T11:51:28.369-0500",
+"value" : {
+"name" : "TriggerMenu_v77",
+"assigned" : "2019-03-19T11:51:28.369-0500"
+}
 }
 ],
 "created" : "2019-02-15T14:15:06.220-0600"
@@ -347,6 +363,14 @@
 {
 "name" : "TriggerMenu_v75",
 "assigned" : "2019-03-08T16:02:49.775-0600"
+},
+{
+"name" : "TriggerMenu_v76",
+"assigned" : "2019-03-19T11:50:40.652-0500"
+},
+{
+"name" : "TriggerMenu_v77",
+"assigned" : "2019-03-19T11:51:28.369-0500"
 }
 ]
 }

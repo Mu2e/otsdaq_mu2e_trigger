@@ -976,6 +976,22 @@
 "name" : "TriggerMenu_v75",
 "assigned" : "2019-03-08T16:02:49.727-0600"
 }
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-19T11:50:40.512-0500",
+"value" : {
+"name" : "TriggerMenu_v76",
+"assigned" : "2019-03-19T11:50:40.512-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-19T11:51:28.241-0500",
+"value" : {
+"name" : "TriggerMenu_v77",
+"assigned" : "2019-03-19T11:51:28.241-0500"
+}
 }
 ],
 "created" : "2019-01-22T12:00:11.361-0600"
@@ -1015,6 +1031,14 @@
 {
 "name" : "TriggerMenu_v75",
 "assigned" : "2019-03-08T16:02:49.727-0600"
+},
+{
+"name" : "TriggerMenu_v76",
+"assigned" : "2019-03-19T11:50:40.512-0500"
+},
+{
+"name" : "TriggerMenu_v77",
+"assigned" : "2019-03-19T11:51:28.241-0500"
 }
 ]
 }

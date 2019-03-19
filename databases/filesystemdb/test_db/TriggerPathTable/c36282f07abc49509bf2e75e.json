@@ -4,7 +4,7 @@
 "NAME" : "TRIGGER_PATH_TABLE",
 "COMMENT" : "Auto-generated from mock-up.",
 "AUTHOR" : "admin",
-"CREATION_TIME" : 1552082568,
+"CREATION_TIME" : 1553014110,
 "COL_TYPES" : {
 "UID" : "VARCHAR2",
 "PATH_GROUP" : "VARCHAR2",
@@ -96,7 +96,7 @@
 },
 {
 "UID" : "caloMVACE",
-"PATH_GROUP" : "DebugGrou0",
+"PATH_GROUP" : "DebugGroup0 | DebugGrou0",
 "TRIGGER_NAME" : "caloMVACE",
 "TRIGGER_TYPE" : "CaloMVA",
 "LINK_TO_TRIGGER_TABLE" : "CaloMVAFilterTable",
@@ -121,30 +121,26 @@
 "source" : "template",
 "name" : "notprovided",
 "format" : "json",
-"created" : "2019-03-08T16:02:48.430-0600",
+"created" : "2019-03-19T11:48:30.403-0500",
 "rawdata" : [
 
 ]
 },
-"version" : "28",
+"version" : "29",
 "entities" : [
 {
 "name" : "OTSROOT",
-"assigned" : "2019-03-08T16:02:48.430-0600"
+"assigned" : "2019-03-19T11:48:30.404-0500"
 }
 ],
 "configurations" : [
 {
 "name" : "notprovided",
-"assigned" : "2019-03-08T16:02:48.430-0600"
+"assigned" : "2019-03-19T11:48:30.403-0500"
 },
 {
-"name" : "TriggerMenu_v75",
-"assigned" : "2019-03-08T16:02:49.817-0600"
-},
-{
-"name" : "TriggerMenu_v76",
-"assigned" : "2019-03-19T11:50:40.787-0500"
+"name" : "TriggerMenu_v77",
+"assigned" : "2019-03-19T11:51:28.492-0500"
 }
 ],
 "changelog" : "notprovided",
@@ -154,57 +150,49 @@
 "updates" : [
 {
 "event" : "addConfiguration",
-"timestamp" : "2019-03-08T16:02:48.430-0600",
+"timestamp" : "2019-03-19T11:48:30.404-0500",
 "value" : {
 "name" : "notprovided",
-"assigned" : "2019-03-08T16:02:48.430-0600"
+"assigned" : "2019-03-19T11:48:30.403-0500"
 }
 },
 {
 "event" : "setVersion",
-"timestamp" : "2019-03-08T16:02:48.430-0600",
+"timestamp" : "2019-03-19T11:48:30.404-0500",
 "value" : {
-"name" : "28",
-"assigned" : "2019-03-08T16:02:48.430-0600"
+"name" : "29",
+"assigned" : "2019-03-19T11:48:30.404-0500"
 }
 },
 {
 "event" : "setCollection",
-"timestamp" : "2019-03-08T16:02:48.430-0600",
+"timestamp" : "2019-03-19T11:48:30.404-0500",
 "value" : {
 "name" : "TriggerPathTable",
-"assigned" : "2019-03-08T16:02:48.430-0600"
+"assigned" : "2019-03-19T11:48:30.404-0500"
 }
 },
 {
 "event" : "addEntity",
-"timestamp" : "2019-03-08T16:02:48.430-0600",
+"timestamp" : "2019-03-19T11:48:30.404-0500",
 "value" : {
 "name" : "OTSROOT",
-"assigned" : "2019-03-08T16:02:48.430-0600"
+"assigned" : "2019-03-19T11:48:30.404-0500"
 }
 },
 {
 "event" : "addConfiguration",
-"timestamp" : "2019-03-08T16:02:49.817-0600",
+"timestamp" : "2019-03-19T11:51:28.492-0500",
 "value" : {
-"name" : "TriggerMenu_v75",
-"assigned" : "2019-03-08T16:02:49.817-0600"
-}
-},
-{
-"event" : "addConfiguration",
-"timestamp" : "2019-03-19T11:50:40.787-0500",
-"value" : {
-"name" : "TriggerMenu_v76",
-"assigned" : "2019-03-19T11:50:40.787-0500"
+"name" : "TriggerMenu_v77",
+"assigned" : "2019-03-19T11:51:28.492-0500"
 }
 }
 ],
-"created" : "2019-03-08T16:02:48.430-0600"
+"created" : "2019-03-19T11:48:30.403-0500"
 },
 "_id" : {
-"$oid" : "baa042748541454d8be10282"
+"$oid" : "c36282f07abc49509bf2e75e"
 },
 "collection" : "TriggerPathTable",
 "aliases" : {

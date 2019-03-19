@@ -128,3 +128,5 @@ physics.unbiased_path  : [ @sequence::paths.unbiased ]
 #include "Trigger_epilogs/unbiased.fcl"
 physics.minimumbiasSDCount_path  : [ @sequence::paths.minimumbiasSDCount ]
 #include "Trigger_epilogs/minimumbiasSDCount.fcl"
+physics.caloMVACE_path  : [ @sequence::paths.caloMVACE ]
+#include "Trigger_epilogs/caloMVACE.fcl"
