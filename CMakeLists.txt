@@ -82,7 +82,6 @@ add_subdirectory(tools)
 add_subdirectory(test)
 
 # Documentation directory
-
 add_subdirectory(doc)
 
 # UPS
