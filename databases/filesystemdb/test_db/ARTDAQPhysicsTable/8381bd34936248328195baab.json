@@ -1,0 +1,226 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_PHYSICS_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1555085340,
+"COL_TYPES" : {
+"PHYSICS_UID" : "VARCHAR2",
+"ANALYZERS_LINK" : "VARCHAR2",
+"ANALYZERS_LINK_GROUP_ID" : "VARCHAR2",
+"PRODUCERS_LINK" : "VARCHAR2",
+"PRODUCERS_LINK_GROUP_ID" : "VARCHAR2",
+"FILTERS_LINK" : "VARCHAR2",
+"FILTERS_LINK_GROUP_ID" : "VARCHAR2",
+"PHYSICS_OTHER_PARAMETERS_LINK" : "VARCHAR2",
+"PHYSICS_OTHER_PARAMETERS_LINK_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PHYSICS_UID" : "eventBuilder0Physics",
+"ANALYZERS_LINK" : "NO_LINK",
+"ANALYZERS_LINK_GROUP_ID" : "DEFAULT",
+"PRODUCERS_LINK" : "NO_LINK",
+"PRODUCERS_LINK_GROUP_ID" : "DEFAULT",
+"FILTERS_LINK" : "ARTDAQPhysicsFilterTable",
+"FILTERS_LINK_GROUP_ID" : "eventBuilder0PhysicsFilters",
+"PHYSICS_OTHER_PARAMETERS_LINK" : "NO_LINK",
+"PHYSICS_OTHER_PARAMETERS_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555085209"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-04-12T11:09:00.482-0500",
+"rawdata" : [
+
+]
+},
+"version" : "2",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T11:09:00.482-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-04-12T11:09:00.482-0500"
+},
+{
+"name" : "OnlineConfiguration_v17",
+"assigned" : "2019-04-12T11:09:22.688-0500"
+},
+{
+"name" : "OnlineConfiguration_v18",
+"assigned" : "2019-04-12T11:24:28.499-0500"
+},
+{
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:32:04.573-0500"
+},
+{
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:23.294-0500"
+},
+{
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:34.319-0500"
+},
+{
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:37.349-0500"
+},
+{
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:42.178-0500"
+},
+{
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:25:06.700-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:09:00.482-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-04-12T11:09:00.482-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-04-12T11:09:00.482-0500",
+"value" : {
+"name" : "2",
+"assigned" : "2019-04-12T11:09:00.482-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-04-12T11:09:00.482-0500",
+"value" : {
+"name" : "ARTDAQPhysicsTable",
+"assigned" : "2019-04-12T11:09:00.482-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-04-12T11:09:00.482-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T11:09:00.482-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:09:22.689-0500",
+"value" : {
+"name" : "OnlineConfiguration_v17",
+"assigned" : "2019-04-12T11:09:22.688-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:24:28.499-0500",
+"value" : {
+"name" : "OnlineConfiguration_v18",
+"assigned" : "2019-04-12T11:24:28.499-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:32:04.573-0500",
+"value" : {
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:32:04.573-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:33:23.294-0500",
+"value" : {
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:23.294-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:38:34.319-0500",
+"value" : {
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:34.319-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:41:37.349-0500",
+"value" : {
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:37.349-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:21:42.178-0500",
+"value" : {
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:42.178-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:25:06.700-0500",
+"value" : {
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:25:06.700-0500"
+}
+}
+],
+"created" : "2019-04-12T11:09:00.482-0500"
+},
+"_id" : {
+"$oid" : "8381bd34936248328195baab"
+},
+"collection" : "ARTDAQPhysicsTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,202 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_OUTPUT_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1555086707,
+"COL_TYPES" : {
+"OUTPUT_GROUP_ID" : "VARCHAR2",
+"OUTPUT_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"OUTPUT_KEY" : "VARCHAR2",
+"OUTPUT_MODULE_TYPE" : "VARCHAR2",
+"OUTPUT_MODULE_PARAMETER_LINK" : "VARCHAR2",
+"OUTPUT_MODULE_PARAMETER_LINK_GROUP_ID" : "VARCHAR2",
+"OUTPUT_MODULE_DESTINATION_LINK" : "VARCHAR2",
+"OUTPUT_MODULE_DESTINATION_LINK_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"OUTPUT_GROUP_ID" : "eventBuilder0Outputs",
+"OUTPUT_UID" : "eventBuilder0Out1",
+"STATUS" : "On",
+"OUTPUT_KEY" : "out1",
+"OUTPUT_MODULE_TYPE" : "FileDumperOutput",
+"OUTPUT_MODULE_PARAMETER_LINK" : "ARTDAQOutputModuleParameterTable",
+"OUTPUT_MODULE_PARAMETER_LINK_GROUP_ID" : "eventBuilder0OutputParameters",
+"OUTPUT_MODULE_DESTINATION_LINK" : "NO_LINK",
+"OUTPUT_MODULE_DESTINATION_LINK_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555086614"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-04-12T11:31:47.309-0500",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T11:31:47.310-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-04-12T11:31:47.310-0500"
+},
+{
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:32:02.534-0500"
+},
+{
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:21.543-0500"
+},
+{
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:32.598-0500"
+},
+{
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:35.171-0500"
+},
+{
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:39.220-0500"
+},
+{
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:25:04.868-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:31:47.310-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-04-12T11:31:47.310-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-04-12T11:31:47.310-0500",
+"value" : {
+"name" : "1",
+"assigned" : "2019-04-12T11:31:47.310-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-04-12T11:31:47.310-0500",
+"value" : {
+"name" : "ARTDAQOutputTable",
+"assigned" : "2019-04-12T11:31:47.310-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-04-12T11:31:47.310-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T11:31:47.310-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:32:02.534-0500",
+"value" : {
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:32:02.534-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:33:21.543-0500",
+"value" : {
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:21.543-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:38:32.598-0500",
+"value" : {
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:32.598-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:41:35.171-0500",
+"value" : {
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:35.171-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:21:39.220-0500",
+"value" : {
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:39.220-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:25:04.868-0500",
+"value" : {
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:25:04.868-0500"
+}
+}
+],
+"created" : "2019-04-12T11:31:47.309-0500"
+},
+"_id" : {
+"$oid" : "dc56ddae73a445b6b50a18b0"
+},
+"collection" : "ARTDAQOutputTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

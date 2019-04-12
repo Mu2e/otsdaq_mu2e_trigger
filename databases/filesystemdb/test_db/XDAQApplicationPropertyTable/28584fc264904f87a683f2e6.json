@@ -1,0 +1,236 @@
+{
+"document" : {
+"data" : {
+"NAME" : "XDAQ_APPLICATION_PROPERTY_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1517420253,
+"COL_TYPES" : {
+"PROPERTY_GROUP_ID" : "VARCHAR2",
+"UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"PROPERTY_NAME" : "VARCHAR2",
+"PROPERTY_TYPE" : "VARCHAR2",
+"PROPERTY_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-03-19T14:59:22.909-0500",
+"rawdata" : [
+
+]
+},
+"version" : "2",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-03-19T14:59:22.910-0500"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-03-19T14:59:22.910-0500"
+},
+{
+"name" : "testContext_v2",
+"assigned" : "2019-03-19T14:59:23.169-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-03-19T14:59:22.910-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-03-19T14:59:22.910-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-03-19T14:59:22.910-0500",
+"value" : {
+"name" : "2",
+"assigned" : "2019-03-19T14:59:22.910-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-03-19T14:59:22.910-0500",
+"value" : {
+"name" : "XDAQApplicationPropertyTable",
+"assigned" : "2019-03-19T14:59:22.910-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-03-19T14:59:22.910-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-03-19T14:59:22.910-0500"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-03-19T14:59:23.169-0500",
+"value" : {
+"name" : "testContext_v2",
+"assigned" : "2019-03-19T14:59:23.169-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-20T11:08:40.992-0500",
+"value" : {
+"name" : "testContext_v3",
+"assigned" : "2019-03-20T11:08:40.992-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-20T11:42:43.126-0500",
+"value" : {
+"name" : "testContext_v4",
+"assigned" : "2019-03-20T11:42:43.126-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-20T11:50:16.055-0500",
+"value" : {
+"name" : "testContext_v5",
+"assigned" : "2019-03-20T11:50:16.055-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-20T11:53:55.029-0500",
+"value" : {
+"name" : "testContext_v6",
+"assigned" : "2019-03-20T11:53:55.029-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-20T12:11:07.845-0500",
+"value" : {
+"name" : "testContext_v7",
+"assigned" : "2019-03-20T12:11:07.845-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-10T10:39:23.856-0500",
+"value" : {
+"name" : "testContext_v8",
+"assigned" : "2019-04-10T10:39:23.856-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-10T10:48:37.999-0500",
+"value" : {
+"name" : "testContext_v9",
+"assigned" : "2019-04-10T10:48:37.999-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-10T11:54:19.473-0500",
+"value" : {
+"name" : "testContext_v10",
+"assigned" : "2019-04-10T11:54:19.473-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T09:40:47.312-0500",
+"value" : {
+"name" : "testContext_v11",
+"assigned" : "2019-04-12T09:40:47.312-0500"
+}
+}
+],
+"created" : "2019-03-19T14:59:22.910-0500"
+},
+"_id" : {
+"$oid" : "28584fc264904f87a683f2e6"
+},
+"collection" : "XDAQApplicationPropertyTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided",
+"configurations" : [
+{
+"name" : "testContext_v3",
+"assigned" : "2019-03-20T11:08:40.992-0500"
+},
+{
+"name" : "testContext_v4",
+"assigned" : "2019-03-20T11:42:43.126-0500"
+},
+{
+"name" : "testContext_v5",
+"assigned" : "2019-03-20T11:50:16.055-0500"
+},
+{
+"name" : "testContext_v6",
+"assigned" : "2019-03-20T11:53:55.029-0500"
+},
+{
+"name" : "testContext_v7",
+"assigned" : "2019-03-20T12:11:07.845-0500"
+},
+{
+"name" : "testContext_v8",
+"assigned" : "2019-04-10T10:39:23.856-0500"
+},
+{
+"name" : "testContext_v9",
+"assigned" : "2019-04-10T10:48:37.999-0500"
+},
+{
+"name" : "testContext_v10",
+"assigned" : "2019-04-10T11:54:19.473-0500"
+},
+{
+"name" : "testContext_v11",
+"assigned" : "2019-04-12T09:40:47.312-0500"
+}
+]
+}

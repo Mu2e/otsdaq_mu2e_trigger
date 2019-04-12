@@ -1,2 +1,10 @@
 Data/Logs/*
 *.cmd
+*~
+*.bk
+TooltipData
+CodeEditorData
+ProgressBarData
+RunNumber
+ARTDAQConfigurations
+RunControlData

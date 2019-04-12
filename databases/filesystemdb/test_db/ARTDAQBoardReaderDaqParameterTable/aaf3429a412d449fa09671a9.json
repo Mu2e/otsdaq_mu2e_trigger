@@ -1,0 +1,416 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_BOARD_READER_DAQ_PARAMETER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1555081208,
+"COL_TYPES" : {
+"DAQ_PARAMETER_GROUP_ID" : "VARCHAR2",
+"DAQ_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"DAQ_PARAMETER_KEY" : "VARCHAR2",
+"DAQ_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "ring_0_roc_count",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "ring_0_roc_count",
+"DAQ_PARAMETER_VALUE" : "1",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "ring_0_timing_enabled",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "ring_0_timing_enabled",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "debug_print",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "debug_print",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "print out for debugging",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555081208"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "verbose",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "verbose",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "raw_output_enable",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "raw_output_enable",
+"DAQ_PARAMETER_VALUE" : "false",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "raw_output_file",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "raw_output_file",
+"DAQ_PARAMETER_VALUE" : "\"mu2eReceiver.bin\"",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "load_sim_file",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "load_sim_file",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "use_detector_emulator",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "use_detector_emulator",
+"DAQ_PARAMETER_VALUE" : "true",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "fragment_id",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "fragment_id",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+},
+{
+"DAQ_PARAMETER_GROUP_ID" : "EventDataGenerator0Parameters",
+"DAQ_PARAMETER_UID" : "board_id",
+"STATUS" : "On",
+"DAQ_PARAMETER_KEY" : "board_id",
+"DAQ_PARAMETER_VALUE" : "0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555080994"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-04-12T10:00:08.192-0500",
+"rawdata" : [
+
+]
+},
+"version" : "3",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T10:00:08.192-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-04-12T10:00:08.192-0500"
+},
+{
+"name" : "OnlineConfiguration_v7",
+"assigned" : "2019-04-12T10:00:17.994-0500"
+},
+{
+"name" : "OnlineConfiguration_v9",
+"assigned" : "2019-04-12T10:11:23.955-0500"
+},
+{
+"name" : "OnlineConfiguration_v10",
+"assigned" : "2019-04-12T10:17:18.949-0500"
+},
+{
+"name" : "OnlineConfiguration_v11",
+"assigned" : "2019-04-12T10:19:12.132-0500"
+},
+{
+"name" : "OnlineConfiguration_v12",
+"assigned" : "2019-04-12T10:21:07.742-0500"
+},
+{
+"name" : "OnlineConfiguration_v13",
+"assigned" : "2019-04-12T10:42:13.278-0500"
+},
+{
+"name" : "OnlineConfiguration_v14",
+"assigned" : "2019-04-12T10:52:35.718-0500"
+},
+{
+"name" : "OnlineConfiguration_v15",
+"assigned" : "2019-04-12T10:54:39.246-0500"
+},
+{
+"name" : "OnlineConfiguration_v16",
+"assigned" : "2019-04-12T11:00:40.316-0500"
+},
+{
+"name" : "OnlineConfiguration_v17",
+"assigned" : "2019-04-12T11:09:15.136-0500"
+},
+{
+"name" : "OnlineConfiguration_v18",
+"assigned" : "2019-04-12T11:24:20.472-0500"
+},
+{
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:31:58.294-0500"
+},
+{
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:17.697-0500"
+},
+{
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:29.225-0500"
+},
+{
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:31.818-0500"
+},
+{
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:33.531-0500"
+},
+{
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:24:45.806-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:00:08.192-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-04-12T10:00:08.192-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-04-12T10:00:08.192-0500",
+"value" : {
+"name" : "3",
+"assigned" : "2019-04-12T10:00:08.192-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-04-12T10:00:08.192-0500",
+"value" : {
+"name" : "ARTDAQBoardReaderDaqParameterTable",
+"assigned" : "2019-04-12T10:00:08.192-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-04-12T10:00:08.192-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T10:00:08.192-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:00:17.994-0500",
+"value" : {
+"name" : "OnlineConfiguration_v7",
+"assigned" : "2019-04-12T10:00:17.994-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:11:23.955-0500",
+"value" : {
+"name" : "OnlineConfiguration_v9",
+"assigned" : "2019-04-12T10:11:23.955-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:17:18.949-0500",
+"value" : {
+"name" : "OnlineConfiguration_v10",
+"assigned" : "2019-04-12T10:17:18.949-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:19:12.132-0500",
+"value" : {
+"name" : "OnlineConfiguration_v11",
+"assigned" : "2019-04-12T10:19:12.132-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:21:07.742-0500",
+"value" : {
+"name" : "OnlineConfiguration_v12",
+"assigned" : "2019-04-12T10:21:07.742-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:42:13.278-0500",
+"value" : {
+"name" : "OnlineConfiguration_v13",
+"assigned" : "2019-04-12T10:42:13.278-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:52:35.718-0500",
+"value" : {
+"name" : "OnlineConfiguration_v14",
+"assigned" : "2019-04-12T10:52:35.718-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:54:39.246-0500",
+"value" : {
+"name" : "OnlineConfiguration_v15",
+"assigned" : "2019-04-12T10:54:39.246-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:00:40.316-0500",
+"value" : {
+"name" : "OnlineConfiguration_v16",
+"assigned" : "2019-04-12T11:00:40.316-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:09:15.136-0500",
+"value" : {
+"name" : "OnlineConfiguration_v17",
+"assigned" : "2019-04-12T11:09:15.136-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:24:20.472-0500",
+"value" : {
+"name" : "OnlineConfiguration_v18",
+"assigned" : "2019-04-12T11:24:20.472-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:31:58.294-0500",
+"value" : {
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:31:58.294-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:33:17.697-0500",
+"value" : {
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:17.697-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:38:29.225-0500",
+"value" : {
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:29.225-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:41:31.818-0500",
+"value" : {
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:31.818-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:21:33.531-0500",
+"value" : {
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:33.531-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:24:45.806-0500",
+"value" : {
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:24:45.806-0500"
+}
+}
+],
+"created" : "2019-04-12T10:00:08.192-0500"
+},
+"_id" : {
+"$oid" : "aaf3429a412d449fa09671a9"
+},
+"collection" : "ARTDAQBoardReaderDaqParameterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}
