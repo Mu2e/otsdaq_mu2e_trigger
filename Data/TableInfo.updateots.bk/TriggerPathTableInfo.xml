@@ -6,6 +6,7 @@
 				<COLUMN Type="GroupID-Trig" 	 Name="PathGroup" 	 StorageName="PATH_GROUP" 		DataType="VARCHAR2" 		DataChoices=""/>
 				<COLUMN Type="FixedChoiceData" 	 Name="TriggerName" 	 StorageName="TRIGGER_NAME" 		DataType="VARCHAR2" 		DataChoices="arbitraryBool=1,tprSeedDeM,tprSeedDeP,cprSeedDeM,cprSeedDeP,tprHelixIPADeM,unbiased,caloMVACE"/>
 				<COLUMN Type="FixedChoiceData" 	 Name="TriggerType" 	 StorageName="TRIGGER_TYPE" 		DataType="VARCHAR2" 		DataChoices="arbitraryBool=0,TrackSeed,Helix,Unbiased,DigiCount,CaloMVA,CaloMVACE"/>
+				<COLUMN Type="OnOff" 	 Name="Status" 	 StorageName="STATUS" 		DataType="VARCHAR2" 		DataChoices=""/>
 				<COLUMN Type="ChildLink-0" 	 Name="LinkToTriggerTable" 	 StorageName="LINK_TO_TRIGGER_TABLE" 		DataType="VARCHAR2" 		DataChoices="arbitraryBool=0,TrackSeedFilterTable,HelixFilterTable,DigiFilterTable,UnbiasedFilterTable,CaloMVAFilterTable"/>
 				<COLUMN Type="ChildLinkUID-0" 	 Name="LinkToTriggerTableUID" 	 StorageName="LINK_TO_TRIGGER_TABLE_UID" 		DataType="VARCHAR2" 		DataChoices=""/>
 				<COLUMN Type="Comment" 	 Name="CommentDescription" 	 StorageName="COMMENT_DESCRIPTION" 		DataType="VARCHAR2" 		DataChoices=""/>

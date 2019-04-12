@@ -2,10 +2,11 @@
 	<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="TableInfo.xsd">
 		<TABLE Name="ParameterTable">
 			<VIEW Name="PARAMETER_TABLE" Type="File,Database,DatabaseTest" Description="No%20description.">
-				<COLUMN Type="UID" 	 Name="UID" 	 StorageName="UID" 		DataType="VARCHAR2" 		DataChoices=""/>
-				<COLUMN Type="GroupID-ParameterGroup" 	 Name="GroupID" 	 StorageName="GROUP_ID" 		DataType="VARCHAR2" 		DataChoices=""/>
-				<COLUMN Type="Data" 	 Name="name" 	 StorageName="NAME" 		DataType="VARCHAR2" 		DataChoices=""/>
-				<COLUMN Type="Data" 	 Name="value" 	 StorageName="VALUE" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="GroupID-parameters" 	 Name="parameterGroupID" 	 StorageName="PARAMETER_GROUP_ID" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="UID" 	 Name="parameterUID" 	 StorageName="PARAMETER_UID" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="OnOff" 	 Name="Status" 	 StorageName="STATUS" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="parameterKey" 	 StorageName="PARAMETER_KEY" 		DataType="VARCHAR2" 		DataChoices=""/>
+				<COLUMN Type="Data" 	 Name="parameterValue" 	 StorageName="PARAMETER_VALUE" 		DataType="VARCHAR2" 		DataChoices=""/>
 				<COLUMN Type="Comment" 	 Name="CommentDescription" 	 StorageName="COMMENT_DESCRIPTION" 		DataType="VARCHAR2" 		DataChoices=""/>
 				<COLUMN Type="Author" 	 Name="Author" 	 StorageName="AUTHOR" 		DataType="VARCHAR2" 		DataChoices=""/>
 				<COLUMN Type="Timestamp" 	 Name="RecordInsertionTime" 	 StorageName="RECORD_INSERTION_TIME" 		DataType="TIMESTAMP WITH TIMEZONE" 		DataChoices=""/>

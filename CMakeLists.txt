@@ -11,7 +11,7 @@
 cmake_minimum_required (VERSION 2.8)
 
 
-project(otsdaq-trigger)
+project(otsdaq-mu2e-trigger)
 # cetbuildtools contains our cmake modules
 SET ( CETBUILDTOOLS_VERSION $ENV{CETBUILDTOOLS_VERSION} )
 IF (NOT CETBUILDTOOLS_VERSION)
@@ -45,6 +45,8 @@ cet_report_compiler_flags()
 
 # these are minimum required versions, not the actual product versions
 #find_ups_product( epics v3_15_2 )
+find_ups_product( pcie_linux_kernel_module v2_01_02 )
+find_ups_product( mu2e_artdaq_core v1_02_00)
 find_ups_product( cetbuildtools v3_03_00 )
 find_ups_product( artdaq v0_04_02 )
 find_ups_product( artdaq_core v1_00_00 )

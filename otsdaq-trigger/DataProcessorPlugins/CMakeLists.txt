@@ -1,16 +1,48 @@
-simple_plugin(DemoDQMHistosConsumer "processor"
+simple_plugin(FSSRDQMHistosConsumer "processor"
     Configurable
-	DemoRootUtilities
+	DataManager
+	RootUtilities
+	FermilabTestbeamDQMHistos
+        WorkLoopManager
+	${CETLIB}
+	MF_MessageLogger
+  )
+
+simple_plugin(FSSRRawDataSaverConsumer "processor"
+	DataManager
+        WorkLoopManager
+	${CETLIB}
+	MF_MessageLogger
+  )
+
+simple_plugin(WireChamberDQMHistosConsumer "processor"
+    Configurable
+	DataManager
+	RootUtilities
+	FermilabTestbeamDQMHistos
+        WorkLoopManager
+	${CETLIB}
+  )
+
+simple_plugin(WireChamberDataSaverConsumer "processor"
+	DataManager
+        WorkLoopManager
+	${CETLIB}
+	${MF_MESSAGELOGGER}
+  )
+
+simple_plugin(RootDQMHistosConsumer "processor"
+    Configurable
     RootUtilities
     DataManager
     WorkLoopManager
-#	MessageFacility
-	Macros
     ConfigurationInterface
     TableCore
+	Macros
 	${ROOT_BASIC_LIB_LIST}
 	${MF_MESSAGELOGGER}
   )
-  
+
+
 install_headers()
 install_source()

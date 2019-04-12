@@ -1,4 +1,4 @@
-#include "otsdaq-demo/Overlays/FragmentType.hh"
+#include "otsdaq-trigger/Overlays/FragmentType.hh"
 
 #include <algorithm>
 #include <cassert>
