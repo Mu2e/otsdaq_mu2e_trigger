@@ -44,17 +44,23 @@ TopLevelTriggerTable::~TopLevelTriggerTable(void)
 //========================================================================================================================
 void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 {
+	isFirstAppInContext_ = configManager->isOwnerFirstAppInContext();
+	
+	__COUTV__(isFirstAppInContext_);
+	if(!isFirstAppInContext_) return;
+
 	//make directory just in case
 	mkdir((ARTDAQ_FCL_PATH).c_str(), 0755);
 
-	char               trigEpilogsDir[100];
-	sprintf(trigEpilogsDir, "%sTrigger_epilogs", (ARTDAQ_FCL_PATH).c_str());
-	mkdir(trigEpilogsDir, 0755);
+	std::string      trigEpilogsDir;
+	trigEpilogsDir = ARTDAQ_FCL_PATH + "Trigger_epilogs";
+	mkdir(trigEpilogsDir.c_str(), 0755);
 
 
 	//create the fcl file
 	std::ofstream      triggerFclFile, epilogFclFile, subEpilogFclFile;
-	char               fclFileName[100], skelethonName[100], epilogName[100];
+	char               fclFileName[100], skelethonName[100];
+	std::string        epilogName;
 	//skelethon to clone
 	sprintf(skelethonName, "%s/main.fcl", (ARTDAQ_FCL_PATH).c_str());
 	//file to be edited
@@ -112,9 +118,9 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 		__COUT__       << "Trigger Type '" << triggerType << "'" << __E__;
 
 		//create the fcl housing the trigger-path configurations
-		sprintf(epilogName, "%s/%s.fcl", trigEpilogsDir, triggerPathPair.first.c_str());
+		epilogName = trigEpilogsDir + "/" + triggerPathPair.first + ".fcl";
 		triggerFclFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
-		epilogFclFile.open(epilogName);
+		epilogFclFile.open(epilogName.c_str());
 
 		//create the directory that will house all the epilogs of a given triggerPath
 		char               singlePathEpilogsDir[100], singlePathPairFclName[100];

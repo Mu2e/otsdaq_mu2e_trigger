@@ -25,6 +25,8 @@ public:
 	void   createHelixFiltersEpilog      (std::ofstream& EpilogFclFile, char* EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
 	void   createDigiCountFiltersEpilog  (std::ofstream& EpilogFclFile, char* EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
 
+private:
+	bool 	isFirstAppInContext_;
 };
 }
 #endif

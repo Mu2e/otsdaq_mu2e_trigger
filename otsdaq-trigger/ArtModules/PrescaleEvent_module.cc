@@ -54,15 +54,16 @@ namespace ots
   };
 
   PrescaleEvent::PrescaleEvent(fhicl::ParameterSet const & p)
-    : nPrescale_      (p.get<uint32_t>("nPrescale")), 
-      useFilteredEvts_(p.get<bool>    ("useFilteredEvents",false)), 
-      _debug          (p.get<int>     ("debugLevel",0)), 
-      //      _trigFlag       (p.get<std::vector<std::string> >("triggerFlag")),
-      _trigPath       (p.get<std::string>("triggerPath")),
-      _nevt(0), _npass(0)
-  {
-    // produces<TriggerInfo>();
-  }
+    : art::EDFilter{p},
+    nPrescale_      (p.get<uint32_t>("nPrescale")), 
+    useFilteredEvts_(p.get<bool>    ("useFilteredEvents",false)), 
+    _debug          (p.get<int>     ("debugLevel",0)), 
+    //      _trigFlag       (p.get<std::vector<std::string> >("triggerFlag")),
+    _trigPath       (p.get<std::string>("triggerPath")),
+    _nevt(0), _npass(0)
+    {
+      // produces<TriggerInfo>();
+    }
 
   inline bool PrescaleEvent::filter(art::Event & e)
   {
@@ -88,7 +89,7 @@ namespace ots
 
   bool PrescaleEvent::endRun( art::Run& run ) {
     if(_debug > 0){
-      std::cout << *currentContext()->moduleLabel() << " passed " << _npass << " events out of " << _nevt << " for a ratio of " << float(_npass)/float(_nevt) << std::endl;
+      std::cout << "PrescaleEvent: " << " passed " << _npass << " events out of " << _nevt << " for a ratio of " << float(_npass)/float(_nevt) << std::endl;
     }
     return true;
   }

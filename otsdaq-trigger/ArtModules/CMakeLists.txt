@@ -80,30 +80,30 @@ canvas
 # )
 
 
-simple_plugin(WireChamberPythonOutput "module"
-        otsdaq-trigger_Overlays
-        artdaq-core_Data
-        ${CETLIB_EXCEPT}
-#        MessageFacility
-        ${MF_MESSAGELOGGER}
-        ${MF_UTILITIES}
-)
+# simple_plugin(WireChamberPythonOutput "module"
+#         otsdaq-trigger_Overlays
+#         artdaq-core_Data
+#         ${CETLIB_EXCEPT}
+# #        MessageFacility
+#         ${MF_MESSAGELOGGER}
+#         ${MF_UTILITIES}
+# )
 
-simple_plugin(STIBDQM "module"
-	otsdaq-trigger_Overlays
-	     DataDecoders
-  NetworkUtilities
-	artdaq-core_Data
-	${CETLIB_EXCEPT}
-	${ROOT_GPAD}
-	${ROOT_HIST}
-	${ROOT_GUI}
-	${ROOT_RIO}
-  ${ROOT_NET}
-#	MessageFacility
-	${MF_MESSAGELOGGER}
-	${MF_UTILITIES}
-)
+# simple_plugin(STIBDQM "module"
+# 	otsdaq-trigger_Overlays
+# 	     DataDecoders
+#   NetworkUtilities
+# 	artdaq-core_Data
+# 	${CETLIB_EXCEPT}
+# 	${ROOT_GPAD}
+# 	${ROOT_HIST}
+# 	${ROOT_GUI}
+# 	${ROOT_RIO}
+#   ${ROOT_NET}
+# #	MessageFacility
+# 	${MF_MESSAGELOGGER}
+# 	${MF_UTILITIES}
+# )
 
 simple_plugin(TriggerCounter "module"
 	otsdaq-trigger_Overlays
@@ -120,43 +120,43 @@ simple_plugin(TriggerCounter "module"
 	${MF_UTILITIES}
 )
 
-simple_plugin(FTBFInput "source"
-  artdaq_ArtModules
-  artdaq_DAQdata
-  otsdaq-trigger_Overlays
-  artdaq-utilities_Plugins
-  artdaq-core_Core
-  artdaq-core_Utilities
-  rt
-  art_Framework_Core
-  art_Framework_IO_Sources
-  art_Framework_Principal
-  art_Persistency_Provenance
-  art_Utilities
-  MF_MessageLogger
-)
+# simple_plugin(FTBFInput "source"
+#   artdaq_ArtModules
+#   artdaq_DAQdata
+#   otsdaq-trigger_Overlays
+#   artdaq-utilities_Plugins
+#   artdaq-core_Core
+#   artdaq-core_Utilities
+#   rt
+#   art_Framework_Core
+#   art_Framework_IO_Sources
+#   art_Framework_Principal
+#   art_Persistency_Provenance
+#   art_Utilities
+#   MF_MessageLogger
+# )
 
-simple_plugin(EventDataServer "module"
-otsdaq-trigger_Overlays
-artdaq_DAQrate
-artdaq_DAQdata
-artdaq-core_Data
-artdaq-core_Core
-MF_MessageLogger
-${Boost_SYSTEM_LIBRARY}
-${Boost_THREAD_LIBRARY}
-)
+# simple_plugin(EventDataServer "module"
+# otsdaq-trigger_Overlays
+# artdaq_DAQrate
+# artdaq_DAQdata
+# artdaq-core_Data
+# artdaq-core_Core
+# MF_MessageLogger
+# ${Boost_SYSTEM_LIBRARY}
+# ${Boost_THREAD_LIBRARY}
+# )
 
-simple_plugin(DummyAnalyzer "module"
-otsdaq-trigger_Overlays
-artdaq_DAQrate
-artdaq_DAQdata
-artdaq-core_Data
-artdaq-core_Core
-MF_MessageLogger
-${Boost_SYSTEM_LIBRARY}
-${Boost_THREAD_LIBRARY}
-)
+# simple_plugin(DummyAnalyzer "module"
+# otsdaq-trigger_Overlays
+# artdaq_DAQrate
+# artdaq_DAQdata
+# artdaq-core_Data
+# artdaq-core_Core
+# MF_MessageLogger
+# ${Boost_SYSTEM_LIBRARY}
+# ${Boost_THREAD_LIBRARY}
+# )
 
 simple_plugin(PrescaleEvent "module"
 otsdaq-trigger_Overlays
