@@ -1,0 +1,200 @@
+{
+"ouid" : [
+"3c887b0592c349c69d757c99",
+"6f6e90413a284c6194ea16ec"
+],
+"version" : {
+"0" : [
+"6f6e90413a284c6194ea16ec"
+],
+"1" : [
+"3c887b0592c349c69d757c99"
+]
+},
+"configurations.name" : {
+"notprovided" : [
+"3c887b0592c349c69d757c99",
+"6f6e90413a284c6194ea16ec"
+],
+"TriggerMenu_v52" : [
+"6f6e90413a284c6194ea16ec"
+],
+"TriggerMenu_v53" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v54" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v55" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v56" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v57" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v58" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v59" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v60" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v61" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v62" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v63" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v64" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v65" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v66" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v67" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v68" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v69" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v70" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v71" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v72" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v73" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v74" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v75" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v76" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v77" : [
+"3c887b0592c349c69d757c99"
+],
+"TriggerMenu_v78" : [
+"3c887b0592c349c69d757c99"
+]
+},
+"entities.name" : {
+"OTSROOT" : [
+"3c887b0592c349c69d757c99",
+"6f6e90413a284c6194ea16ec"
+]
+},
+"aliases.active.name" : {
+
+},
+"runs.name" : {
+
+},
+"configurations.assigned" : {
+"notprovided" : [
+"2019-02-15T12:51:51.104-0600",
+"2019-02-15T12:52:35.490-0600"
+],
+"TriggerMenu_v52" : [
+"2019-02-15T12:51:51.528-0600"
+],
+"TriggerMenu_v53" : [
+"2019-02-15T12:52:36.252-0600"
+],
+"TriggerMenu_v54" : [
+"2019-02-15T13:00:06.407-0600"
+],
+"TriggerMenu_v55" : [
+"2019-02-15T13:00:24.948-0600"
+],
+"TriggerMenu_v56" : [
+"2019-02-15T13:12:50.195-0600"
+],
+"TriggerMenu_v57" : [
+"2019-02-15T13:21:07.758-0600"
+],
+"TriggerMenu_v58" : [
+"2019-02-15T13:21:51.486-0600"
+],
+"TriggerMenu_v59" : [
+"2019-02-15T13:28:52.166-0600"
+],
+"TriggerMenu_v60" : [
+"2019-02-15T13:31:42.308-0600"
+],
+"TriggerMenu_v61" : [
+"2019-02-15T14:13:20.595-0600"
+],
+"TriggerMenu_v62" : [
+"2019-02-15T14:15:07.105-0600"
+],
+"TriggerMenu_v63" : [
+"2019-02-15T14:16:13.805-0600"
+],
+"TriggerMenu_v64" : [
+"2019-02-15T14:18:57.906-0600"
+],
+"TriggerMenu_v65" : [
+"2019-02-15T14:24:41.043-0600"
+],
+"TriggerMenu_v66" : [
+"2019-02-15T14:29:49.138-0600"
+],
+"TriggerMenu_v67" : [
+"2019-03-08T14:51:39.116-0600"
+],
+"TriggerMenu_v68" : [
+"2019-03-08T14:58:57.211-0600"
+],
+"TriggerMenu_v69" : [
+"2019-03-08T15:02:41.562-0600"
+],
+"TriggerMenu_v70" : [
+"2019-03-08T15:03:00.786-0600"
+],
+"TriggerMenu_v71" : [
+"2019-03-08T15:11:13.472-0600"
+],
+"TriggerMenu_v72" : [
+"2019-03-08T15:32:24.677-0600"
+],
+"TriggerMenu_v73" : [
+"2019-03-08T15:37:34.957-0600"
+],
+"TriggerMenu_v74" : [
+"2019-03-08T16:01:26.143-0600"
+],
+"TriggerMenu_v75" : [
+"2019-03-08T16:02:49.858-0600"
+],
+"TriggerMenu_v76" : [
+"2019-03-19T11:50:40.925-0500"
+],
+"TriggerMenu_v77" : [
+"2019-03-19T11:51:28.645-0500"
+],
+"TriggerMenu_v78" : [
+"2019-03-19T14:54:23.346-0500"
+]
+}
+}

@@ -1,0 +1,156 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TRACK_SEED_FILTER_CONFIGURATION",
+"COMMENT" : "Added ParameterTable",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1549069580,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LOW_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "DeMSeed0",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "DEFAULT",
+"LOW_LEVEL_PRESCALE_FACTOR" : "DEFAULT",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "HelixParameterGroup",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "DEFAULT",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549069474"
+},
+{
+"UID" : "DePSeed0",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "DEFAULT",
+"LOW_LEVEL_PRESCALE_FACTOR" : "DEFAULT",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "DEFAULT",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "DEFAULT",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_TABLE" : "ParameterConfiguration",
+"LINK_TO_TRACK_SEED_FILTER_PARAMETER_GROUP_ID" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1548264880"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-01T19:06:20.980-0600",
+"rawdata" : [
+
+]
+},
+"version" : "5",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-01T19:06:20.981-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-01T19:06:20.980-0600"
+},
+{
+"name" : "TriggerMenu_v10",
+"assigned" : "2019-02-01T19:06:21.383-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-01T19:06:20.980-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-01T19:06:20.980-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-01T19:06:20.980-0600",
+"value" : {
+"name" : "5",
+"assigned" : "2019-02-01T19:06:20.980-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-01T19:06:20.981-0600",
+"value" : {
+"name" : "TrackSeedFilterConfiguration",
+"assigned" : "2019-02-01T19:06:20.981-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-01T19:06:20.981-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-01T19:06:20.981-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-01T19:06:21.383-0600",
+"value" : {
+"name" : "TriggerMenu_v10",
+"assigned" : "2019-02-01T19:06:21.383-0600"
+}
+}
+],
+"created" : "2019-02-01T19:06:20.980-0600"
+},
+"_id" : {
+"$oid" : "c1a07610b5ea40acbbe793ee"
+},
+"collection" : "TrackSeedFilterConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

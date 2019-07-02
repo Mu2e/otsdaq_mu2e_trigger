@@ -1,0 +1,533 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_PHYSICS_PRODUCER_PARAMETER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1554911520,
+"COL_TYPES" : {
+"PRODUCER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"PRODUCER_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"PRODUCER_PARAMETER_KEY" : "VARCHAR2",
+"PRODUCER_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-04-10T10:52:00.140-0500",
+"rawdata" : [
+
+]
+},
+"version" : "0",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-04-10T10:52:00.140-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-04-10T10:52:00.140-0500"
+},
+{
+"name" : "OnlineConfiguration_v0",
+"assigned" : "2019-04-10T10:52:21.886-0500"
+},
+{
+"name" : "OnlineConfiguration_v1",
+"assigned" : "2019-04-10T10:54:22.321-0500"
+},
+{
+"name" : "OnlineConfiguration_v2",
+"assigned" : "2019-04-10T11:53:23.410-0500"
+},
+{
+"name" : "OnlineConfiguration_v3",
+"assigned" : "2019-04-12T09:39:57.949-0500"
+},
+{
+"name" : "OnlineConfiguration_v4",
+"assigned" : "2019-04-12T09:53:10.937-0500"
+},
+{
+"name" : "OnlineConfiguration_v5",
+"assigned" : "2019-04-12T09:56:50.103-0500"
+},
+{
+"name" : "OnlineConfiguration_v6",
+"assigned" : "2019-04-12T09:58:50.150-0500"
+},
+{
+"name" : "OnlineConfiguration_v7",
+"assigned" : "2019-04-12T10:00:23.696-0500"
+},
+{
+"name" : "OnlineConfiguration_v8",
+"assigned" : "2019-04-12T10:09:30.515-0500"
+},
+{
+"name" : "OnlineConfiguration_v9",
+"assigned" : "2019-04-12T10:11:29.540-0500"
+},
+{
+"name" : "OnlineConfiguration_v10",
+"assigned" : "2019-04-12T10:17:25.500-0500"
+},
+{
+"name" : "OnlineConfiguration_v11",
+"assigned" : "2019-04-12T10:19:17.749-0500"
+},
+{
+"name" : "OnlineConfiguration_v12",
+"assigned" : "2019-04-12T10:21:14.769-0500"
+},
+{
+"name" : "OnlineConfiguration_v13",
+"assigned" : "2019-04-12T10:42:20.214-0500"
+},
+{
+"name" : "OnlineConfiguration_v14",
+"assigned" : "2019-04-12T10:52:41.084-0500"
+},
+{
+"name" : "OnlineConfiguration_v15",
+"assigned" : "2019-04-12T10:54:44.841-0500"
+},
+{
+"name" : "OnlineConfiguration_v16",
+"assigned" : "2019-04-12T11:00:46.759-0500"
+},
+{
+"name" : "OnlineConfiguration_v17",
+"assigned" : "2019-04-12T11:09:22.222-0500"
+},
+{
+"name" : "OnlineConfiguration_v18",
+"assigned" : "2019-04-12T11:24:27.838-0500"
+},
+{
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:32:03.952-0500"
+},
+{
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:22.753-0500"
+},
+{
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:33.799-0500"
+},
+{
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:36.883-0500"
+},
+{
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:41.531-0500"
+},
+{
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:25:06.380-0500"
+},
+{
+"name" : "OnlineConfiguration_v25",
+"assigned" : "2019-04-19T09:25:47.012-0500"
+},
+{
+"name" : "OnlineConfiguration_v26",
+"assigned" : "2019-04-19T10:23:27.645-0500"
+},
+{
+"name" : "OnlineConfiguration_v27",
+"assigned" : "2019-04-19T10:31:48.920-0500"
+},
+{
+"name" : "OnlineConfiguration_v28",
+"assigned" : "2019-04-19T10:37:54.166-0500"
+},
+{
+"name" : "OnlineConfiguration_v29",
+"assigned" : "2019-04-19T10:40:26.682-0500"
+},
+{
+"name" : "OnlineConfiguration_v30",
+"assigned" : "2019-04-19T10:45:13.159-0500"
+},
+{
+"name" : "OnlineConfiguration_v31",
+"assigned" : "2019-04-19T12:17:42.164-0500"
+},
+{
+"name" : "OnlineConfiguration_v32",
+"assigned" : "2019-04-19T12:19:09.264-0500"
+},
+{
+"name" : "OnlineConfiguration_v33",
+"assigned" : "2019-04-30T14:45:42.272-0500"
+},
+{
+"name" : "OnlineConfiguration_v34",
+"assigned" : "2019-05-09T14:07:57.754-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-10T10:52:00.140-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-04-10T10:52:00.140-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-04-10T10:52:00.140-0500",
+"value" : {
+"name" : "0",
+"assigned" : "2019-04-10T10:52:00.140-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-04-10T10:52:00.140-0500",
+"value" : {
+"name" : "ARTDAQPhysicsProducerParameterTable",
+"assigned" : "2019-04-10T10:52:00.140-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-04-10T10:52:00.140-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-04-10T10:52:00.140-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-10T10:52:21.886-0500",
+"value" : {
+"name" : "OnlineConfiguration_v0",
+"assigned" : "2019-04-10T10:52:21.886-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-10T10:54:22.321-0500",
+"value" : {
+"name" : "OnlineConfiguration_v1",
+"assigned" : "2019-04-10T10:54:22.321-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-10T11:53:23.410-0500",
+"value" : {
+"name" : "OnlineConfiguration_v2",
+"assigned" : "2019-04-10T11:53:23.410-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T09:39:57.949-0500",
+"value" : {
+"name" : "OnlineConfiguration_v3",
+"assigned" : "2019-04-12T09:39:57.949-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T09:53:10.938-0500",
+"value" : {
+"name" : "OnlineConfiguration_v4",
+"assigned" : "2019-04-12T09:53:10.937-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T09:56:50.103-0500",
+"value" : {
+"name" : "OnlineConfiguration_v5",
+"assigned" : "2019-04-12T09:56:50.103-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T09:58:50.150-0500",
+"value" : {
+"name" : "OnlineConfiguration_v6",
+"assigned" : "2019-04-12T09:58:50.150-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:00:23.696-0500",
+"value" : {
+"name" : "OnlineConfiguration_v7",
+"assigned" : "2019-04-12T10:00:23.696-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:09:30.515-0500",
+"value" : {
+"name" : "OnlineConfiguration_v8",
+"assigned" : "2019-04-12T10:09:30.515-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:11:29.541-0500",
+"value" : {
+"name" : "OnlineConfiguration_v9",
+"assigned" : "2019-04-12T10:11:29.540-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:17:25.500-0500",
+"value" : {
+"name" : "OnlineConfiguration_v10",
+"assigned" : "2019-04-12T10:17:25.500-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:19:17.749-0500",
+"value" : {
+"name" : "OnlineConfiguration_v11",
+"assigned" : "2019-04-12T10:19:17.749-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:21:14.769-0500",
+"value" : {
+"name" : "OnlineConfiguration_v12",
+"assigned" : "2019-04-12T10:21:14.769-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:42:20.214-0500",
+"value" : {
+"name" : "OnlineConfiguration_v13",
+"assigned" : "2019-04-12T10:42:20.214-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:52:41.084-0500",
+"value" : {
+"name" : "OnlineConfiguration_v14",
+"assigned" : "2019-04-12T10:52:41.084-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T10:54:44.841-0500",
+"value" : {
+"name" : "OnlineConfiguration_v15",
+"assigned" : "2019-04-12T10:54:44.841-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:00:46.759-0500",
+"value" : {
+"name" : "OnlineConfiguration_v16",
+"assigned" : "2019-04-12T11:00:46.759-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:09:22.222-0500",
+"value" : {
+"name" : "OnlineConfiguration_v17",
+"assigned" : "2019-04-12T11:09:22.222-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:24:27.838-0500",
+"value" : {
+"name" : "OnlineConfiguration_v18",
+"assigned" : "2019-04-12T11:24:27.838-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:32:03.952-0500",
+"value" : {
+"name" : "OnlineConfiguration_v19",
+"assigned" : "2019-04-12T11:32:03.952-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:33:22.753-0500",
+"value" : {
+"name" : "OnlineConfiguration_v20",
+"assigned" : "2019-04-12T11:33:22.753-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:38:33.799-0500",
+"value" : {
+"name" : "OnlineConfiguration_v21",
+"assigned" : "2019-04-12T11:38:33.799-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:41:36.883-0500",
+"value" : {
+"name" : "OnlineConfiguration_v22",
+"assigned" : "2019-04-12T11:41:36.883-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:21:41.531-0500",
+"value" : {
+"name" : "OnlineConfiguration_v23",
+"assigned" : "2019-04-12T12:21:41.531-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:25:06.380-0500",
+"value" : {
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:25:06.380-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T09:25:47.012-0500",
+"value" : {
+"name" : "OnlineConfiguration_v25",
+"assigned" : "2019-04-19T09:25:47.012-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:23:27.645-0500",
+"value" : {
+"name" : "OnlineConfiguration_v26",
+"assigned" : "2019-04-19T10:23:27.645-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:31:48.920-0500",
+"value" : {
+"name" : "OnlineConfiguration_v27",
+"assigned" : "2019-04-19T10:31:48.920-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:37:54.166-0500",
+"value" : {
+"name" : "OnlineConfiguration_v28",
+"assigned" : "2019-04-19T10:37:54.166-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:40:26.682-0500",
+"value" : {
+"name" : "OnlineConfiguration_v29",
+"assigned" : "2019-04-19T10:40:26.682-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:45:13.160-0500",
+"value" : {
+"name" : "OnlineConfiguration_v30",
+"assigned" : "2019-04-19T10:45:13.159-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T12:17:42.164-0500",
+"value" : {
+"name" : "OnlineConfiguration_v31",
+"assigned" : "2019-04-19T12:17:42.164-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T12:19:09.264-0500",
+"value" : {
+"name" : "OnlineConfiguration_v32",
+"assigned" : "2019-04-19T12:19:09.264-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-30T14:45:42.272-0500",
+"value" : {
+"name" : "OnlineConfiguration_v33",
+"assigned" : "2019-04-30T14:45:42.272-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-05-09T14:07:57.754-0500",
+"value" : {
+"name" : "OnlineConfiguration_v34",
+"assigned" : "2019-05-09T14:07:57.754-0500"
+}
+}
+],
+"created" : "2019-04-10T10:52:00.140-0500"
+},
+"_id" : {
+"$oid" : "8a6fbecfdbe740a6a311ce42"
+},
+"collection" : "ARTDAQPhysicsProducerParameterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

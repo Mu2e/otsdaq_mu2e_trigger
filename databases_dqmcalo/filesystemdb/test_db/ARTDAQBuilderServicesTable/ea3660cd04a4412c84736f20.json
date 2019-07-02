@@ -1,0 +1,260 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_BUILDER_SERVICES_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1555089858,
+"COL_TYPES" : {
+"SERVICES_UID" : "VARCHAR2",
+"SCHEDULER_FILE_MODE" : "VARCHAR2",
+"SCHEDULER_ERROR_ON_FAILTURE_TO_PUT" : "VARCHAR2",
+"NET_MON_TRASPORT_SERVICE_INTERFACE_SERVICE_PROVIDER" : "VARCHAR2",
+"NET_MON_TRASPORT_SERVICE_INTERFACE_DESTINATIONS_LINK" : "VARCHAR2",
+"NET_MON_TRASPORT_SERVICE_INTERFACE_DESTINATIONS_LINK_GROUP_ID" : "VARCHAR2",
+"SERVICES_PARAMETERS_LINK" : "VARCHAR2",
+"SERVICE_PARAMETERS_LINK_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"SERVICES_UID" : "eventBuilder0Services",
+"SCHEDULER_FILE_MODE" : "DEFAULT",
+"SCHEDULER_ERROR_ON_FAILTURE_TO_PUT" : "False",
+"NET_MON_TRASPORT_SERVICE_INTERFACE_SERVICE_PROVIDER" : "\"NetMonTransportService\"",
+"NET_MON_TRASPORT_SERVICE_INTERFACE_DESTINATIONS_LINK" : "NO_LINK",
+"NET_MON_TRASPORT_SERVICE_INTERFACE_DESTINATIONS_LINK_GROUP_ID" : "DEFAULT",
+"SERVICES_PARAMETERS_LINK" : "ARTDAQBuilderDaqParameterTable",
+"SERVICE_PARAMETERS_LINK_GROUP_ID" : "eventBuilder0ServicesParameters",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555089853"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-04-12T12:24:18.762-0500",
+"rawdata" : [
+
+]
+},
+"version" : "3",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T12:24:18.762-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-04-12T12:24:18.762-0500"
+},
+{
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:24:47.239-0500"
+},
+{
+"name" : "OnlineConfiguration_v25",
+"assigned" : "2019-04-19T09:25:41.700-0500"
+},
+{
+"name" : "OnlineConfiguration_v26",
+"assigned" : "2019-04-19T10:23:23.002-0500"
+},
+{
+"name" : "OnlineConfiguration_v27",
+"assigned" : "2019-04-19T10:31:43.745-0500"
+},
+{
+"name" : "OnlineConfiguration_v28",
+"assigned" : "2019-04-19T10:37:49.152-0500"
+},
+{
+"name" : "OnlineConfiguration_v29",
+"assigned" : "2019-04-19T10:40:23.029-0500"
+},
+{
+"name" : "OnlineConfiguration_v30",
+"assigned" : "2019-04-19T10:45:07.997-0500"
+},
+{
+"name" : "OnlineConfiguration_v31",
+"assigned" : "2019-04-19T12:17:38.230-0500"
+},
+{
+"name" : "OnlineConfiguration_v32",
+"assigned" : "2019-04-19T12:19:05.989-0500"
+},
+{
+"name" : "OnlineConfiguration_v33",
+"assigned" : "2019-04-30T14:45:38.172-0500"
+},
+{
+"name" : "OnlineConfiguration_v34",
+"assigned" : "2019-05-09T14:07:45.819-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:24:18.762-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-04-12T12:24:18.762-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-04-12T12:24:18.762-0500",
+"value" : {
+"name" : "3",
+"assigned" : "2019-04-12T12:24:18.762-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-04-12T12:24:18.762-0500",
+"value" : {
+"name" : "ARTDAQBuilderServicesTable",
+"assigned" : "2019-04-12T12:24:18.762-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-04-12T12:24:18.762-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T12:24:18.762-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T12:24:47.239-0500",
+"value" : {
+"name" : "OnlineConfiguration_v24",
+"assigned" : "2019-04-12T12:24:47.239-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T09:25:41.700-0500",
+"value" : {
+"name" : "OnlineConfiguration_v25",
+"assigned" : "2019-04-19T09:25:41.700-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:23:23.002-0500",
+"value" : {
+"name" : "OnlineConfiguration_v26",
+"assigned" : "2019-04-19T10:23:23.002-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:31:43.745-0500",
+"value" : {
+"name" : "OnlineConfiguration_v27",
+"assigned" : "2019-04-19T10:31:43.745-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:37:49.153-0500",
+"value" : {
+"name" : "OnlineConfiguration_v28",
+"assigned" : "2019-04-19T10:37:49.152-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:40:23.029-0500",
+"value" : {
+"name" : "OnlineConfiguration_v29",
+"assigned" : "2019-04-19T10:40:23.029-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T10:45:07.997-0500",
+"value" : {
+"name" : "OnlineConfiguration_v30",
+"assigned" : "2019-04-19T10:45:07.997-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T12:17:38.230-0500",
+"value" : {
+"name" : "OnlineConfiguration_v31",
+"assigned" : "2019-04-19T12:17:38.230-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-19T12:19:05.989-0500",
+"value" : {
+"name" : "OnlineConfiguration_v32",
+"assigned" : "2019-04-19T12:19:05.989-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-30T14:45:38.172-0500",
+"value" : {
+"name" : "OnlineConfiguration_v33",
+"assigned" : "2019-04-30T14:45:38.172-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-05-09T14:07:45.819-0500",
+"value" : {
+"name" : "OnlineConfiguration_v34",
+"assigned" : "2019-05-09T14:07:45.819-0500"
+}
+}
+],
+"created" : "2019-04-12T12:24:18.762-0500"
+},
+"_id" : {
+"$oid" : "ea3660cd04a4412c84736f20"
+},
+"collection" : "ARTDAQBuilderServicesTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

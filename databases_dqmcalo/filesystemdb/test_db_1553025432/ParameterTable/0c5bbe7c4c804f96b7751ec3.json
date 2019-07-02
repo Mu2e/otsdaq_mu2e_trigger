@@ -1,0 +1,154 @@
+{
+"document" : {
+"data" : {
+"NAME" : "PARAMETER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1548265669,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"GROUP_ID" : "VARCHAR2",
+"VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "minT",
+"GROUP_ID" : "TimingClusterParameterGroup",
+"VALUE" : "400",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1548265397"
+},
+{
+"UID" : "minP",
+"GROUP_ID" : "Filter2ParameterGroup",
+"VALUE" : "70.0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1548265651"
+},
+{
+"UID" : "maxT",
+"GROUP_ID" : "TimingClusterParameterGroup",
+"VALUE" : "DEFAULT",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1548265558"
+},
+{
+"UID" : "maxP",
+"GROUP_ID" : "Filter2ParameterGroup",
+"VALUE" : "140.0",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1548265663"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-01-23T11:47:49.202-0600",
+"rawdata" : [
+
+]
+},
+"version" : "2",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-01-23T11:47:49.202-0600"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-01-23T11:47:49.202-0600"
+},
+{
+"name" : "TriggerMenu_v8",
+"assigned" : "2019-01-23T11:47:49.591-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-01-23T11:47:49.202-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-01-23T11:47:49.202-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-01-23T11:47:49.202-0600",
+"value" : {
+"name" : "2",
+"assigned" : "2019-01-23T11:47:49.202-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-01-23T11:47:49.202-0600",
+"value" : {
+"name" : "ParameterTable",
+"assigned" : "2019-01-23T11:47:49.202-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-01-23T11:47:49.202-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-01-23T11:47:49.202-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-01-23T11:47:49.591-0600",
+"value" : {
+"name" : "TriggerMenu_v8",
+"assigned" : "2019-01-23T11:47:49.591-0600"
+}
+}
+],
+"created" : "2019-01-23T11:47:49.202-0600"
+},
+"_id" : {
+"$oid" : "0c5bbe7c4c804f96b7751ec3"
+},
+"collection" : "ParameterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

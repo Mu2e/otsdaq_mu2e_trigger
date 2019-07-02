@@ -1,0 +1,171 @@
+{
+"ouid" : [
+"238d36c559f74528aaee883b",
+"781f858eae6744b1b58e0b23",
+"c7f07ecdb9014ccb8293243e"
+],
+"version" : {
+"0" : [
+"781f858eae6744b1b58e0b23"
+],
+"1" : [
+"c7f07ecdb9014ccb8293243e"
+],
+"2" : [
+"238d36c559f74528aaee883b"
+]
+},
+"configurations.name" : {
+"notprovided" : [
+"238d36c559f74528aaee883b",
+"781f858eae6744b1b58e0b23",
+"c7f07ecdb9014ccb8293243e"
+],
+"TriggerMenu_v51" : [
+"781f858eae6744b1b58e0b23"
+],
+"TriggerMenu_v52" : [
+"781f858eae6744b1b58e0b23"
+],
+"TriggerMenu_v53" : [
+"781f858eae6744b1b58e0b23"
+],
+"TriggerMenu_v54" : [
+"781f858eae6744b1b58e0b23"
+],
+"TriggerMenu_v55" : [
+"781f858eae6744b1b58e0b23"
+],
+"TriggerMenu_v56" : [
+"781f858eae6744b1b58e0b23"
+],
+"TriggerMenu_v57" : [
+"c7f07ecdb9014ccb8293243e"
+],
+"TriggerMenu_v58" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v59" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v60" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v61" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v62" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v63" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v64" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v65" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v66" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v67" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v68" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v69" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v70" : [
+"238d36c559f74528aaee883b"
+],
+"TriggerMenu_v71" : [
+"238d36c559f74528aaee883b"
+]
+},
+"entities.name" : {
+"OTSROOT" : [
+"238d36c559f74528aaee883b",
+"781f858eae6744b1b58e0b23",
+"c7f07ecdb9014ccb8293243e"
+]
+},
+"aliases.active.name" : {
+
+},
+"runs.name" : {
+
+},
+"configurations.assigned" : {
+"notprovided" : [
+"2019-02-15T12:49:10.430-0600",
+"2019-02-15T13:21:00.282-0600",
+"2019-02-15T13:21:44.292-0600"
+],
+"TriggerMenu_v51" : [
+"2019-02-15T12:49:10.700-0600"
+],
+"TriggerMenu_v52" : [
+"2019-02-15T12:51:51.376-0600"
+],
+"TriggerMenu_v53" : [
+"2019-02-15T12:52:36.098-0600"
+],
+"TriggerMenu_v54" : [
+"2019-02-15T13:00:06.253-0600"
+],
+"TriggerMenu_v55" : [
+"2019-02-15T13:00:24.792-0600"
+],
+"TriggerMenu_v56" : [
+"2019-02-15T13:12:50.037-0600"
+],
+"TriggerMenu_v57" : [
+"2019-02-15T13:21:07.598-0600"
+],
+"TriggerMenu_v58" : [
+"2019-02-15T13:21:51.324-0600"
+],
+"TriggerMenu_v59" : [
+"2019-02-15T13:28:52.004-0600"
+],
+"TriggerMenu_v60" : [
+"2019-02-15T13:31:42.144-0600"
+],
+"TriggerMenu_v61" : [
+"2019-02-15T14:13:20.426-0600"
+],
+"TriggerMenu_v62" : [
+"2019-02-15T14:15:06.932-0600"
+],
+"TriggerMenu_v63" : [
+"2019-02-15T14:16:13.628-0600"
+],
+"TriggerMenu_v64" : [
+"2019-02-15T14:18:57.725-0600"
+],
+"TriggerMenu_v65" : [
+"2019-02-15T14:24:40.856-0600"
+],
+"TriggerMenu_v66" : [
+"2019-02-15T14:29:48.966-0600"
+],
+"TriggerMenu_v67" : [
+"2019-03-08T14:51:38.880-0600"
+],
+"TriggerMenu_v68" : [
+"2019-03-08T14:58:57.035-0600"
+],
+"TriggerMenu_v69" : [
+"2019-03-08T15:02:41.300-0600"
+],
+"TriggerMenu_v70" : [
+"2019-03-08T15:03:00.520-0600"
+],
+"TriggerMenu_v71" : [
+"2019-03-08T15:11:13.208-0600"
+]
+}
+}

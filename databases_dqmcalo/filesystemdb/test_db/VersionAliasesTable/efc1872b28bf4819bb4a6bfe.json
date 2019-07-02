@@ -1,0 +1,183 @@
+{
+"document" : {
+"data" : {
+"NAME" : "VERSION_ALIASES_TABLE",
+"COMMENT" : "Default Version Aliases.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1553098865,
+"COL_TYPES" : {
+"VERSION_ALIAS_UID" : "VARCHAR2",
+"TABLE_NAME" : "VARCHAR2",
+"VERSION_ALIAS" : "VARCHAR2",
+"VERSION" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"VERSION_ALIAS_UID" : "CaloMVAFiltercalibration0",
+"TABLE_NAME" : "CaloMVAFilterTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+},
+{
+"VERSION_ALIAS_UID" : "DigiFiltercalibration0",
+"TABLE_NAME" : "DigiFilterTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+},
+{
+"VERSION_ALIAS_UID" : "HelixFiltercalibration0",
+"TABLE_NAME" : "HelixFilterTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+},
+{
+"VERSION_ALIAS_UID" : "TopLevelTriggercalibration0",
+"TABLE_NAME" : "TopLevelTriggerTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+},
+{
+"VERSION_ALIAS_UID" : "TrackSeedFiltercalibration0",
+"TABLE_NAME" : "TrackSeedFilterTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+},
+{
+"VERSION_ALIAS_UID" : "TriggerParametercalibration0",
+"TABLE_NAME" : "TriggerParameterTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+},
+{
+"VERSION_ALIAS_UID" : "TriggerPathcalibration0",
+"TABLE_NAME" : "TriggerPathTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+},
+{
+"VERSION_ALIAS_UID" : "UnbiasedFiltercalibration0",
+"TABLE_NAME" : "UnbiasedFilterTable",
+"VERSION_ALIAS" : "calibration0",
+"VERSION" : "1",
+"COMMENT_DESCRIPTION" : "Entry was added by server in ConfigurationGUISupervisor::setVersionAliasInActiveBackbone().",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1553098865"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-03-20T11:21:05.192-0500",
+"rawdata" : [
+
+]
+},
+"version" : "4",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-03-20T11:21:05.193-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-03-20T11:21:05.193-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-03-20T11:21:05.193-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-03-20T11:21:05.193-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-03-20T11:21:05.193-0500",
+"value" : {
+"name" : "4",
+"assigned" : "2019-03-20T11:21:05.193-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-03-20T11:21:05.193-0500",
+"value" : {
+"name" : "VersionAliasesTable",
+"assigned" : "2019-03-20T11:21:05.193-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-03-20T11:21:05.193-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-03-20T11:21:05.193-0500"
+}
+}
+],
+"created" : "2019-03-20T11:21:05.192-0500"
+},
+"_id" : {
+"$oid" : "efc1872b28bf4819bb4a6bfe"
+},
+"collection" : "VersionAliasesTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

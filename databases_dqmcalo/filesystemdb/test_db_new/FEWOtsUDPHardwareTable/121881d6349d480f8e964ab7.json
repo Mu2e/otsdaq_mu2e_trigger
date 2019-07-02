@@ -1,0 +1,129 @@
+{
+"document" : {
+"data" : {
+"NAME" : "FEW_OTS_UDP_HARDWARE_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1554911526,
+"COL_TYPES" : {
+"INTERFACE_ID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"FIRMWARE_VERSION" : "NUMBER",
+"IP_ADDRESS" : "VARCHAR2",
+"PORT" : "NUMBER",
+"INTERFACE_IP_ADDRESS" : "VARCHAR2",
+"INTERFACE_PORT" : "NUMBER",
+"CLOCK_SELECT" : "VARCHAR2",
+"CLOCK_SPEED_M_HZ" : "NUMBER",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-04-12T11:10:40.155-0500",
+"rawdata" : [
+
+]
+},
+"version" : "1",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T11:10:40.156-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-04-12T11:10:40.156-0500"
+},
+{
+"name" : "OnlineConfiguration_v1",
+"assigned" : "2019-04-12T11:10:58.671-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:10:40.156-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-04-12T11:10:40.156-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-04-12T11:10:40.156-0500",
+"value" : {
+"name" : "1",
+"assigned" : "2019-04-12T11:10:40.156-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-04-12T11:10:40.156-0500",
+"value" : {
+"name" : "FEWOtsUDPHardwareTable",
+"assigned" : "2019-04-12T11:10:40.156-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-04-12T11:10:40.156-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-04-12T11:10:40.156-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-04-12T11:10:58.671-0500",
+"value" : {
+"name" : "OnlineConfiguration_v1",
+"assigned" : "2019-04-12T11:10:58.671-0500"
+}
+}
+],
+"created" : "2019-04-12T11:10:40.156-0500"
+},
+"_id" : {
+"$oid" : "121881d6349d480f8e964ab7"
+},
+"collection" : "FEWOtsUDPHardwareTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

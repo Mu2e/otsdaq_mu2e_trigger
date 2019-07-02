@@ -1,0 +1,159 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TRIGGER_PATH_CONFIGURATION",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1550006277,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"PATH_GROUP" : "VARCHAR2",
+"TRIGGER_NAME" : "VARCHAR2",
+"TRIGGER_TYPE" : "VARCHAR2",
+"LINK_TO_TRIGGER_CONFIGURATION_TABLE" : "VARCHAR2",
+"LINK_TO_TRIGGER_CONFIGURATION_UID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "tprSeedDeM",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "tprSeedDeM",
+"TRIGGER_TYPE" : "TrackSeed",
+"LINK_TO_TRIGGER_CONFIGURATION_TABLE" : "TrackSeedFilterConfiguration",
+"LINK_TO_TRIGGER_CONFIGURATION_UID" : "tprTrackSeedDeM",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550006245"
+},
+{
+"UID" : "tprSeedDeP",
+"PATH_GROUP" : "DebugGroup0",
+"TRIGGER_NAME" : "tprSeedDeP",
+"TRIGGER_TYPE" : "TrackSeed",
+"LINK_TO_TRIGGER_CONFIGURATION_TABLE" : "TrackSeedFilterConfiguration",
+"LINK_TO_TRIGGER_CONFIGURATION_UID" : "tprTrackSeedDeP",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550006272"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-12T15:17:57.056-0600",
+"rawdata" : [
+
+]
+},
+"version" : "10",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-12T15:17:57.057-0600"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-12T15:17:57.056-0600"
+},
+{
+"name" : "TriggerMenu_v32",
+"assigned" : "2019-02-12T15:17:57.611-0600"
+},
+{
+"name" : "TriggerMenu_v33",
+"assigned" : "2019-02-12T15:23:57.182-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-12T15:17:57.056-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-12T15:17:57.056-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-12T15:17:57.056-0600",
+"value" : {
+"name" : "10",
+"assigned" : "2019-02-12T15:17:57.056-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-12T15:17:57.057-0600",
+"value" : {
+"name" : "TriggerPathConfiguration",
+"assigned" : "2019-02-12T15:17:57.057-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-12T15:17:57.057-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-12T15:17:57.057-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-12T15:17:57.611-0600",
+"value" : {
+"name" : "TriggerMenu_v32",
+"assigned" : "2019-02-12T15:17:57.611-0600"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-02-12T15:23:57.182-0600",
+"value" : {
+"name" : "TriggerMenu_v33",
+"assigned" : "2019-02-12T15:23:57.182-0600"
+}
+}
+],
+"created" : "2019-02-12T15:17:57.056-0600"
+},
+"_id" : {
+"$oid" : "2a339754eec342c6a799d131"
+},
+"collection" : "TriggerPathConfiguration",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}
