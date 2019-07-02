@@ -1,5 +1,0 @@
-#include "Trigger_epilogs/tprHelixIPADeM/tprHelixIPADeMEventPrescale.fcl"
-#include "Trigger_epilogs/tprHelixIPADeM/tprHelixIPADeMPrescale.fcl"
-#include "Trigger_epilogs/tprHelixIPADeM/tprHelixIPADeMSDCountFilter.fcl"
-#include "Trigger_epilogs/tprHelixIPADeM/tprHelixIPADeMTCFilter.fcl"
-#include "Trigger_epilogs/tprHelixIPADeM/tprHelixIPADeMHSFilter.fcl"

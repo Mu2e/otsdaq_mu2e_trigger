@@ -1,0 +1,213 @@
+{
+"document" : {
+"data" : {
+"NAME" : "PARAMETER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1550007038,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"TRACK_SEED_GROUP_ID" : "VARCHAR2",
+"HELIX_GROUP_ID" : "VARCHAR2",
+"GROUP_ID" : "VARCHAR2",
+"NAME" : "VARCHAR2",
+"VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "minNSh",
+"TRACK_SEED_GROUP_ID" : "DEFAULT",
+"HELIX_GROUP_ID" : "",
+"GROUP_ID" : "",
+"NAME" : "TimeCluster_minNSh",
+"VALUE" : "10",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549479861"
+},
+{
+"UID" : "TPRHelixDeM_minNSh",
+"TRACK_SEED_GROUP_ID" : "DEFAULT",
+"HELIX_GROUP_ID" : "TPRDeM",
+"GROUP_ID" : "",
+"NAME" : "minNSh",
+"VALUE" : "15",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549479985"
+},
+{
+"UID" : "tprSeedDeM_TCFilter_minNSh",
+"TRACK_SEED_GROUP_ID" : "tprSeedDeM",
+"HELIX_GROUP_ID" : "",
+"GROUP_ID" : "TPR",
+"NAME" : "minNSh",
+"VALUE" : "10",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1550007030"
+},
+{
+"UID" : "TPRHelixDeP_minNSh",
+"TRACK_SEED_GROUP_ID" : "DEFAULT",
+"HELIX_GROUP_ID" : "TPRDeP",
+"GROUP_ID" : "",
+"NAME" : "minNSh",
+"VALUE" : "15",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480118"
+},
+{
+"UID" : "TPRHelixDeM_minP",
+"TRACK_SEED_GROUP_ID" : "DEFAULT",
+"HELIX_GROUP_ID" : "TPRDeM",
+"GROUP_ID" : "",
+"NAME" : "minP",
+"VALUE" : "60",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480316"
+},
+{
+"UID" : "TPRHelixDeM_maxP",
+"TRACK_SEED_GROUP_ID" : "DEFAULT",
+"HELIX_GROUP_ID" : "TPRDeM",
+"GROUP_ID" : "",
+"NAME" : "maxP",
+"VALUE" : "120",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480328"
+},
+{
+"UID" : "TPRHelixDeP_minP",
+"TRACK_SEED_GROUP_ID" : "DEFAULT",
+"HELIX_GROUP_ID" : "TPRDeP",
+"GROUP_ID" : "",
+"NAME" : "minP",
+"VALUE" : "70",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480407"
+},
+{
+"UID" : "TPRHelixDeP_maxP",
+"TRACK_SEED_GROUP_ID" : "DEFAULT",
+"HELIX_GROUP_ID" : "TPRDeP",
+"GROUP_ID" : "",
+"NAME" : "maxP",
+"VALUE" : "110",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480422"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-12T15:30:38.009-0600",
+"rawdata" : [
+
+]
+},
+"version" : "16",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-12T15:30:38.010-0600"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-12T15:30:38.010-0600"
+},
+{
+"name" : "TriggerMenu_v35",
+"assigned" : "2019-02-12T15:30:38.504-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-02-12T15:30:38.010-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-12T15:30:38.010-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-12T15:30:38.010-0600",
+"value" : {
+"name" : "16",
+"assigned" : "2019-02-12T15:30:38.010-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-12T15:30:38.010-0600",
+"value" : {
+"name" : "ParameterTable",
+"assigned" : "2019-02-12T15:30:38.010-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-12T15:30:38.010-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-12T15:30:38.010-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-02-12T15:30:38.504-0600",
+"value" : {
+"name" : "TriggerMenu_v35",
+"assigned" : "2019-02-12T15:30:38.504-0600"
+}
+}
+],
+"created" : "2019-02-12T15:30:38.009-0600"
+},
+"_id" : {
+"$oid" : "bdd21fc82ff24ccabb69f650"
+},
+"collection" : "ParameterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

@@ -1,0 +1,150 @@
+{
+"document" : {
+"data" : {
+"NAME" : "TRACK_SEED_FILTER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1549480124,
+"COL_TYPES" : {
+"UID" : "VARCHAR2",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LOW_LEVEL_PRESCALE_FACTOR" : "NUMBER",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "VARCHAR2",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"UID" : "TPRTrackSeedDeM",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "1",
+"LOW_LEVEL_PRESCALE_FACTOR" : "1",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "ParameterTable",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "DEFAULT",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "ParameterTable",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "TPRDeM",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480001"
+},
+{
+"UID" : "TPRTrackSeedDeP",
+"HIGH_LEVEL_PRESCALE_FACTOR" : "0",
+"LOW_LEVEL_PRESCALE_FACTOR" : "0",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_TABLE" : "ParameterTable",
+"LINK_TO_TIME_CLUSTER_FILTER_PARAMETER_GROUP_ID" : "DEFAULT",
+"LINK_TO_HELIX_FILTER_PARAMETER_TABLE" : "ParameterTable",
+"LINK_TO_HELIX_FILTER_PARAMETER_GROUP_ID" : "TPRDeP",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1549480057"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-02-06T13:08:44.187-0600",
+"rawdata" : [
+
+]
+},
+"version" : "12",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-02-06T13:08:44.188-0600"
+}
+],
+"tables" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-02-06T13:08:44.187-0600"
+},
+{
+"name" : "TriggerMenu_v23",
+"assigned" : "2019-02-06T13:08:44.763-0600"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addTable",
+"timestamp" : "2019-02-06T13:08:44.187-0600",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-02-06T13:08:44.187-0600"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-02-06T13:08:44.187-0600",
+"value" : {
+"name" : "12",
+"assigned" : "2019-02-06T13:08:44.187-0600"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-02-06T13:08:44.188-0600",
+"value" : {
+"name" : "TrackSeedFilterTable",
+"assigned" : "2019-02-06T13:08:44.188-0600"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-02-06T13:08:44.188-0600",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-02-06T13:08:44.188-0600"
+}
+},
+{
+"event" : "addTable",
+"timestamp" : "2019-02-06T13:08:44.763-0600",
+"value" : {
+"name" : "TriggerMenu_v23",
+"assigned" : "2019-02-06T13:08:44.763-0600"
+}
+}
+],
+"created" : "2019-02-06T13:08:44.187-0600"
+},
+"_id" : {
+"$oid" : "30a907cc821f40ea9b5bbe7a"
+},
+"collection" : "TrackSeedFilterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

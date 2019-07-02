@@ -20,10 +20,10 @@ public:
 
 	//Methods
 	void   init                          (ConfigurationManager *configManager);
-	void   createPrescaleEpilog          (std::ofstream& EpilogFclFile, char* EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
-	void   createTrackingFiltersEpilog   (std::ofstream& EpilogFclFile, char* EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
-	void   createHelixFiltersEpilog      (std::ofstream& EpilogFclFile, char* EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
-	void   createDigiCountFiltersEpilog  (std::ofstream& EpilogFclFile, char* EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
+	void   createPrescaleEpilog          (std::ofstream& EpilogFclFile, std::string& EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
+	void   createTrackingFiltersEpilog   (std::ofstream& EpilogFclFile, std::string& EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
+	void   createHelixFiltersEpilog      (std::ofstream& EpilogFclFile, std::string& EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
+	void   createDigiCountFiltersEpilog  (std::ofstream& EpilogFclFile, std::string& EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
 
 private:
 	bool 	isFirstAppInContext_;

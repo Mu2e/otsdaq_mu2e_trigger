@@ -23,11 +23,11 @@ using namespace ots;
 
 //========================================================================================================================
 TopLevelTriggerTable::TopLevelTriggerTable(void)
-	: TableBase("TopLevelTriggerTable")
+  : TableBase("TopLevelTriggerTable")
 {
-	//////////////////////////////////////////////////////////////////////
-	//WARNING: the names used in C++ MUST match the Table INFO  //
-	//////////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////////
+  //WARNING: the names used in C++ MUST match the Table INFO  //
+  //////////////////////////////////////////////////////////////////////
   __COUT__ <<"hi" << __E__;
   __COUT__ <<"hi" << __E__;
   __COUT__ <<"hi" << __E__;
@@ -44,185 +44,195 @@ TopLevelTriggerTable::~TopLevelTriggerTable(void)
 //========================================================================================================================
 void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 {
-	isFirstAppInContext_ = configManager->isOwnerFirstAppInContext();
+  isFirstAppInContext_ = configManager->isOwnerFirstAppInContext();
 	
-	__COUTV__(isFirstAppInContext_);
-	if(!isFirstAppInContext_) return;
+  __COUTV__(isFirstAppInContext_);
+  if(!isFirstAppInContext_) return;
 
-	//make directory just in case
-	mkdir((ARTDAQ_FCL_PATH).c_str(), 0755);
+  //make directory just in case
+  mkdir((ARTDAQ_FCL_PATH).c_str(), 0755);
 
-	std::string      trigEpilogsDir;
-	trigEpilogsDir = ARTDAQ_FCL_PATH + "Trigger_epilogs";
-	mkdir(trigEpilogsDir.c_str(), 0755);
+  std::string      trigEpilogsDir;
+  trigEpilogsDir = ARTDAQ_FCL_PATH + "Trigger_epilogs";
+  mkdir(trigEpilogsDir.c_str(), 0755);
 
 
-	//create the fcl file
-	std::ofstream      triggerFclFile, epilogFclFile, subEpilogFclFile;
-	char               fclFileName[100], skelethonName[100];
-	std::string        epilogName;
-	//skelethon to clone
-	sprintf(skelethonName, "%s/main.fcl", (ARTDAQ_FCL_PATH).c_str());
-	//file to be edited
-	sprintf(fclFileName, "%s/runTriggerExample.fcl", (ARTDAQ_FCL_PATH).c_str());
+  //create the fcl file
+  std::ofstream      triggerFclFile, epilogFclFile, subEpilogFclFile;
+  std::string        fclFileName, skelethonName;
+  std::string        epilogName;
+  //skelethon to clone
+  //	skelethonName = Form("%s/main.fcl", (ARTDAQ_FCL_PATH).c_str());
+  skelethonName = ARTDAQ_FCL_PATH + "/main.fcl" ;
+  //file to be edited
+  //	fclFileName = Form("%s/runTriggerExample.fcl", (ARTDAQ_FCL_PATH).c_str());
+  fclFileName = ARTDAQ_FCL_PATH+"/runTriggerExample.fcl";
 	
-	std::ifstream      mainFclFile;
-	mainFclFile   .open(skelethonName);
-	triggerFclFile.open(fclFileName);
+  std::ifstream      mainFclFile;
+  mainFclFile   .open(skelethonName);
+  triggerFclFile.open(fclFileName);
 
-	std::string        line;
-	while (std::getline(mainFclFile, line, '\n') ) triggerFclFile << line << '\n';
+  std::string        line;
+  while (std::getline(mainFclFile, line, '\n') ) triggerFclFile << line << '\n';
 
-	__COUT__ << "*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*" << std::endl;
-	__COUT__ << configManager->__SELF_NODE__ << std::endl;
+  __COUT__ << "*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*" << std::endl;
+  __COUT__ << configManager->__SELF_NODE__ << std::endl;
 
-	auto childrenMap = configManager->__SELF_NODE__.getChildren();
-	__COUT__ <<"printing children content"<<__E__;
-	__COUT__ <<"children map size"<<childrenMap.size() << __E__;
+  auto childrenMap = configManager->__SELF_NODE__.getChildren();
+  __COUT__ <<"printing children content"<<__E__;
+  __COUT__ <<"children map size"<<childrenMap.size() << __E__;
 
-	for (auto &topLevelPair : childrenMap)
-	  {
-	    __COUT__       << "Main table name '" << topLevelPair.first << "'" << __E__;
-	    auto triggerPaths = topLevelPair.second.getNode("LinkToTriggerPathsTable").getChildren();
-	    for (auto &triggerPathPair : triggerPaths)
-	      {
-		__COUT__       << "children LOOP" << __E__;		
-		__COUT__       << "children Path '" << triggerPathPair.first << "'" << __E__;
-	      }
-	  }
-	__COUT__ <<"children map printed..." <<__E__;
+  for (auto &topLevelPair : childrenMap)
+    {
+      __COUT__       << "Main table name '" << topLevelPair.first << "'" << __E__;
+      auto triggerPaths = topLevelPair.second.getNode("LinkToTriggerPathsTable").getChildren();
+      for (auto &triggerPathPair : triggerPaths)
+	{
+	  __COUT__       << "children LOOP" << __E__;		
+	  __COUT__       << "children Path '" << triggerPathPair.first << "'" << __E__;
+	}
+    }
+  __COUT__ <<"children map printed..." <<__E__;
 
-	for (auto &topLevelPair : childrenMap)
-	  {
-	    __COUT__       << "top LOOP" << __E__;
-	    __COUT__       << "Top Level '" << topLevelPair.first << "'" << __E__;
-	    // triggerFclFile << "Top Level '" << topLevelPair.first << "'" << __E__; 
-	    // triggerFclFile << "Node name '" << topLevelPair.second << "'" << __E__; 
+  for (auto &topLevelPair : childrenMap)
+    {
+      __COUT__       << "top LOOP" << __E__;
+      __COUT__       << "Top Level '" << topLevelPair.first << "'" << __E__;
+      // triggerFclFile << "Top Level '" << topLevelPair.first << "'" << __E__; 
+      // triggerFclFile << "Node name '" << topLevelPair.second << "'" << __E__; 
 
-	    auto triggerPaths = topLevelPair.second.getNode("LinkToTriggerPathsTable").getChildren();
-	    size_t children_map_size = triggerPaths.size();
-	    size_t counter(0);
-	    for (auto &triggerPathPair : triggerPaths)
-	      {
-		__COUT__       << "internal LOOP" << __E__;		
-		__COUT__       << "Trigger Path '" << triggerPathPair.first << "'" << __E__;
-		__COUT__       << "Trigger Name '" << triggerPathPair.second.getNode("TriggerName").getValue() << "'" << __E__;
+      auto triggerPaths = topLevelPair.second.getNode("LinkToTriggerPathsTable").getChildren();
+      size_t children_map_size = triggerPaths.size();
+      size_t counter(0);
+      for (auto &triggerPathPair : triggerPaths)
+	{
+	  __COUT__       << "internal LOOP" << __E__;		
+	  __COUT__       << "Trigger Path '" << triggerPathPair.first << "'" << __E__;
+	  __COUT__       << "Trigger Name '" << triggerPathPair.second.getNode("TriggerName").getValue() << "'" << __E__;
 
-		//we need to append the line where we instantiate the given TriggerPath
-		triggerFclFile << "physics." << triggerPathPair.first  << "_path  : [ @sequence::paths."<< triggerPathPair.first<< " ]" << __E__; 
+	  //we need to append the line where we instantiate the given TriggerPath
+	  triggerFclFile << "physics." << triggerPathPair.first  << "_path  : [ @sequence::paths."<< triggerPathPair.first<< " ]" << __E__; 
 
-		auto singlePath = triggerPathPair.second.getNode("LinkToTriggerTable");
-		__COUT__       << "singlePath : " << singlePath << __E__;
+	  ots::ConfigurationTree singlePath = triggerPathPair.second.getNode("LinkToTriggerTable");
+	  __COUT__       << "singlePath : " << singlePath << __E__;
+	  __COUT__       << "singlePath.isDisconnected : " << singlePath.isDisconnected() << __E__;
+	  // __COUT__       << "singlePath.getNode : " << StringMacros::vectorToString(singlePath.getChildrenNames()) << __E__;
+	  // __COUT__       << "singlePath.getConfigurationManager " << singlePath.getConfigurationManager() << __E__;
+	  // __COUT__       << "singlePath.getConfigurationManager()->getTableByName " << singlePath.getConfigurationManager()->getTableByName("TriggerParameterTable") << __E__
+	    ;
 
-		std::string  triggerType = triggerPathPair.second.getNode("TriggerType").getValue<std::string>();
-		__COUT__       << "Trigger Type '" << triggerType << "'" << __E__;
 
-		//create the fcl housing the trigger-path configurations
-		epilogName = trigEpilogsDir + "/" + triggerPathPair.first + ".fcl";
-		triggerFclFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
-		epilogFclFile.open(epilogName.c_str());
+	  std::string  triggerType = triggerPathPair.second.getNode("TriggerType").getValue<std::string>();
+	  __COUT__       << "Trigger Type '" << triggerType << "'" << __E__;
+;
+	  //create the fcl housing the trigger-path configurations
+	  epilogName = trigEpilogsDir + "/" + triggerPathPair.first + ".fcl";
+	  triggerFclFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
+	  epilogFclFile.open(epilogName.c_str());
 
-		//create the directory that will house all the epilogs of a given triggerPath
-		char               singlePathEpilogsDir[100], singlePathPairFclName[100];
-		sprintf(singlePathEpilogsDir, "%sTrigger_epilogs/%s", (ARTDAQ_FCL_PATH).c_str(), triggerPathPair.first.c_str());
-		mkdir(singlePathEpilogsDir, 0755);
-		__COUT__       << "single path epilogs dir " << singlePathEpilogsDir << __E__; 
+	  //create the directory that will house all the epilogs of a given triggerPath
+	  std::string               singlePathEpilogsDir, singlePathPairFclName;
+	  //		singlePathEpilogsDir = "%sTrigger_epilogs/%s", (ARTDAQ_FCL_PATH).c_str(), triggerPathPair.first.c_str());
+	  singlePathEpilogsDir = ARTDAQ_FCL_PATH + "TriggerEpilogs/" + triggerPathPair.first;
+	  mkdir(singlePathEpilogsDir.c_str(), 0755);
+	  __COUT__       << "single path epilogs dir " << singlePathEpilogsDir << __E__; 
 
-		//set the general prescale factor at the beginning of the path
-		createPrescaleEpilog         (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);
+	  //set the general prescale factor at the beginning of the path
+	  createPrescaleEpilog         (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);
 
-		if (triggerType == "TrackSeed")
-		  {
-		    //to set up the Tracking filters we need to loop over the children of the corresponding node
-		    createTrackingFiltersEpilog  (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);
-		  }
-		else if (triggerType == "Helix")
-		  {
-		    createHelixFiltersEpilog  (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);
-		  }
-		else if (triggerType == "DigiCount")
-		  {
-		    createDigiCountFiltersEpilog  (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);		    
-		  }
+	  if (triggerType == "TrackSeed")
+	    {
+	      //to set up the Tracking filters we need to loop over the children of the corresponding node
+	      createTrackingFiltersEpilog  (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);
+	    }
+	  else if (triggerType == "Helix")
+	    {
+	      singlePath.getNode("LinkToDigiFilterParameterTable");
+	      createHelixFiltersEpilog  (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);
+	    }
+	  else if (triggerType == "DigiCount")
+	    {
+	      createDigiCountFiltersEpilog  (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);		    
+	    }
 
-		__COUT__ <<" closing epilogFclFile" <<__E__;
+	  __COUT__ <<" closing epilogFclFile" <<__E__;
 		  
-		epilogFclFile.close();
-		__COUT__ << "epilogFclFile closed... " << __E__;
+	  epilogFclFile.close();
+	  __COUT__ << "epilogFclFile closed... " << __E__;
 		
-		++counter;
-		__COUT__ <<"counter = " << counter <<", map-size = " << children_map_size <<__E__;
-		// if (counter == children_map_size-2) break;
-	      }//end loop over triggerPathPair
+	  ++counter;
+	  __COUT__ <<"counter = " << counter <<", map-size = " << children_map_size <<__E__;
+	  // if (counter == children_map_size-2) break;
+	}//end loop over triggerPathPair
 	    
-	    __COUT__ <<" end of main LOOP" <<__E__;
+      __COUT__ <<" end of main LOOP" <<__E__;
 	   
-	  }//end loop over topLevelPair
+    }//end loop over topLevelPair
 
-	__COUT__ << "loop completed closed... " << __E__;
+  __COUT__ << "loop completed closed... " << __E__;
 
 
-	triggerFclFile.close();
-	__COUT__ << "triggerFclFile closed... " << __E__;
+  triggerFclFile.close();
+  __COUT__ << "triggerFclFile closed... " << __E__;
 
-	//const XDAQContext *contextConfig = configManager->__GET_CONFIG__(XDAQContext);
+  //const XDAQContext *contextConfig = configManager->__GET_CONFIG__(XDAQContext);
 	
-	//	std::vector<const XDAQContext::XDAQContext *> readerContexts =
-	//	contextConfig->getBoardReaderContexts();
+  //	std::vector<const XDAQContext::XDAQContext *> readerContexts =
+  //	contextConfig->getBoardReaderContexts();
 
 
-		//Tree readerConfigNode = contextConfig->getSupervisorConfigNode(configManager,
-		//		readerContext->contextUID_, readerContext->applications_[0].applicationUID_);
+  //Tree readerConfigNode = contextConfig->getSupervisorConfigNode(configManager,
+  //		readerContext->contextUID_, readerContext->applications_[0].applicationUID_);
 
 
 
-	//handle fcl file generation, wherever the level of this configuration
+  //handle fcl file generation, wherever the level of this configuration
 
-	// auto childrenMap = configManager->__SELF_NODE__.getChildren();
-	// std::string appUID, buffUID, consumerUID;
-	// for (auto &child : childrenMap)
-	// {
-	// 	const XDAQContext::XDAQContext * thisContext = nullptr;
-	// 	for (auto& readerContext : readerContexts) {
-	// 		Tree readerConfigNode = contextConfig->getSupervisorConfigNode(configManager,
-	// 			readerContext->contextUID_, readerContext->applications_[0].applicationUID_);
-	// 		auto dataManagerConfMap = readerConfigNode.getNode("LinkToDataManager").getChildren();
-	// 		for (auto dmc : dataManagerConfMap) {
-	// 			auto dataBufferConfMap = dmc.second.getNode("LinkToDataBuffer").getChildren();
-	// 			for (auto dbc : dataBufferConfMap) {
-	// 				auto processorConfUID = dbc.second.getNode("LinkToProcessorUID").getUIDAsString();
-	// 				if (processorConfUID == child.second.getValue()) {
-	// 					__COUT__ << "Found match for context UID: " << readerContext->contextUID_ << std::endl;
-	// 					thisContext = readerContext;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
+  // auto childrenMap = configManager->__SELF_NODE__.getChildren();
+  // std::string appUID, buffUID, consumerUID;
+  // for (auto &child : childrenMap)
+  // {
+  // 	const XDAQContext::XDAQContext * thisContext = nullptr;
+  // 	for (auto& readerContext : readerContexts) {
+  // 		Tree readerConfigNode = contextConfig->getSupervisorConfigNode(configManager,
+  // 			readerContext->contextUID_, readerContext->applications_[0].applicationUID_);
+  // 		auto dataManagerConfMap = readerConfigNode.getNode("LinkToDataManager").getChildren();
+  // 		for (auto dmc : dataManagerConfMap) {
+  // 			auto dataBufferConfMap = dmc.second.getNode("LinkToDataBuffer").getChildren();
+  // 			for (auto dbc : dataBufferConfMap) {
+  // 				auto processorConfUID = dbc.second.getNode("LinkToProcessorUID").getUIDAsString();
+  // 				if (processorConfUID == child.second.getValue()) {
+  // 					__COUT__ << "Found match for context UID: " << readerContext->contextUID_ << std::endl;
+  // 					thisContext = readerContext;
+  // 				}
+  // 			}
+  // 		}
+  // 	}
 
-	// 	if (thisContext == nullptr) {
-	// 		__COUT_ERR__ << "Could not find matching context for this configuration!" << std::endl;
-	// 	}
-	// 	else {
-	// 		if (child.second.getNode(ViewColumnInfo::COL_NAME_STATUS).getValue<bool>())
-	// 		{
-	// 			outputFHICL(configManager, child.second,
-	// 				contextConfig->getARTDAQAppRank(thisContext->contextUID_),
-	// 				contextConfig->getContextAddress(thisContext->contextUID_),
-	// 				contextConfig->getARTDAQDataPort(configManager,thisContext->contextUID_),
-	// 				contextConfig);
-	// 		}
-	// 	}
-	// }
+  // 	if (thisContext == nullptr) {
+  // 		__COUT_ERR__ << "Could not find matching context for this configuration!" << std::endl;
+  // 	}
+  // 	else {
+  // 		if (child.second.getNode(ViewColumnInfo::COL_NAME_STATUS).getValue<bool>())
+  // 		{
+  // 			outputFHICL(configManager, child.second,
+  // 				contextConfig->getARTDAQAppRank(thisContext->contextUID_),
+  // 				contextConfig->getContextAddress(thisContext->contextUID_),
+  // 				contextConfig->getARTDAQDataPort(configManager,thisContext->contextUID_),
+  // 				contextConfig);
+  // 		}
+  // 	}
+  // }
 }
 
 
 //--------------------------------------------------------------------------------------------------------
 // this function creates the epilog for the Prescaler module used at the end of each path
 //--------------------------------------------------------------------------------------------------------
-void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile, char* EpilogsDir,
-							   std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
+void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile, std::string& EpilogsDir,
+						   std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
 {
-  char            singlePathPairFclName[200];
+  std::string     singlePathPairFclName;
   std::ofstream   subEpilogFclFile;
 
   int             nFilters(2);
@@ -230,7 +240,7 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
   if (TrigPath == "unbiased") nFilters = 1;
   
   std::string     varNames [2] = {"HighLevelPrescaleFactor",
-					 "LowLevelPrescaleFactor"};
+				  "LowLevelPrescaleFactor"};
   __COUT__     << "createPrescaleEpilog starts..." << __E__;
 
   std::string     filtNames[2] = {"EventPrescale", "Prescale"};
@@ -242,7 +252,7 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
       __COUT__  << "node: " << prescaleFactor << __E__;
       __COUTV__(prescaleFactor);
       
-      sprintf(singlePathPairFclName, "%s/%s%s.fcl", EpilogsDir, TrigPath.c_str(), filtNames[i].c_str());
+      singlePathPairFclName = EpilogsDir+"/"+ TrigPath+ filtNames[i]+".fcl";
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] <<".fcl\""<<__E__; 
       
       __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
@@ -264,10 +274,10 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
 //---------------------------------------------------------------------------------------------------------
 //this function creates the epilog with the parameters from a LinkToTimeClusterFilterTable
 //---------------------------------------------------------------------------------------------------------
-void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFclFile, char* EpilogsDir,
-								 std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
+void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFclFile, std::string& EpilogsDir,
+							 std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
 {
-  char            singlePathPairFclName[200];
+  std::string            singlePathPairFclName;
   std::ofstream   subEpilogFclFile;
   
   const int       nFilters(4);
@@ -283,7 +293,7 @@ void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFc
     {
       ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
       
-      sprintf(singlePathPairFclName, "%s/%s%s.fcl", EpilogsDir, TrigPath.c_str(), filtNames[i].c_str());
+      singlePathPairFclName = EpilogsDir + "/" + TrigPath + filtNames[i];
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] << ".fcl\""<<__E__; 
   
       __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
@@ -315,13 +325,13 @@ void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFc
 //---------------------------------------------------------------------------------------------------------
 //this function creates the epilog with the parameters from a LinkToTimeClusterFilterTable
 //---------------------------------------------------------------------------------------------------------
-void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFile, char* EpilogsDir,
-							      std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
+void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFile, std::string& EpilogsDir,
+						      std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
 {
-  char            singlePathPairFclName[200];
+  std::string          singlePathPairFclName;
   std::ofstream   subEpilogFclFile;
   
-  const int      nFilters(3);
+  const int       nFilters(3);
   std::string     varNames [nFilters] = {"LinkToDigiFilterParameterTable",
 					 "LinkToTimeClusterFilterParameterTable",
 					 "LinkToHelixFilterParameterTable"};
@@ -331,12 +341,14 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
 
   for (int i=0; i<nFilters; ++i)
     {
+      __COUT__ << "varName["<<i << "] = " << varNames[i] << __E__;
+
       ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
       
-      sprintf(singlePathPairFclName, "%s/%s%s.fcl", EpilogsDir, TrigPath.c_str(), filtNames[i].c_str());
+      singlePathPairFclName = EpilogsDir + "/" + TrigPath.c_str() + filtNames[i] + ".fcl";
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] << ".fcl\""<<__E__; 
   
-      __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
+      __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__;
 
       subEpilogFclFile.open(singlePathPairFclName);
 
@@ -364,10 +376,10 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
 //---------------------------------------------------------------------------------------------------------
 //this function creates the epilog with the parameters from a LinkToTimeClusterFilterTable
 //---------------------------------------------------------------------------------------------------------
-void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogFclFile, char* EpilogsDir,
-								  std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
+void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogFclFile, std::string& EpilogsDir,
+							  std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
 {
-  char            singlePathPairFclName[200];
+  std::string            singlePathPairFclName;
   std::ofstream   subEpilogFclFile;
   
   const int       nFilters(1);
@@ -380,7 +392,7 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
     {
       ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
       
-      sprintf(singlePathPairFclName, "%s/%s%s.fcl", EpilogsDir, TrigPath.c_str(), filtNames[i].c_str());
+      singlePathPairFclName = EpilogsDir + "/" + TrigPath + filtNames[i];
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] << ".fcl\""<<__E__; 
   
       __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
