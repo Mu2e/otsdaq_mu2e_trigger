@@ -58,8 +58,8 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 
 
   //create the fcl file
-  std::ofstream      triggerFclFile, epilogFclFile, subEpilogFclFile;
-  std::string        fclFileName, skelethonName;
+  std::ofstream      triggerFclFile, epilogFclFile, subEpilogFclFile, allPathsFile;
+  std::string        fclFileName, skelethonName, allPathsFileName;
   std::string        epilogName;
   //skelethon to clone
   //	skelethonName = Form("%s/main.fcl", (ARTDAQ_FCL_PATH).c_str());
@@ -67,13 +67,20 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
   //file to be edited
   //	fclFileName = Form("%s/runTriggerExample.fcl", (ARTDAQ_FCL_PATH).c_str());
   fclFileName = ARTDAQ_FCL_PATH+"/runTriggerExample.fcl";
-	
+
+  //file that will house all the includes necessary to run the trigger paths
+  allPathsFileName = trigEpilogsDir+ "/allPaths.fcl";
+
   std::ifstream      mainFclFile;
   mainFclFile   .open(skelethonName);
   triggerFclFile.open(fclFileName);
+  allPathsFile  .open(allPathsFileName);
 
   std::string        line;
   while (std::getline(mainFclFile, line, '\n') ) triggerFclFile << line << '\n';
+
+  //we need to append the line where include the fcl that will contain all the trigger paths
+  triggerFclFile << "#include \"Trigger_epilogs/allPaths.fcl"<<__E__; 
 
   __COUT__ << "*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*" << std::endl;
   __COUT__ << configManager->__SELF_NODE__ << std::endl;
@@ -110,24 +117,23 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  __COUT__       << "Trigger Path '" << triggerPathPair.first << "'" << __E__;
 	  __COUT__       << "Trigger Name '" << triggerPathPair.second.getNode("TriggerName").getValue() << "'" << __E__;
 
-	  //we need to append the line where we instantiate the given TriggerPath
-	  triggerFclFile << "physics." << triggerPathPair.first  << "_path  : [ @sequence::paths."<< triggerPathPair.first<< " ]" << __E__; 
-
 	  ots::ConfigurationTree singlePath = triggerPathPair.second.getNode("LinkToTriggerTable");
 	  __COUT__       << "singlePath : " << singlePath << __E__;
 	  __COUT__       << "singlePath.isDisconnected : " << singlePath.isDisconnected() << __E__;
 	  // __COUT__       << "singlePath.getNode : " << StringMacros::vectorToString(singlePath.getChildrenNames()) << __E__;
 	  // __COUT__       << "singlePath.getConfigurationManager " << singlePath.getConfigurationManager() << __E__;
-	  // __COUT__       << "singlePath.getConfigurationManager()->getTableByName " << singlePath.getConfigurationManager()->getTableByName("TriggerParameterTable") << __E__
-	    ;
+	  // __COUT__       << "singlePath.getConfigurationManager()->getTableByName " << singlePath.getConfigurationManager()->getTableByName("TriggerParameterTable") << __E__;
 
 
 	  std::string  triggerType = triggerPathPair.second.getNode("TriggerType").getValue<std::string>();
 	  __COUT__       << "Trigger Type '" << triggerType << "'" << __E__;
-;
+	  
 	  //create the fcl housing the trigger-path configurations
 	  epilogName = trigEpilogsDir + "/" + triggerPathPair.first + ".fcl";
-	  triggerFclFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
+	  allPathsFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
+	  //we need to append the line where we instantiate the given TriggerPath
+	  allPathsFile << "physics." << triggerPathPair.first  << "_trigger  : [ @sequence::paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  
 	  epilogFclFile.open(epilogName.c_str());
 
 	  //create the directory that will house all the epilogs of a given triggerPath

@@ -102,8 +102,8 @@ mu2e::OfflineFragmentReader::~OfflineFragmentReader()
 }
 
 bool mu2e::OfflineFragmentReader::readNext(art::RunPrincipal* const& inR, art::SubRunPrincipal* const& inSR,
-										   art::RunPrincipal*& outR, art::SubRunPrincipal*& outSR,
-										   art::EventPrincipal*& outE)
+					   art::RunPrincipal*& outR, art::SubRunPrincipal*& outSR,
+					   art::EventPrincipal*& outE)
 {
 	if (outputFileCloseNeeded_) {
 		outputFileCloseNeeded_ = false;
@@ -175,7 +175,7 @@ bool mu2e::OfflineFragmentReader::readNext(art::RunPrincipal* const& inR, art::S
 				// subrun, then it must have been associated with a data event.  In that case, we need
 				// to generate a flush event with a valid run but flush subrun and event number in order
 				// to end the subrun.
-				if (inSR != 0 && !inSR->id().isFlush() && inSR->subRun() == evtHeader_.subrun_id) {
+				if (inSR != 0 && !inSR->id().isFlush() && inSR->id() == evtHeader_.subrun_id) {
 					art::EventID const evid(art::EventID::flushEvent(inR->id()));
 					outSR = pMaker_.makeSubRunPrincipal(evid.subRunID(), currentTime);
 					outE = pMaker_.makeEventPrincipal(evid, currentTime);
@@ -267,7 +267,8 @@ bool mu2e::OfflineFragmentReader::readNext(art::RunPrincipal* const& inR, art::S
 
 		// make new subrun if inSR is 0 or if the subrun has changed
 		art::SubRunID subrun_check(evtHeader_.run_id, evtHeader_.subrun_id);
-		if (inSR == 0 || subrun_check != inSR->subRunID()) {
+		//		if (inSR == 0 || subrun_check != inSR->subRunID()) {
+		if (inSR == 0 || subrun_check != inSR->id()) {
 			outSR = pMaker_.makeSubRunPrincipal(evtHeader_.run_id, evtHeader_.subrun_id, currentTime);
 		}
 

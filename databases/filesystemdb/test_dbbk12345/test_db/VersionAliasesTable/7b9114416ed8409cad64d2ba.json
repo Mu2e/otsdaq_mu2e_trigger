@@ -44,7 +44,7 @@
 "assigned" : "2019-03-19T14:59:22.040-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-03-19T14:59:22.040-0500"
@@ -60,7 +60,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-19T14:59:22.040-0500",
 "value" : {
 "name" : "notprovided",
@@ -92,7 +92,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-19T14:59:22.142-0500",
 "value" : {
 "name" : "TableEditWizBackbone_v0",

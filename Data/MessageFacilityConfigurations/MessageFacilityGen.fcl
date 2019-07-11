@@ -1,6 +1,6 @@
 udp: {
 	type: UDP
 	threshold: DEBUG
-	port: 30000
+	port: 33045
 	host: "127.0.0.1"
 }

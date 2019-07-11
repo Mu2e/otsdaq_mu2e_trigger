@@ -158,16 +158,16 @@ simple_plugin(TriggerCounter "module"
 # ${Boost_THREAD_LIBRARY}
 # )
 
-simple_plugin(PrescaleEvent "module"
-otsdaq-trigger_Overlays
-artdaq_DAQrate
-artdaq_DAQdata
-artdaq-core_Data
-artdaq-core_Core
-MF_MessageLogger
-${Boost_SYSTEM_LIBRARY}
-${Boost_THREAD_LIBRARY}
-)
+# simple_plugin(PrescaleEvent "module"
+# otsdaq-trigger_Overlays
+# artdaq_DAQrate
+# artdaq_DAQdata
+# artdaq-core_Data
+# artdaq-core_Core
+# MF_MessageLogger
+# ${Boost_SYSTEM_LIBRARY}
+# ${Boost_THREAD_LIBRARY}
+# )
 
 
 simple_plugin(OfflineFragmentsDumper "module"

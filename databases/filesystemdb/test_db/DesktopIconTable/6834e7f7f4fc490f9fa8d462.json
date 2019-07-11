@@ -302,7 +302,7 @@
 "FORCE_ONLY_ONE_INSTANCE" : "False",
 "REQUIRED_PERMISSION_LEVEL" : "1",
 "IMAGE_URL" : "icon-Configure.png",
-"WINDOW_CONTENT_URL" : "/WebPath/html/TableSubsetBlockDiagram.html",
+"WINDOW_CONTENT_URL" : "/WebPath/html/ConfigurationSubsetBlockDiagram.html",
 "LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
 "LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
 "LINK_TO_PARAMETER_TABLE" : "NO_LINK",
@@ -340,7 +340,7 @@
 "assigned" : "2019-03-20T11:50:12.110-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-03-20T11:50:12.110-0500"
@@ -380,7 +380,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:50:12.110-0500",
 "value" : {
 "name" : "notprovided",
@@ -412,7 +412,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:50:15.373-0500",
 "value" : {
 "name" : "testContext_v5",
@@ -420,7 +420,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:53:53.724-0500",
 "value" : {
 "name" : "testContext_v6",
@@ -428,7 +428,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T12:11:07.031-0500",
 "value" : {
 "name" : "testContext_v7",
@@ -436,7 +436,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-10T10:39:22.589-0500",
 "value" : {
 "name" : "testContext_v8",
@@ -444,7 +444,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-10T10:48:36.685-0500",
 "value" : {
 "name" : "testContext_v9",
@@ -452,7 +452,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-10T11:54:17.790-0500",
 "value" : {
 "name" : "testContext_v10",
@@ -460,7 +460,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T09:40:45.488-0500",
 "value" : {
 "name" : "testContext_v11",
