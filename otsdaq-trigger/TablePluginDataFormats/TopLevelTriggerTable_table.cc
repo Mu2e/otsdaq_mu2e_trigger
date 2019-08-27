@@ -132,14 +132,14 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  epilogName = trigEpilogsDir + "/" + triggerPathPair.first + ".fcl";
 	  allPathsFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
 	  //we need to append the line where we instantiate the given TriggerPath
-	  allPathsFile << "physics." << triggerPathPair.first  << "_trigger  : [ @sequence::paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  allPathsFile << "physics." << triggerPathPair.first  << "_trigger  : [ @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
 	  
 	  epilogFclFile.open(epilogName.c_str());
 
 	  //create the directory that will house all the epilogs of a given triggerPath
 	  std::string               singlePathEpilogsDir, singlePathPairFclName;
 	  //		singlePathEpilogsDir = "%sTrigger_epilogs/%s", (ARTDAQ_FCL_PATH).c_str(), triggerPathPair.first.c_str());
-	  singlePathEpilogsDir = ARTDAQ_FCL_PATH + "TriggerEpilogs/" + triggerPathPair.first;
+	  singlePathEpilogsDir = ARTDAQ_FCL_PATH + "Trigger_epilogs/" + triggerPathPair.first;
 	  mkdir(singlePathEpilogsDir.c_str(), 0755);
 	  __COUT__       << "single path epilogs dir " << singlePathEpilogsDir << __E__; 
 
@@ -299,7 +299,7 @@ void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFc
     {
       ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
       
-      singlePathPairFclName = EpilogsDir + "/" + TrigPath + filtNames[i];
+      singlePathPairFclName = EpilogsDir + "/" + TrigPath + filtNames[i]+ ".fcl";
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] << ".fcl\""<<__E__; 
   
       __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
@@ -398,7 +398,7 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
     {
       ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
       
-      singlePathPairFclName = EpilogsDir + "/" + TrigPath + filtNames[i];
+      singlePathPairFclName = EpilogsDir + "/" + TrigPath + filtNames[i]+ ".fcl";
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] << ".fcl\""<<__E__; 
   
       __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 

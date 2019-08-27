@@ -4,7 +4,7 @@
 		xmlns:xc	= "http://xdaq.web.cern.ch/xdaq/xsd/2004/XMLConfiguration-30">
 
 	<!-- ContextUID='mainContext' sourceConfig='XDAQContextTable_v3 @ 1554910755' -->
-	<xc:Context id="0" url="http://mu2edaq10.fnal.gov:3045">
+	<xc:Context id="0" url="http://mu2edaq11.fnal.gov:3045">
 
 		<!-- Application GroupID = 'mainContext' UID='GatewaySupervisor' sourceConfig='XDAQApplicationTable_v11 @ 1556907741' -->
 		<xc:Application class="ots::GatewaySupervisor" id="200" instance="1" network="local" group="daq">
@@ -76,7 +76,7 @@
 	</xc:Context>
 
 	<!-- ContextUID='ARTDAQ_EventDataGenerator' sourceConfig='XDAQContextTable_v3 @ 1554910755' -->
-	<xc:Context id="0" url="http://mu2edaq10.fnal.gov:3046">
+	<xc:Context id="0" url="http://mu2edaq11.fnal.gov:3046">
 
 		<!-- Application GroupID = 'ARTDAQ_EventDataGenerator' UID='EventDataGeneratorDMSupervisor' sourceConfig='XDAQApplicationTable_v11 @ 1556907741' -->
 		<xc:Application class="ots::ARTDAQDataManagerSupervisor" id="400" instance="1" network="local" group="daq">
@@ -88,7 +88,7 @@
 	</xc:Context>
 
 	<!-- ContextUID='ARTDAQ_EventBuilder0' sourceConfig='XDAQContextTable_v3 @ 1554910755' -->
-	<xc:Context id="0" url="http://mu2edaq10.fnal.gov:3047">
+	<xc:Context id="0" url="http://mu2edaq11.fnal.gov:3047">
 
 		<!-- Application GroupID = 'ARTDAQ_EventBuilder0' UID='EventBuilder0Supervisor' sourceConfig='XDAQApplicationTable_v11 @ 1556907741' -->
 		<xc:Application class="ots::EventBuilderApp" id="401" instance="1" network="local" group="daq">

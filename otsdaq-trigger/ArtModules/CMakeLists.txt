@@ -10,6 +10,7 @@ art_make( BASENAME_ONLY
 canvas
  otsdaq-trigger_Overlays
  #otsdaq-utilities_ECLWriter
+ artdaq-core_Utilities
  artdaq_ArtModules
  artdaq-core_Data
  artdaq-core_Core
@@ -106,8 +107,9 @@ canvas
 # )
 
 simple_plugin(TriggerCounter "module"
+        artdaq-core_Utilities
 	otsdaq-trigger_Overlays
-  NetworkUtilities
+	NetworkUtilities
 	artdaq-core_Data
 	${CETLIB_EXCEPT}
 	${ROOT_GPAD}
@@ -170,14 +172,14 @@ simple_plugin(TriggerCounter "module"
 # )
 
 
-simple_plugin(OfflineFragmentsDumper "module"
-  mu2e-artdaq-core_Overlays
-  ${CETLIB_EXCEPT}
-)
+# simple_plugin(OfflineFragmentsDumper "module"
+#   mu2e-artdaq-core_Overlays
+#   ${CETLIB_EXCEPT}
+# )
 
-simple_plugin(OfflineFragmentReader "source"
-  MF_MessageLogger
-  artdaq_DAQdata
-  otsdaq-trigger_ArtModules
-  )
+# simple_plugin(OfflineFragmentReader "source"
+#   MF_MessageLogger
+#   artdaq_DAQdata
+#   otsdaq-trigger_ArtModules
+#   )
 

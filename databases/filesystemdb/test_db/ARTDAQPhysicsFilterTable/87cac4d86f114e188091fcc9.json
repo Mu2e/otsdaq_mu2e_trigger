@@ -388,6 +388,78 @@
 "name" : "OnlineConfiguration_v44",
 "assigned" : "2019-07-10T15:40:21.224-0500"
 }
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-15T15:56:37.378-0500",
+"value" : {
+"name" : "OnlineConfiguration_v45",
+"assigned" : "2019-07-15T15:56:37.378-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-15T15:57:54.632-0500",
+"value" : {
+"name" : "OnlineConfiguration_v46",
+"assigned" : "2019-07-15T15:57:54.632-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-18T14:59:17.965-0500",
+"value" : {
+"name" : "OnlineConfiguration_v47",
+"assigned" : "2019-07-18T14:59:17.965-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-22T15:38:09.031-0500",
+"value" : {
+"name" : "OnlineConfiguration_v48",
+"assigned" : "2019-07-22T15:38:09.031-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-22T15:40:48.449-0500",
+"value" : {
+"name" : "OnlineConfiguration_v49",
+"assigned" : "2019-07-22T15:40:48.449-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-19T11:10:28.164-0500",
+"value" : {
+"name" : "OnlineConfiguration_v50",
+"assigned" : "2019-08-19T11:10:28.164-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-19T11:11:36.990-0500",
+"value" : {
+"name" : "OnlineConfiguration_v51",
+"assigned" : "2019-08-19T11:11:36.990-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-19T11:27:08.707-0500",
+"value" : {
+"name" : "OnlineConfiguration_v52",
+"assigned" : "2019-08-19T11:27:08.707-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-19T11:33:12.816-0500",
+"value" : {
+"name" : "OnlineConfiguration_v53",
+"assigned" : "2019-08-19T11:33:12.816-0500"
+}
 }
 ],
 "created" : "2019-04-12T11:24:09.434-0500"
@@ -447,6 +519,42 @@
 {
 "name" : "OnlineConfiguration_v44",
 "assigned" : "2019-07-10T15:40:21.224-0500"
+},
+{
+"name" : "OnlineConfiguration_v45",
+"assigned" : "2019-07-15T15:56:37.378-0500"
+},
+{
+"name" : "OnlineConfiguration_v46",
+"assigned" : "2019-07-15T15:57:54.632-0500"
+},
+{
+"name" : "OnlineConfiguration_v47",
+"assigned" : "2019-07-18T14:59:17.965-0500"
+},
+{
+"name" : "OnlineConfiguration_v48",
+"assigned" : "2019-07-22T15:38:09.031-0500"
+},
+{
+"name" : "OnlineConfiguration_v49",
+"assigned" : "2019-07-22T15:40:48.449-0500"
+},
+{
+"name" : "OnlineConfiguration_v50",
+"assigned" : "2019-08-19T11:10:28.164-0500"
+},
+{
+"name" : "OnlineConfiguration_v51",
+"assigned" : "2019-08-19T11:11:36.990-0500"
+},
+{
+"name" : "OnlineConfiguration_v52",
+"assigned" : "2019-08-19T11:27:08.707-0500"
+},
+{
+"name" : "OnlineConfiguration_v53",
+"assigned" : "2019-08-19T11:33:12.816-0500"
 }
 ]
 }

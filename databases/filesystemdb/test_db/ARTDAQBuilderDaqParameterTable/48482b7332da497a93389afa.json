@@ -243,6 +243,22 @@
 "name" : "OnlineTable_v12",
 "assigned" : "2019-04-12T10:21:08.202-0500"
 }
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-23T14:02:59.087-0500",
+"value" : {
+"name" : "OnlineConfiguration_v62",
+"assigned" : "2019-08-23T14:02:59.087-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-23T14:14:25.566-0500",
+"value" : {
+"name" : "OnlineConfiguration_v63",
+"assigned" : "2019-08-23T14:14:25.566-0500"
+}
 }
 ],
 "created" : "2019-04-10T10:51:53.803-0500"
@@ -265,5 +281,15 @@
 "attachments" : [
 
 ],
-"configtype" : "notprovided"
+"configtype" : "notprovided",
+"configurations" : [
+{
+"name" : "OnlineConfiguration_v62",
+"assigned" : "2019-08-23T14:02:59.087-0500"
+},
+{
+"name" : "OnlineConfiguration_v63",
+"assigned" : "2019-08-23T14:14:25.566-0500"
+}
+]
 }
