@@ -284,7 +284,7 @@
 "FORCE_ONLY_ONE_INSTANCE" : "False",
 "REQUIRED_PERMISSION_LEVEL" : "1",
 "IMAGE_URL" : "icon-Configure.png",
-"WINDOW_CONTENT_URL" : "/WebPath/html/TableSubsetBlockDiagram.html",
+"WINDOW_CONTENT_URL" : "/WebPath/html/ConfigurationSubsetBlockDiagram.html",
 "LINK_TO_APPLICATION_TABLE" : "XDAQApplicationTable",
 "LINK_TO_APPLICATION_UID" : "ConfigurationGUISupervisor",
 "LINK_TO_PARAMETER_TABLE" : "NO_LINK",
@@ -378,7 +378,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:08:40.119-0500",
 "value" : {
 "name" : "testContext_v3",
@@ -407,7 +407,7 @@
 
 ],
 "configtype" : "notprovided",
-"configurations" : [
+"tables" : [
 {
 "name" : "testContext_v3",
 "assigned" : "2019-03-20T11:08:40.119-0500"

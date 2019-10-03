@@ -16,7 +16,7 @@
 {
 "UNUSED_UID" : "0",
 "GROUP_ALIASES" : "",
-"COMMENT_DESCRIPTION" : "new%20group%20for%20developing%20the%20online%20configuration%20state%20machine",
+"COMMENT_DESCRIPTION" : "new%20group%20for%20developing%20the%20online%20table%20state%20machine",
 "AUTHOR" : "admin",
 "GROUP_CREATION_TIME" : "1555081002"
 }
@@ -48,13 +48,13 @@
 "assigned" : "2019-04-12T09:56:42.336-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-12T09:56:42.336-0500"
 },
 {
-"name" : "OnlineConfiguration_v5",
+"name" : "OnlineTable_v5",
 "assigned" : "2019-04-12T09:56:56.463-0500"
 }
 ],
@@ -64,7 +64,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T09:56:42.336-0500",
 "value" : {
 "name" : "notprovided",
@@ -96,10 +96,10 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T09:56:56.463-0500",
 "value" : {
-"name" : "OnlineConfiguration_v5",
+"name" : "OnlineTable_v5",
 "assigned" : "2019-04-12T09:56:56.463-0500"
 }
 }

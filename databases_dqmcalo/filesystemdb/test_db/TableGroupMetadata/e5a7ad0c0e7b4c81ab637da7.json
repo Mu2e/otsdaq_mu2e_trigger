@@ -48,13 +48,13 @@
 "assigned" : "2019-04-19T10:37:46.430-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-19T10:37:46.430-0500"
 },
 {
-"name" : "OnlineConfiguration_v28",
+"name" : "OnlineTable_v28",
 "assigned" : "2019-04-19T10:38:00.782-0500"
 }
 ],
@@ -64,7 +64,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-19T10:37:46.430-0500",
 "value" : {
 "name" : "notprovided",
@@ -96,10 +96,10 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-19T10:38:00.782-0500",
 "value" : {
-"name" : "OnlineConfiguration_v28",
+"name" : "OnlineTable_v28",
 "assigned" : "2019-04-19T10:38:00.782-0500"
 }
 }

@@ -30,7 +30,7 @@
 "DAQ_GENERATOR_FRAGMENT_TYPE" : "DEFAULT",
 "DAQ_PARAMETERS_LINK" : "ARTDAQBoardReaderDaqParameterTable",
 "DAQ_PARAMETERS_LINK_GROUP_ID" : "EventDataGenerator0Parameters",
-"DAQ_DESTINATIONS_LINK" : "ARTDAQDaqDestinationTable",
+"DAQ_DESTINATIONS_LINK" : "ARTDAQDestinationTable",
 "DAQ_DESTINATIONS_LINK_GROUP_ID" : "EventDataGenerator0Destinations",
 "DAQ_METRICS_LINK" : "NO_LINK",
 "DAQ_METRICS_LINK_UID" : "DEFAULT",
@@ -66,21 +66,21 @@
 "assigned" : "2019-04-12T10:09:15.077-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-12T10:09:15.077-0500"
 },
 {
-"name" : "OnlineConfiguration_v8",
+"name" : "OnlineTable_v8",
 "assigned" : "2019-04-12T10:09:24.398-0500"
 },
 {
-"name" : "OnlineConfiguration_v9",
+"name" : "OnlineTable_v9",
 "assigned" : "2019-04-12T10:11:24.142-0500"
 },
 {
-"name" : "OnlineConfiguration_v10",
+"name" : "OnlineTable_v10",
 "assigned" : "2019-04-12T10:17:19.166-0500"
 }
 ],
@@ -90,7 +90,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T10:09:15.077-0500",
 "value" : {
 "name" : "notprovided",
@@ -122,26 +122,26 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T10:09:24.398-0500",
 "value" : {
-"name" : "OnlineConfiguration_v8",
+"name" : "OnlineTable_v8",
 "assigned" : "2019-04-12T10:09:24.398-0500"
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T10:11:24.142-0500",
 "value" : {
-"name" : "OnlineConfiguration_v9",
+"name" : "OnlineTable_v9",
 "assigned" : "2019-04-12T10:11:24.142-0500"
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T10:17:19.166-0500",
 "value" : {
-"name" : "OnlineConfiguration_v10",
+"name" : "OnlineTable_v10",
 "assigned" : "2019-04-12T10:17:19.166-0500"
 }
 }

@@ -66,17 +66,17 @@
 "assigned" : "2019-04-12T09:58:34.011-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-12T09:58:34.010-0500"
 },
 {
-"name" : "OnlineConfiguration_v6",
+"name" : "OnlineTable_v6",
 "assigned" : "2019-04-12T09:58:43.746-0500"
 },
 {
-"name" : "OnlineConfiguration_v7",
+"name" : "OnlineTable_v7",
 "assigned" : "2019-04-12T10:00:18.300-0500"
 }
 ],
@@ -86,7 +86,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T09:58:34.010-0500",
 "value" : {
 "name" : "notprovided",
@@ -118,18 +118,18 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T09:58:43.746-0500",
 "value" : {
-"name" : "OnlineConfiguration_v6",
+"name" : "OnlineTable_v6",
 "assigned" : "2019-04-12T09:58:43.746-0500"
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T10:00:18.300-0500",
 "value" : {
-"name" : "OnlineConfiguration_v7",
+"name" : "OnlineTable_v7",
 "assigned" : "2019-04-12T10:00:18.300-0500"
 }
 }

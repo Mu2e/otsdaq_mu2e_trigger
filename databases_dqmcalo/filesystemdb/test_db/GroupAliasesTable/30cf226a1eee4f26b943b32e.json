@@ -24,7 +24,7 @@
 },
 {
 "GROUP_KEY_ALIAS" : "DevelopOnline",
-"GROUP_NAME" : "OnlineConfiguration",
+"GROUP_NAME" : "OnlineTable",
 "GROUP_KEY" : "34",
 "COMMENT_DESCRIPTION" : "This Group Alias was automatically setup by the server.",
 "AUTHOR" : "admin",
@@ -66,7 +66,7 @@
 "assigned" : "2019-06-25T15:11:55.723-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-06-25T15:11:55.723-0500"
@@ -86,7 +86,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-25T15:11:55.723-0500",
 "value" : {
 "name" : "notprovided",
@@ -118,7 +118,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-25T15:11:58.191-0500",
 "value" : {
 "name" : "GroupAliasTreeEditWizBackbone_v29",
@@ -126,7 +126,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-06-25T15:12:33.652-0500",
 "value" : {
 "name" : "TableEditWizBackbone_v14",

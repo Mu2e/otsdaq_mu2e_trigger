@@ -142,7 +142,7 @@
 "assigned" : "2019-03-20T12:01:59.905-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-03-20T12:01:59.904-0500"
@@ -158,7 +158,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T12:01:59.904-0500",
 "value" : {
 "name" : "notprovided",
@@ -190,7 +190,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T12:02:04.233-0500",
 "value" : {
 "name" : "TriggerMenu_v2",

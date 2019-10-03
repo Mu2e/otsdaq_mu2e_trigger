@@ -4,3 +4,9 @@ udp: {
 	port: 30000 
 	host: "127.0.0.1" 
 }
+
+
+console: {
+	type: "cout"
+	threshold: "DEBUG"
+}
