@@ -11,8 +11,11 @@
 #include "art/Framework/Principal/Event.h"
 #include "art/Framework/Core/ModuleMacros.h"
 #include "art/Framework/Services/Registry/ServiceHandle.h"
+#if ART_HEX_VERSION < 0x30204
 #include "art/Framework/Services/Optional/TFileService.h"
-//#include "art_root_io/TFileService.h" // Include moved here since art v3_02_04
+#else
+#include "art_root_io/TFileService.h" // Include moved here since art v3_02_04
+#endif
 #include "fhiclcpp/ParameterSet.h"
 
 #include "art/Framework/Principal/Handle.h"

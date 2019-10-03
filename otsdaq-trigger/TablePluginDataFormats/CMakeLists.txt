@@ -9,6 +9,7 @@ simple_plugin(TopLevelTriggerTable "table"
   ConfigurationInterface 
   Macros #ssssave and close 
   ${CETLIB}
+  ${MF_MESSAGELOGGER}
   )
   
 

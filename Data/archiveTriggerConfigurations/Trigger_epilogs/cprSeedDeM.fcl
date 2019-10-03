@@ -1,6 +1,0 @@
-#include "Trigger_epilogs/cprSeedDeM/cprSeedDeMEventPrescale.fcl"
-#include "Trigger_epilogs/cprSeedDeM/cprSeedDeMPrescale.fcl"
-#include "Trigger_epilogs/cprSeedDeM/cprSeedDeMSDCountFilter.fcl"
-#include "Trigger_epilogs/cprSeedDeM/cprSeedDeMTCFilter.fcl"
-#include "Trigger_epilogs/cprSeedDeM/cprSeedDeMHSFilter.fcl"
-#include "Trigger_epilogs/cprSeedDeM/cprSeedDeMTSFilter.fcl"
