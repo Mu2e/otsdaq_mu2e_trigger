@@ -1,0 +1,6 @@
+#include "Trigger_epilogs/tprSeedDeP/tprSeedDePEventPrescale.fcl"
+#include "Trigger_epilogs/tprSeedDeP/tprSeedDePPrescale.fcl"
+#include "Trigger_epilogs/tprSeedDeP/tprSeedDePSDCountFilter.fcl"
+#include "Trigger_epilogs/tprSeedDeP/tprSeedDePTCFilter.fcl"
+#include "Trigger_epilogs/tprSeedDeP/tprSeedDePHSFilter.fcl"
+#include "Trigger_epilogs/tprSeedDeP/tprSeedDePTSFilter.fcl"

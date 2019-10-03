@@ -4,7 +4,7 @@
 #include <map>
 #include <queue>
 #include <string>
-#include "otsdaq-core/RootUtilities/DQMHistosBase.h"
+#include "otsdaq/RootUtilities/DQMHistosBase.h"
 
 static const int          MAX_CHAMBERS = 4;  // only support six chambers for now
 static const int          MAX_WIRES    = 128;

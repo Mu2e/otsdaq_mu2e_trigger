@@ -1,6 +1,6 @@
 #include "otsdaq-trigger/TablePluginDataFormats/TopLevelTriggerTable.h"
-#include "otsdaq-core/Macros/TablePluginMacros.h"
-#include "otsdaq-core/ConfigurationInterface/ConfigurationManager.h"
+#include "otsdaq/Macros/TablePluginMacros.h"
+#include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
 
 #include <iostream>
 #include <fstream>      // std::fstream

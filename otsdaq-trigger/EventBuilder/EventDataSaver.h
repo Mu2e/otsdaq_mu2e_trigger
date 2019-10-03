@@ -1,7 +1,7 @@
 #ifndef _ots_EventDataSaver_h
 #define _ots_EventDataSaver_h
 
-#include "otsdaq-core/DataManager/DataConsumer.h"
+#include "otsdaq/DataManager/DataConsumer.h"
 //#include "otsdaq-core/EventBuilder/Event.h"
 #include <string>
 

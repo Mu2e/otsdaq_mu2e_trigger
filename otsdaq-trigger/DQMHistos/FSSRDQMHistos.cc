@@ -1,8 +1,8 @@
 #include "otsdaq-trigger/DQMHistos/FSSRDQMHistos.h"
 #include "otsdaq-trigger/DataDecoders/FSSRData.h"
 //#include "otsdaq-trigger/DataDecoders/VIPICData.h"
-#include "otsdaq-core/ConfigurationInterface/ConfigurationTree.h"
-#include "otsdaq-core/NetworkUtilities/NetworkConverters.h"
+#include "otsdaq/ConfigurationInterface/ConfigurationTree.h"
+#include "otsdaq/NetworkUtilities/NetworkConverters.h"
 
 #include <iostream>
 #include <sstream>
@@ -307,11 +307,11 @@ void FSSRDQMHistos::book(TDirectory*              myDirectory,
 		if(streamer->second.second != visualHost)
 			dataBufferStreamToMap.erase(streamer--);
 	}
-	for(auto streamer = dataBufferStreamToMap.begin();
-	    streamer != dataBufferStreamToMap.end();
-	    streamer++)
+	for(auto bufferStreamer = dataBufferStreamToMap.begin();
+	    bufferStreamer != dataBufferStreamToMap.end();
+	    bufferStreamer++)
 	{
-		__COUT__ << streamer->second.second.second << std::endl;
+		__COUT__ << bufferStreamer->second.second.second << std::endl;
 	}
 
 	myDir_      = myDirectory;

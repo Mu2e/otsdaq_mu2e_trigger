@@ -2,8 +2,8 @@
 #define _ots_FSSRDQMHistosConsumer_h_
 
 #include <string>
-#include "otsdaq-core/Configurable/Configurable.h"
-#include "otsdaq-core/DataManager/DQMHistosConsumerBase.h"
+#include "otsdaq/Configurable/Configurable.h"
+#include "otsdaq/DataManager/DQMHistosConsumerBase.h"
 #include "otsdaq-trigger/DQMHistos/FSSRDQMHistos.h"
 class TFile;
 class TDirectory;

@@ -1,8 +1,8 @@
 #ifndef _ots_TopLevelTriggerTable_h_
 #define _ots_TopLevelTriggerTable_h_
 
-#include "otsdaq-core/TableCore/TableBase.h"
-#include "otsdaq-core/ConfigurationInterface/ConfigurationManager.h"
+#include "otsdaq/TableCore/TableBase.h"
+#include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
 #include <string>
 #include <iostream>
 #include <fstream>      // std::fstream

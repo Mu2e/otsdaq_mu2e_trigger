@@ -1,4 +1,4 @@
-#include "otsdaq-core/Macros/ProcessorPluginMacros.h"
+#include "otsdaq/Macros/ProcessorPluginMacros.h"
 #include "otsdaq-trigger/DataProcessorPlugins/WireChamberDataSaverConsumer.h"
 
 using namespace ots;

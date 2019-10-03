@@ -1,0 +1,150 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_PHYSICS_PRODUCER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1566926466,
+"COL_TYPES" : {
+"PRODUCER_GROUP_ID" : "VARCHAR2",
+"PRODUCER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"PRODUCER_KEY" : "VARCHAR2",
+"PRODUCER_MODULE_TYPE" : "VARCHAR2",
+"PRODUCER_MODULE_PARAMETER_LINK" : "VARCHAR2",
+"PRODUCER_MODULE_PARAMETER_LINK_GROUP_ID" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PRODUCER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PRODUCER_UID" : "physicsProducersDefault",
+"STATUS" : "Off",
+"PRODUCER_KEY" : "myProducerKey",
+"PRODUCER_MODULE_TYPE" : "myType",
+"PRODUCER_MODULE_PARAMETER_LINK" : "ARTDAQPhysicsProducerParameterTable",
+"PRODUCER_MODULE_PARAMETER_LINK_GROUP_ID" : "eventBuilder0PhysicsProducerParameters",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1566916880"
+},
+{
+"PRODUCER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PRODUCER_UID" : "TTHelixFinder",
+"STATUS" : "On",
+"PRODUCER_KEY" : "TTHelixFinder",
+"PRODUCER_MODULE_TYPE" : "@table::Trigger.producers.TTHelixFinder",
+"PRODUCER_MODULE_PARAMETER_LINK" : "ARTDAQPhysicsProducerParameterTable",
+"PRODUCER_MODULE_PARAMETER_LINK_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1566926435"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-08-27T12:21:06.268-0500",
+"rawdata" : [
+
+]
+},
+"version" : "11",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-08-27T12:21:06.269-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-08-27T12:21:06.268-0500"
+},
+{
+"name" : "OnlineConfiguration_v87",
+"assigned" : "2019-08-27T12:21:15.967-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-27T12:21:06.268-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-08-27T12:21:06.268-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-08-27T12:21:06.269-0500",
+"value" : {
+"name" : "11",
+"assigned" : "2019-08-27T12:21:06.269-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-08-27T12:21:06.269-0500",
+"value" : {
+"name" : "ARTDAQPhysicsProducerTable",
+"assigned" : "2019-08-27T12:21:06.269-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-08-27T12:21:06.269-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-08-27T12:21:06.269-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-27T12:21:15.967-0500",
+"value" : {
+"name" : "OnlineConfiguration_v87",
+"assigned" : "2019-08-27T12:21:15.967-0500"
+}
+}
+],
+"created" : "2019-08-27T12:21:06.268-0500"
+},
+"_id" : {
+"$oid" : "0081917df1a34be9b2ba5db4"
+},
+"collection" : "ARTDAQPhysicsProducerTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

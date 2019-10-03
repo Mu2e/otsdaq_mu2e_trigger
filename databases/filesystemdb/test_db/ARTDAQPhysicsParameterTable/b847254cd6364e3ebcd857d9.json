@@ -1,0 +1,270 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_PHYSICS_PARAMETER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1562703807,
+"COL_TYPES" : {
+"PHYSICS_PARAMETER_GROUP_ID" : "VARCHAR2",
+"PHYSICS_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"PHYSICS_PARAMETER_KEY" : "VARCHAR2",
+"PHYSICS_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsParameters_endPaths",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "end_paths",
+"PHYSICS_PARAMETER_VALUE" : "[ output ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555694231"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsParamters_output",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "output",
+"PHYSICS_PARAMETER_VALUE" : "[ dumpOutput, rootOutput ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555694330"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsParamters_debugTrigPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "debugTrig_path",
+"PHYSICS_PARAMETER_VALUE" : "[ prescaleEvent ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1556652485"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsFiltersTable",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "filters",
+"PHYSICS_PARAMETER_VALUE" : "{ @table::Trigger.filters }",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1562703801"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsProducersTable",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "producers",
+"PHYSICS_PARAMETER_VALUE" : "{ @table::Trigger.producers }",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1562703781"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-07-09T15:23:27.765-0500",
+"rawdata" : [
+
+]
+},
+"version" : "5",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-07-09T15:23:27.766-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-07-09T15:23:27.766-0500"
+},
+{
+"name" : "OnlineConfiguration_v42",
+"assigned" : "2019-07-09T15:23:35.236-0500"
+},
+{
+"name" : "OnlineConfiguration_v43",
+"assigned" : "2019-07-09T15:59:19.274-0500"
+},
+{
+"name" : "OnlineConfiguration_v44",
+"assigned" : "2019-07-10T15:40:21.300-0500"
+},
+{
+"name" : "OnlineConfiguration_v45",
+"assigned" : "2019-07-15T15:56:37.563-0500"
+},
+{
+"name" : "OnlineConfiguration_v46",
+"assigned" : "2019-07-15T15:57:54.843-0500"
+},
+{
+"name" : "OnlineConfiguration_v47",
+"assigned" : "2019-07-18T14:59:18.180-0500"
+},
+{
+"name" : "OnlineConfiguration_v48",
+"assigned" : "2019-07-22T15:38:09.214-0500"
+},
+{
+"name" : "OnlineConfiguration_v49",
+"assigned" : "2019-07-22T15:40:48.659-0500"
+},
+{
+"name" : "OnlineConfiguration_v50",
+"assigned" : "2019-08-19T11:10:28.292-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-09T15:23:27.766-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-07-09T15:23:27.766-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-07-09T15:23:27.766-0500",
+"value" : {
+"name" : "5",
+"assigned" : "2019-07-09T15:23:27.766-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-07-09T15:23:27.766-0500",
+"value" : {
+"name" : "ARTDAQPhysicsParameterTable",
+"assigned" : "2019-07-09T15:23:27.766-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-07-09T15:23:27.766-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-07-09T15:23:27.766-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-09T15:23:35.236-0500",
+"value" : {
+"name" : "OnlineConfiguration_v42",
+"assigned" : "2019-07-09T15:23:35.236-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-09T15:59:19.274-0500",
+"value" : {
+"name" : "OnlineConfiguration_v43",
+"assigned" : "2019-07-09T15:59:19.274-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-10T15:40:21.300-0500",
+"value" : {
+"name" : "OnlineConfiguration_v44",
+"assigned" : "2019-07-10T15:40:21.300-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-15T15:56:37.563-0500",
+"value" : {
+"name" : "OnlineConfiguration_v45",
+"assigned" : "2019-07-15T15:56:37.563-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-15T15:57:54.843-0500",
+"value" : {
+"name" : "OnlineConfiguration_v46",
+"assigned" : "2019-07-15T15:57:54.843-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-18T14:59:18.180-0500",
+"value" : {
+"name" : "OnlineConfiguration_v47",
+"assigned" : "2019-07-18T14:59:18.180-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-22T15:38:09.214-0500",
+"value" : {
+"name" : "OnlineConfiguration_v48",
+"assigned" : "2019-07-22T15:38:09.214-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-07-22T15:40:48.659-0500",
+"value" : {
+"name" : "OnlineConfiguration_v49",
+"assigned" : "2019-07-22T15:40:48.659-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-19T11:10:28.292-0500",
+"value" : {
+"name" : "OnlineConfiguration_v50",
+"assigned" : "2019-08-19T11:10:28.292-0500"
+}
+}
+],
+"created" : "2019-07-09T15:23:27.765-0500"
+},
+"_id" : {
+"$oid" : "b847254cd6364e3ebcd857d9"
+},
+"collection" : "ARTDAQPhysicsParameterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

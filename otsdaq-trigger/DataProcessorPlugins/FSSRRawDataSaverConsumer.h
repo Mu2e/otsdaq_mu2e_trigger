@@ -1,7 +1,7 @@
 #ifndef _ots_FSSRRawDataSaverConsumer_h_
 #define _ots_FSSRRawDataSaverConsumer_h_
 
-#include "otsdaq-core/DataManager/RawDataSaverConsumerBase.h"
+#include "otsdaq/DataManager/RawDataSaverConsumerBase.h"
 
 namespace ots
 {

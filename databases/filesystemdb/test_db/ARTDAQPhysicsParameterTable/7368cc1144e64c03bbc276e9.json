@@ -1,0 +1,292 @@
+{
+"document" : {
+"data" : {
+"NAME" : "ARTDAQ_PHYSICS_PARAMETER_TABLE",
+"COMMENT" : "Auto-generated from mock-up.",
+"AUTHOR" : "admin",
+"CREATION_TIME" : 1567004931,
+"COL_TYPES" : {
+"PHYSICS_PARAMETER_GROUP_ID" : "VARCHAR2",
+"PHYSICS_PARAMETER_UID" : "VARCHAR2",
+"STATUS" : "VARCHAR2",
+"PHYSICS_PARAMETER_KEY" : "VARCHAR2",
+"PHYSICS_PARAMETER_VALUE" : "VARCHAR2",
+"COMMENT_DESCRIPTION" : "VARCHAR2",
+"AUTHOR" : "VARCHAR2",
+"RECORD_INSERTION_TIME" : "TIMESTAMP WITH TIMEZONE"
+},
+"DATA_SET" : [
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsParameters_endPaths",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "end_paths",
+"PHYSICS_PARAMETER_VALUE" : "[ output ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555694231"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsParamters_output",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "output",
+"PHYSICS_PARAMETER_VALUE" : "[ dumpOutput, rootOutput ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1555694330"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "",
+"PHYSICS_PARAMETER_UID" : "physicsParamters_debugTrigPath",
+"STATUS" : "Off",
+"PHYSICS_PARAMETER_KEY" : "debugTrig_path",
+"PHYSICS_PARAMETER_VALUE" : "[ prescaleEvent ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1566232015"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsFiltersTable",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "filters",
+"PHYSICS_PARAMETER_VALUE" : "{ @table::Trigger.filters }",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1566570030"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "physicsProducersTable",
+"STATUS" : "Off",
+"PHYSICS_PARAMETER_KEY" : "producers",
+"PHYSICS_PARAMETER_VALUE" : "{ @table::Trigger.producers }",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1567004610"
+},
+{
+"PHYSICS_PARAMETER_GROUP_ID" : "eventBuilder0PhysicsParameters",
+"PHYSICS_PARAMETER_UID" : "generateDigiPath",
+"STATUS" : "On",
+"PHYSICS_PARAMETER_KEY" : "AAADigiGenPath",
+"PHYSICS_PARAMETER_VALUE" : "[ makeSD, CaloDigiFromShower ]",
+"COMMENT_DESCRIPTION" : "No Comment",
+"AUTHOR" : "admin",
+"RECORD_INSERTION_TIME" : "1567004925"
+}
+]
+},
+"metadata" : {
+
+},
+"search" : [
+
+]
+},
+"comments" : [
+
+],
+"origin" : {
+"source" : "template",
+"name" : "notprovided",
+"format" : "json",
+"created" : "2019-08-28T10:08:51.245-0500",
+"rawdata" : [
+
+]
+},
+"version" : "14",
+"entities" : [
+{
+"name" : "OTSROOT",
+"assigned" : "2019-08-28T10:08:51.245-0500"
+}
+],
+"configurations" : [
+{
+"name" : "notprovided",
+"assigned" : "2019-08-28T10:08:51.245-0500"
+},
+{
+"name" : "OnlineConfiguration_v100",
+"assigned" : "2019-08-28T10:09:00.959-0500"
+},
+{
+"name" : "OnlineConfiguration_v101",
+"assigned" : "2019-08-28T10:11:44.967-0500"
+},
+{
+"name" : "OnlineConfiguration_v102",
+"assigned" : "2019-08-28T10:18:56.365-0500"
+},
+{
+"name" : "OnlineConfiguration_v103",
+"assigned" : "2019-08-28T10:25:58.043-0500"
+},
+{
+"name" : "OnlineConfiguration_v106",
+"assigned" : "2019-08-29T14:05:34.356-0500"
+},
+{
+"name" : "OnlineConfiguration_v107",
+"assigned" : "2019-08-29T14:09:43.738-0500"
+},
+{
+"name" : "OnlineConfiguration_v108",
+"assigned" : "2019-08-29T14:14:52.898-0500"
+},
+{
+"name" : "OnlineConfiguration_v109",
+"assigned" : "2019-08-29T14:19:46.057-0500"
+},
+{
+"name" : "OnlineConfiguration_v110",
+"assigned" : "2019-08-29T14:25:37.570-0500"
+},
+{
+"name" : "OnlineConfiguration_v113",
+"assigned" : "2019-08-29T15:08:43.920-0500"
+}
+],
+"changelog" : "notprovided",
+"bookkeeping" : {
+"isdeleted" : false,
+"isreadonly" : false,
+"updates" : [
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-28T10:08:51.245-0500",
+"value" : {
+"name" : "notprovided",
+"assigned" : "2019-08-28T10:08:51.245-0500"
+}
+},
+{
+"event" : "setVersion",
+"timestamp" : "2019-08-28T10:08:51.245-0500",
+"value" : {
+"name" : "14",
+"assigned" : "2019-08-28T10:08:51.245-0500"
+}
+},
+{
+"event" : "setCollection",
+"timestamp" : "2019-08-28T10:08:51.245-0500",
+"value" : {
+"name" : "ARTDAQPhysicsParameterTable",
+"assigned" : "2019-08-28T10:08:51.245-0500"
+}
+},
+{
+"event" : "addEntity",
+"timestamp" : "2019-08-28T10:08:51.245-0500",
+"value" : {
+"name" : "OTSROOT",
+"assigned" : "2019-08-28T10:08:51.245-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-28T10:09:00.959-0500",
+"value" : {
+"name" : "OnlineConfiguration_v100",
+"assigned" : "2019-08-28T10:09:00.959-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-28T10:11:44.967-0500",
+"value" : {
+"name" : "OnlineConfiguration_v101",
+"assigned" : "2019-08-28T10:11:44.967-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-28T10:18:56.365-0500",
+"value" : {
+"name" : "OnlineConfiguration_v102",
+"assigned" : "2019-08-28T10:18:56.365-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-28T10:25:58.043-0500",
+"value" : {
+"name" : "OnlineConfiguration_v103",
+"assigned" : "2019-08-28T10:25:58.043-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-29T14:05:34.356-0500",
+"value" : {
+"name" : "OnlineConfiguration_v106",
+"assigned" : "2019-08-29T14:05:34.356-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-29T14:09:43.738-0500",
+"value" : {
+"name" : "OnlineConfiguration_v107",
+"assigned" : "2019-08-29T14:09:43.738-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-29T14:14:52.898-0500",
+"value" : {
+"name" : "OnlineConfiguration_v108",
+"assigned" : "2019-08-29T14:14:52.898-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-29T14:19:46.058-0500",
+"value" : {
+"name" : "OnlineConfiguration_v109",
+"assigned" : "2019-08-29T14:19:46.057-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-29T14:25:37.570-0500",
+"value" : {
+"name" : "OnlineConfiguration_v110",
+"assigned" : "2019-08-29T14:25:37.570-0500"
+}
+},
+{
+"event" : "addConfiguration",
+"timestamp" : "2019-08-29T15:08:43.920-0500",
+"value" : {
+"name" : "OnlineConfiguration_v113",
+"assigned" : "2019-08-29T15:08:43.920-0500"
+}
+}
+],
+"created" : "2019-08-28T10:08:51.245-0500"
+},
+"_id" : {
+"$oid" : "7368cc1144e64c03bbc276e9"
+},
+"collection" : "ARTDAQPhysicsParameterTable",
+"aliases" : {
+"active" : [
+
+],
+"history" : [
+
+]
+},
+"runs" : [
+
+],
+"attachments" : [
+
+],
+"configtype" : "notprovided"
+}

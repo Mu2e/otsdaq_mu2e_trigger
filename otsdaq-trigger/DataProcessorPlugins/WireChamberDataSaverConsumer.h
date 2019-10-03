@@ -2,7 +2,7 @@
 #define _ots_WireChamberDataSaverConsumer_h_
 
 #include <vector>
-#include "otsdaq-core/DataManager/RawDataSaverConsumerBase.h"
+#include "otsdaq/DataManager/RawDataSaverConsumerBase.h"
 
 namespace ots
 {

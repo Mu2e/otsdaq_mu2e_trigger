@@ -3,8 +3,8 @@
 
 #include <queue>
 #include <string>
-#include "otsdaq-core/DataManager/DataConsumer.h"
-#include "otsdaq-core/DataManager/DataProducer.h"
+#include "otsdaq/DataManager/DataConsumer.h"
+#include "otsdaq/DataManager/DataProducer.h"
 
 namespace ots
 {
