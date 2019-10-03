@@ -40,7 +40,7 @@
 "OUTPUTS_LINK_UID" : "eventBuilder0Outputs",
 "PHYSICS_LINK" : "ARTDAQPhysicsTable",
 "PHYSICS_LINK_UID" : "eventBuilder0Physics",
-"SOURCE_LINK" : "ARTDAQDaqSourceTable",
+"SOURCE_LINK" : "ARTDAQSourceTable",
 "SOURCE_LINK_UID" : "eventBuilder0Sources",
 "ARTDAQ_GLOBAL_TABLE_FOR_PROCESS_NAME_LINK" : "ARTDAQGlobalTable",
 "ARTDAQ_GLOBAL_TABLE_FOR_PROCESS_NAME_LINK_UID" : "artdaqGlobal0",
@@ -76,13 +76,13 @@
 "assigned" : "2019-04-12T11:38:18.511-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-04-12T11:38:18.511-0500"
 },
 {
-"name" : "OnlineConfiguration_v21",
+"name" : "OnlineTable_v21",
 "assigned" : "2019-04-12T11:38:30.776-0500"
 }
 ],
@@ -92,7 +92,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T11:38:18.511-0500",
 "value" : {
 "name" : "notprovided",
@@ -124,10 +124,10 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-04-12T11:38:30.776-0500",
 "value" : {
-"name" : "OnlineConfiguration_v21",
+"name" : "OnlineTable_v21",
 "assigned" : "2019-04-12T11:38:30.776-0500"
 }
 }

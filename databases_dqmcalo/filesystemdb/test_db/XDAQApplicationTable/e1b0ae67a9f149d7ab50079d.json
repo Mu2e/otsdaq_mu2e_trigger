@@ -265,7 +265,7 @@
 "assigned" : "2019-03-20T11:04:44.089-0500"
 }
 ],
-"configurations" : [
+"tables" : [
 {
 "name" : "notprovided",
 "assigned" : "2019-03-20T11:04:44.089-0500"
@@ -277,7 +277,7 @@
 "isreadonly" : false,
 "updates" : [
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:04:44.089-0500",
 "value" : {
 "name" : "notprovided",

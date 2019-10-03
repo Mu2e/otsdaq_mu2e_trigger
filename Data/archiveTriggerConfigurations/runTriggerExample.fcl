@@ -114,19 +114,4 @@ outputs : {
 
 
 
-physics.tprSeedDeM_path  : [ @sequence::paths.tprSeedDeM ]
-#include "Trigger_epilogs/tprSeedDeM.fcl"
-physics.tprSeedDeP_path  : [ @sequence::paths.tprSeedDeP ]
-#include "Trigger_epilogs/tprSeedDeP.fcl"
-physics.cprSeedDeM_path  : [ @sequence::paths.cprSeedDeM ]
-#include "Trigger_epilogs/cprSeedDeM.fcl"
-physics.cprSeedDeP_path  : [ @sequence::paths.cprSeedDeP ]
-#include "Trigger_epilogs/cprSeedDeP.fcl"
-physics.tprHelixIPADeM_path  : [ @sequence::paths.tprHelixIPADeM ]
-#include "Trigger_epilogs/tprHelixIPADeM.fcl"
-physics.unbiased_path  : [ @sequence::paths.unbiased ]
-#include "Trigger_epilogs/unbiased.fcl"
-physics.minimumbiasSDCount_path  : [ @sequence::paths.minimumbiasSDCount ]
-#include "Trigger_epilogs/minimumbiasSDCount.fcl"
-physics.caloMVACE_path  : [ @sequence::paths.caloMVACE ]
-#include "Trigger_epilogs/caloMVACE.fcl"
+#include "Trigger_epilogs/allPaths.fcl

@@ -116,7 +116,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:08:41.266-0500",
 "value" : {
 "name" : "testContext_v3",
@@ -124,7 +124,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:42:43.429-0500",
 "value" : {
 "name" : "testContext_v4",
@@ -132,7 +132,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:50:16.397-0500",
 "value" : {
 "name" : "testContext_v5",
@@ -140,7 +140,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T11:53:55.325-0500",
 "value" : {
 "name" : "testContext_v6",
@@ -148,7 +148,7 @@
 }
 },
 {
-"event" : "addConfiguration",
+"event" : "addTable",
 "timestamp" : "2019-03-20T12:11:08.161-0500",
 "value" : {
 "name" : "testContext_v7",
@@ -177,7 +177,7 @@
 
 ],
 "configtype" : "notprovided",
-"configurations" : [
+"tables" : [
 {
 "name" : "testContext_v3",
 "assigned" : "2019-03-20T11:08:41.266-0500"
