@@ -80,7 +80,7 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
   while (std::getline(mainFclFile, line, '\n') ) triggerFclFile << line << '\n';
 
   //we need to append the line where include the fcl that will contain all the trigger paths
-  triggerFclFile << "#include \"Trigger_epilogs/allPaths.fcl"<<__E__; 
+  triggerFclFile << "#include \"Trigger_epilogs/allPaths.fcl\""<<__E__; 
 
   __COUT__ << "*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*" << std::endl;
   __COUT__ << configManager->__SELF_NODE__ << std::endl;
