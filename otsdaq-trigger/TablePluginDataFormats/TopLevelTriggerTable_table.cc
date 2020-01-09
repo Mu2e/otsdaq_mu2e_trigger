@@ -132,7 +132,8 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  epilogName = trigEpilogsDir + "/" + triggerPathPair.first + ".fcl";
 	  allPathsFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
 	  //we need to append the line where we instantiate the given TriggerPath
-	  allPathsFile << "physics." << triggerPathPair.first  << "_trigger  : [ @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  //	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloDigiFromShower, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
 	  
 	  epilogFclFile.open(epilogName.c_str());
 
@@ -271,7 +272,7 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
 	}
       else
 	{
-	  subEpilogFclFile << "physics.filters."<<  TrigPath << filtNames[i] << ".nPrescale : " <<  prescaleFactor  << __E__; 
+	  subEpilogFclFile << "art.physics.filters."<<  TrigPath << filtNames[i] << ".nPrescale : " <<  prescaleFactor  << __E__; 
 	  subEpilogFclFile.close();
 	}
     }
@@ -321,7 +322,7 @@ void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFc
 	      ots::ConfigurationTree    valNode = params.second.getNode("value");
 	      std::string    val =  valNode.getValue<std::string>();
 	      __COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-	      subEpilogFclFile << "physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+	      subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
 	    }
 	  subEpilogFclFile.close();
 	}
@@ -373,7 +374,7 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
 	      ots::ConfigurationTree    valNode = params.second.getNode("value");
 	      std::string    val =  valNode.getValue<std::string>();
 	      __COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-	      subEpilogFclFile << "physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+	      subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
 	    }
 	  subEpilogFclFile.close();
 	}
@@ -424,7 +425,7 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
 	      ots::ConfigurationTree    valNode = params.second.getNode("value");
 	      std::string    val =  valNode.getValue<std::string>();
 	      __COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-	      subEpilogFclFile << "physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+	      subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
 	    }
 	  subEpilogFclFile.close();
 	}
