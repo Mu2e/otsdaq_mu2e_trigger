@@ -1,6 +1,6 @@
 // ======================================================================
 //
-// CaloSpy:  Monitoring of calorimeter readout channels
+// CaloCosmics:  Monitoring of calorimeter with cosmic rays
 //
 // ======================================================================
 
@@ -28,22 +28,22 @@
 
 #include <memory>
 
-int Ntot = 0;
-const int nCryDisk = 674;
-const int nCryTot  = 2*nCryDisk;
+//int Ntot = 0;
+//const int nCryDisk = 674;
+//const int nCryTot  = 2*nCryDisk;
 
 // Notation: 0/1 disk number; A/B readout side
 
-struct cryStru
-{
-  float WFpeakA = 0.;
-  float WFpeakB = 0.;
-  float WFratio = 0.;
-  float TriseA  = 0.;
-  float TriseB  = 0.;
-  float TdecayA = 0.;
-  float TdecayB = 0.;
-};
+//struct cryStru
+//{
+//  float WFpeakA = 0.;
+//  float WFpeakB = 0.;
+//  float WFratio = 0.;
+//  float TriseA  = 0.;
+//  float TriseB  = 0.;
+//  float TdecayA = 0.;
+//  float TdecayB = 0.;
+//};
 
 //TH1F     *_hCaloOccupancy0    = nullptr;
 //TH1F     *_hCaloOccupancy1    = nullptr;
@@ -57,29 +57,28 @@ struct cryStru
 //TProfile *_hTdecay1           = nullptr;
 //TProfile *_hWave[6][28][20]   = {};
 
-// Temporary, waiting for ROOT fixing                                                                    
-float OccupancyVec[nCryTot] = {};
-
 namespace art {
-  class CaloSpy;
+  class CaloCosmics;
 }
 
-using art::CaloSpy;
+using art::CaloCosmics;
 
 // ======================================================================
 
-class art::CaloSpy
+class art::CaloCosmics
   : public EDAnalyzer
 {
 
 public:
 
+  /*
   using EventNumber_t = art::EventNumber_t;
   using adc_t = mu2e::ArtFragmentReader::adc_t;
-  
+  */
+
   // --- C'tor/d'tor:
-  explicit  CaloSpy(fhicl::ParameterSet const& pset);
-  virtual  ~CaloSpy()  { }
+  explicit  CaloCosmics(fhicl::ParameterSet const& pset);
+  virtual  ~CaloCosmics()  { }
 
   // --- Production:
   virtual void beginJob();
@@ -92,19 +91,20 @@ private:
   int   parseCAL_;
   int   parseTRK_;
 
+  /*
   art::InputTag trkFragmentsTag_;
   art::InputTag caloFragmentsTag_;
-
-};  // CaloSpy
+  */
+};  // CaloCosmics
 
 // ======================================================================
 
-CaloSpy::CaloSpy(fhicl::ParameterSet const& pset)
+CaloCosmics::CaloCosmics(fhicl::ParameterSet const& pset)
   : EDAnalyzer(pset)
   , diagLevel_(pset.get<int>("diagLevel",0))
-  , parseCAL_(pset.get<int>("parseCAL",1))
-  , trkFragmentsTag_(pset.get<art::InputTag>("trkTag","daq:trk"))
-  , caloFragmentsTag_(pset.get<art::InputTag>("caloTag","daq:calo"))
+    //  , parseCAL_(pset.get<int>("parseCAL",1))
+    //  , trkFragmentsTag_(pset.get<art::InputTag>("trkTag","daq:trk"))
+    //  , caloFragmentsTag_(pset.get<art::InputTag>("caloTag","daq:calo"))
 {
 }
 
@@ -112,7 +112,7 @@ CaloSpy::CaloSpy(fhicl::ParameterSet const& pset)
 // Begin Job - Histogram booking
 // ======================================================================
 
-  void CaloSpy::beginJob(){
+  void CaloCosmics::beginJob(){
     /*
     art::ServiceHandle<art::TFileService> tfs;
 
@@ -143,12 +143,17 @@ CaloSpy::CaloSpy(fhicl::ParameterSet const& pset)
 // ======================================================================
 
 void
-CaloSpy::
+CaloCosmics::
 analyze( Event const& event )
 {
   art::EventNumber_t eventNumber = event.event();
 
+  errdd
+
   ++Ntot;
+  if( Ntot%1==0 && _diaglevel > 0 ) std::cout<<"[CaloCosmics] Processing event "<<Ntot<<std::endl;
+
+  /*
   struct cryStru crystal[nCryTot];
 
   art::Handle<artdaq::Fragments> trkFragments, calFragments;
@@ -171,7 +176,7 @@ analyze( Event const& event )
   // size_t numCalFrags = calFragments->size();
 
   if( diagLevel_ > 1 ) {
-    std::cout << std::dec << "[CaloSpy] Run " << event.run() << ", subrun " << event.subRun()
+    std::cout << std::dec << "[CaloCosmics] Run " << event.run() << ", subrun " << event.subRun()
 	      << ", event " << eventNumber << " has " << std::endl;
     std::cout << numTrkFrags << " TRK fragments, and ";
     std::cout << numCalFrags << " CAL fragments." << std::endl;
@@ -255,7 +260,7 @@ analyze( Event const& event )
 
       auto hdr = cc.GetHeader(curBlockIdx);
       if(hdr == nullptr) {
-	mf::LogError("CaloSpy") << "Unable to retrieve header from block " << curBlockIdx << "!" << std::endl;
+	mf::LogError("CaloCosmics") << "Unable to retrieve header from block " << curBlockIdx << "!" << std::endl;
 	continue;
       }
       
@@ -291,12 +296,12 @@ analyze( Event const& event )
 	
 	auto calData = cc.GetCalorimeterData(curBlockIdx);
 	if(calData == nullptr) {
-	  mf::LogError("CaloSpy") << "Error retrieving Calorimeter data from block " << curBlockIdx << "! Aborting processing of this block!";
+	  mf::LogError("CaloCosmics") << "Error retrieving Calorimeter data from block " << curBlockIdx << "! Aborting processing of this block!";
 	  continue;
 	}
 
 	if( diagLevel_ > 0 ) {
-	  std::cout <<"[CaloSpy] NEW CALDATA: NumberOfHits "<< calData->NumberOfHits << std::endl;
+	  std::cout <<"[CaloCosmics] NEW CALDATA: NumberOfHits "<< calData->NumberOfHits << std::endl;
 	}
 
 	bool err = false;
@@ -306,27 +311,27 @@ analyze( Event const& event )
 	  const mu2e::ArtFragmentReader::CalorimeterHitReadoutPacket* hitPkt(0);
 	  hitPkt = cc.GetCalorimeterReadoutPacket(curBlockIdx, hitIdx);
 	  if(hitPkt == nullptr) {
-	    mf::LogError("CaloSpy") << "Error retrieving Calorimeter data from block " << curBlockIdx << " for hit " << hitIdx << "! Aborting processing of this block!";
+	    mf::LogError("CaloCosmics") << "Error retrieving Calorimeter data from block " << curBlockIdx << " for hit " << hitIdx << "! Aborting processing of this block!";
 	    err = true;
 	    break;
 	  }
 	    
 	  if( diagLevel_ > 0 ) {
-	    std::cout <<"[CaloSpy] calo hit "<< hitIdx <<std::endl;
-	    std::cout <<"[CaloSpy] \thitPkt " << hitPkt << std::endl;
-	    std::cout <<"[CaloSpy] \tChNumber   " << (int)hitPkt->ChannelNumber  << std::endl;
-	    std::cout <<"[CaloSpy] \tDIRACA     " << (int)hitPkt->DIRACA   << std::endl;
-	    std::cout <<"[CaloSpy] \tDIRACB     " << (int)hitPkt->DIRACB  << std::endl;
-	    std::cout <<"[CaloSpy] \tErrorFlags " << (int)hitPkt->ErrorFlags  << std::endl;
-	    std::cout <<"[CaloSpy] \tTime       " << (int)hitPkt->Time  << std::endl;
-	    std::cout <<"[CaloSpy] \tNSamples   " << (int)hitPkt->NumberOfSamples << std::endl;
-	    std::cout <<"[CaloSpy] \tIndexMax   " << (int)hitPkt->IndexOfMaxDigitizerSample << std::endl;
+	    std::cout <<"[CaloCosmics] calo hit "<< hitIdx <<std::endl;
+	    std::cout <<"[CaloCosmics] \thitPkt " << hitPkt << std::endl;
+	    std::cout <<"[CaloCosmics] \tChNumber   " << (int)hitPkt->ChannelNumber  << std::endl;
+	    std::cout <<"[CaloCosmics] \tDIRACA     " << (int)hitPkt->DIRACA   << std::endl;
+	    std::cout <<"[CaloCosmics] \tDIRACB     " << (int)hitPkt->DIRACB  << std::endl;
+	    std::cout <<"[CaloCosmics] \tErrorFlags " << (int)hitPkt->ErrorFlags  << std::endl;
+	    std::cout <<"[CaloCosmics] \tTime       " << (int)hitPkt->Time  << std::endl;
+	    std::cout <<"[CaloCosmics] \tNSamples   " << (int)hitPkt->NumberOfSamples << std::endl;
+	    std::cout <<"[CaloCosmics] \tIndexMax   " << (int)hitPkt->IndexOfMaxDigitizerSample << std::endl;
 	  }
 	    
 	  auto first = cc.GetCalorimeterReadoutSample(curBlockIdx,hitIdx,0);
 	  auto last  = cc.GetCalorimeterReadoutSample(curBlockIdx, hitIdx, hitPkt->NumberOfSamples - 1);
 	  if(first == nullptr || last == nullptr) {
-	    mf::LogError("CaloSpy") << "Error retrieving Calorimeter samples from block " << curBlockIdx << " for hit " << hitIdx << "! Aborting processing of this block!";
+	    mf::LogError("CaloCosmics") << "Error retrieving Calorimeter samples from block " << curBlockIdx << " for hit " << hitIdx << "! Aborting processing of this block!";
 	    err = true;
 	    break;
 	  }
@@ -350,6 +355,10 @@ analyze( Event const& event )
 	    // Until we have the final mapping, the BoardID is just a placeholder
 	    // adc_t BoardId    = cc.DBC_BoardID(pos,channelIdx);
 	          
+	    std::cout << "Crystal ID: " << (int)crystalID << std::endl;
+	    std::cout << "APD ID: " << (int)apdID << std::endl;
+	    std::cout << "Time: " << (int)hitPkt->Time << std::endl;
+	    std::cout << "NumSamples: " << (int)hitPkt->NumberOfSamples << std::endl;
 	    std::cout << "Waveform: {";
 	    for(size_t i=0; i<cwf.size(); i++) {
 	      std::cout << cwf[i];
@@ -358,11 +367,7 @@ analyze( Event const& event )
 	      }
 	    }
 	    std::cout << "}" << std::endl;
-	    std::cout << "Crystal ID: " << (int)crystalID << std::endl;
-	    std::cout << "APD ID: " << (int)apdID << std::endl;
-            //std::cout << "Time: " << (int)hitPkt->Time << std::endl;
-            //std::cout << "NumSamples: " << (int)hitPkt->NumberOfSamples << std::endl;
-
+	
 	    //-------------------------
 	    // Fill crystal structure
 	    //-------------------------
@@ -378,7 +383,7 @@ analyze( Event const& event )
 	      crystal[crystalID].TdecayB = 5.*(numSamples-peakIdx);
 	    } 
 	    else{
-	      std::cout <<  "mu2e::CaloSpy::analyze eventNumber=" << (int)(event.event()) << 
+	      std::cout <<  "mu2e::CaloCosmics::analyze eventNumber=" << (int)(event.event()) << 
 		"Unknown SiPM id" << apdID <<std::endl;
 	      exit(0);
 	    }
@@ -386,29 +391,7 @@ analyze( Event const& event )
 	    //-------------------------------
 	    // Fill single readout histograms
 	    //-------------------------------
-	    
-	    // use DMAP to extract CalPoi
-	    CalPoi = 2*crystalID + apdID;
-	    std::cout << "CalPoi: " << CalPoi << std::endl;
-	  
-	    if( CalPoi<2*nCryDisk ){                      // Two readouts per crystal
-	      OccupancyVec[CalPoi]++;
-
-	      ///_hCaloOccupancy0->Fill(CalPoi);
-	      ///_hMaxWaveForm0->Fill(CalPoi,cwf[peakIdx]);
-	      ///_hTrise0->Fill(CalPoi,5.*(peakIdx-4));
-	      ///_hTdecay0->Fill(CalPoi,5.*(numSamples-peakIdx));
-	      //std::cout << " Filling histos for Disk 0" << std::endl;
-	    }
-	    else{
-	      int DiskPoi = CalPoi - 2*nCryDisk;
-	      ///_hCaloOccupancy1->Fill(DiskPoi);
-	      ///_hMaxWaveForm1->Fill(DiskPoi,cwf[peakIdx]);
-	      ///_hTrise1->Fill(DiskPoi,5.*(peakIdx-4));
-	      ///_hTdecay1->Fill(DiskPoi,5.*(numSamples-peakIdx));
-	      //std::cout << " Filling histos for Disk 1" << std::endl;
-	    }
-
+      
 	    // Text format: timestamp crystalID roID time nsamples samples...
 	    // Example: 1 201 402 660 18 0 0 0 0 1 17 51 81 91 83 68 60 58 52 42 33 23 16
 	    std::cout << "GREPMECAL: " << hdr->GetTimestamp() << " ";
@@ -435,9 +418,9 @@ analyze( Event const& event )
   } // Close loop over fragments
 
   //  }  // Close loop over the TRK and CAL collections
-
+  */
   if( diagLevel_ > 0 ) {
-    std::cout << "mu2e::CaloSpy::analyze exiting eventNumber=" << (int)(event.event()) << " / timestamp=" << (int)eventNumber <<std::endl;
+    std::cout << "mu2e::CaloCosmics::analyze exiting eventNumber=" << (int)(event.event()) << " / timestamp=" << (int)eventNumber <<std::endl;
   }
 
 }  // analyze()
@@ -446,13 +429,8 @@ analyze( Event const& event )
 // End Job - Normalize histograms
 // ============================================================================
                                          
-  void CaloSpy::endJob(){
-    std::cout << "CaloSpy: Normalizing histos to number of events:" << Ntot << std::endl;
-    // Temporary, waiting for ROOT fixing
-    for( int iCryId=0; iCryId<nCryDisk; iCryId++){
-      OccupancyVec[iCryId] = OccupancyVec[iCryId]/Ntot;
-      std::cout << "Disk CryId Occupancy: 0 " << iCryId << " " << OccupancyVec[iCryId] << std::endl;
-    }
+  void CaloCosmics::endJob(){
+    std::cout << "CaloCosmics: Normalizing histos to number of events:" << Ntot << std::endl;
     /*
     // Get Ntot from art?
     if( Ntot>0 ){
@@ -466,6 +444,6 @@ analyze( Event const& event )
 
 // ============================================================================
 
-DEFINE_ART_MODULE(CaloSpy)
+DEFINE_ART_MODULE(CaloCosmics)
 
 // ======================================================================
