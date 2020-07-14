@@ -117,6 +117,11 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  __COUT__       << "Trigger Path '" << triggerPathPair.first << "'" << __E__;
 	  __COUT__       << "Trigger Name '" << triggerPathPair.second.getNode("TriggerName").getValue() << "'" << __E__;
 
+	  std::string trigger_status = triggerPathPair.second.getNode("Status").getValue();
+	  if (trigger_status == "Off"){
+	    __COUT__       << "Trigger status is Off" << __E__;
+	    continue;
+	  }
 	  ots::ConfigurationTree singlePath = triggerPathPair.second.getNode("LinkToTriggerTable");
 	  __COUT__       << "singlePath : " << singlePath << __E__;
 	  __COUT__       << "singlePath.isDisconnected : " << singlePath.isDisconnected() << __E__;
