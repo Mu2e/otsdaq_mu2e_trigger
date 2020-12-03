@@ -35,7 +35,8 @@ TopLevelTriggerTable::TopLevelTriggerTable(void)
   __COUT__ <<"hi" << __E__;
   __COUT__ <<"hi" << __E__;
   //  exit(0);
-}
+  __COUT__ << StringMacros::stackTrace() << __E__;
+} //end constructor
 
 //========================================================================================================================
 TopLevelTriggerTable::~TopLevelTriggerTable(void)
@@ -55,6 +56,8 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
   std::string      trigEpilogsDir;
   trigEpilogsDir = ARTDAQ_FCL_PATH + "Trigger_epilogs";
   mkdir(trigEpilogsDir.c_str(), 0755);
+
+  __COUT__ << StringMacros::stackTrace() << __E__;
 
 
   //create the fcl file
