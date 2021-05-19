@@ -11,7 +11,8 @@
 cmake_minimum_required (VERSION 3.17)
 
 
-project(otsdaq-mu2e-trigger)
+find_package(cetbuildtools)
+project(otsdaq_mu2e_trigger VERSION 1.01.00)
 # cetbuildtools contains our cmake modules
 SET ( CETBUILDTOOLS_VERSION $ENV{CETBUILDTOOLS_VERSION} )
 IF (NOT CETBUILDTOOLS_VERSION)
@@ -28,12 +29,11 @@ message(STATUS "CMAKE_MODULE_PATH is ${CMAKE_MODULE_PATH}")
 
 include(CetCMakeEnv)
 cet_cmake_env()
-include(FindUpsXdaq)
 
 cet_set_compiler_flags(DIAGS VIGILANT
  WERROR
  NO_UNDEFINED
- EXTRA_FLAGS -pedantic -Wno-unused-parameter -Wno-unused-but-set-variable -Wno-maybe-uninitialized -Wno-ignored-qualifiers -Wno-unused-variable
+ EXTRA_FLAGS -pedantic -Wno-unused-parameter
  )
 
 #string(TOUPPER ${CMAKE_BUILD_TYPE} BTYPE_UC )
