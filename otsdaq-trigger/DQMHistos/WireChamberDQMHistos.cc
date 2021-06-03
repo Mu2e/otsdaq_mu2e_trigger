@@ -83,7 +83,7 @@ void WireChamberDQMHistos::convertSpillData(const std::string& spillData)
 {
 	// Unpack Controller Header
 	[[maybe_unused]]
-	unsigned int words, spillLinkStatus, spillTDCStatus, spillTriggerCount, minute,
+	unsigned int words, spillLinkStatus, spillTDCStatus, spillTriggerCount{0}, minute,
 	    second, day, hour, year, month, spillCount, totalWordCount, index;
 	unsigned int       tmpInt;
 	const unsigned int wordSz = 2;
