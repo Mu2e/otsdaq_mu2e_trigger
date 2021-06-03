@@ -5,11 +5,8 @@
 #)
   
 simple_plugin(TopLevelTriggerTable "table"
-  TableCore
-  ConfigurationInterface 
-  Macros #ssssave and close 
-  ${CETLIB}
-  ${MF_MESSAGELOGGER}
+ artdaq_core::artdaq-core_Utilities
+ otsdaq::ConfigurationInterface
   )
   
 

@@ -408,8 +408,8 @@ void FSSRDQMHistos::fill(std::string& buffer, std::map<std::string, std::string>
 	//__COUT__ << NetworkConverters::stringToUnsignedPort(port)<< " New buffer" <<
 	// std::endl;
 	unsigned int bufferCounter = 0;
-	uint32_t     bco           = 0;
-	uint32_t     data          = 0;
+	//uint32_t     bco           = 0;
+	//uint32_t     data          = 0;
 	while(!convertedBuffer_.empty())
 	{
 		if(((NetworkConverters::stringToUnsignedPort(port) == 48000) ||
@@ -418,7 +418,7 @@ void FSSRDQMHistos::fill(std::string& buffer, std::map<std::string, std::string>
 		   bufferCounter % 2 == 1)
 		{
 			// THIS IS THE BCO
-			bco = convertedBuffer_.front();
+			//bco = convertedBuffer_.front();
 			//__COUT__ << bco << std::endl;
 			convertedBuffer_.pop();
 			bufferCounter++;
@@ -431,7 +431,7 @@ void FSSRDQMHistos::fill(std::string& buffer, std::map<std::string, std::string>
 			//				__COUT__ << "There is a copy FSSR: " << std::hex <<
 			// convertedBuffer_.front() << " counter: " << bufferCounter << std::dec <<
 			// std::endl;
-			data                       = convertedBuffer_.front();
+			//data                       = convertedBuffer_.front();
 			FSSRData* detectorDataFSSR = 0;
 			theDataDecoder_.decodeData(convertedBuffer_.front(),
 			                           (DetectorDataBase**)&detectorDataFSSR);

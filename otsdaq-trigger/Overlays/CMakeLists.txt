@@ -1,8 +1,6 @@
 art_make(LIBRARY_NAME otsdaq-trigger_Overlays
 	   LIB_LIBRARIES
-	   ${ARTDAQ_DAQDATA}
-	   ${CETLIB}
-	   ${CETLIB_EXCEPT}
+	  artdaq_core::artdaq-core_Data
 	   )
 install_headers()
 install_source()

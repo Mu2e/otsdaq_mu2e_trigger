@@ -7,29 +7,7 @@ art_make( BASENAME_ONLY
  ${ART_PERSISTENCY_PROVENANCE}
  ${CANVAS_PERSISTENCY_PROVENANCE}
  LIB_LIBRARIES
-canvas
- otsdaq-trigger_Overlays
- #otsdaq-utilities_ECLWriter
- artdaq-core_Utilities
- artdaq_ArtModules
- artdaq-core_Data
- artdaq-core_Core
-  art_Framework_Core
-  art_Framework_IO_Sources
-  art_Framework_Principal
-#  canvas_Persistency_Common
-  art_Persistency_Provenance
-#  canvas_Persistency_Provenance
-# canvas_Utilities
-  MF_MessageLogger
-  ${ROOT_CINTEX}
-  ${ROOT_RIO}
-  ${ROOT_CORE}
-  ${ROOT_NET}
-  ${ROOT_REFLEX}
-  cetlib
-  cetlib_except
-  DTCInterface
+  
 )
 
 # simple_plugin(WireChamberDQM "module"
@@ -107,20 +85,8 @@ canvas
 # )
 
 simple_plugin(TriggerCounter "module"
-        artdaq-core_Utilities
 	otsdaq-trigger_Overlays
-	NetworkUtilities
-	artdaq-core_Data
-	 artdaq-core_Core
-	${CETLIB_EXCEPT}
-	${ROOT_GPAD}
-	${ROOT_HIST}
-	${ROOT_GUI}
-	${ROOT_RIO}
-  ${ROOT_NET}
-#	MessageFacility
-	${MF_MESSAGELOGGER}
-	${MF_UTILITIES}
+	artdaq::DAQdata
 )
 
 # simple_plugin(FTBFInput "source"

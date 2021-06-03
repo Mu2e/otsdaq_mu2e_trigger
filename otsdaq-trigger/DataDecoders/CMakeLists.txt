@@ -1,6 +1,6 @@
 cet_make(LIBRARY_NAME DataDecoders
 		LIBRARIES
-		MF_MessageLogger
+		artdaq_core::artdaq-core_Utilities
                 )
 
 install_headers()

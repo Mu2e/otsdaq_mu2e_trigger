@@ -13,10 +13,10 @@ cet_make_library(LIBRARY_NAME EventBuilder
 			EventDataSaver.cc
 			VirtualEventBuilder.cc
 		LIBRARIES
-		        ${ROOT_BASIC_LIB_LIST}
-			WorkLoopManager
-			DataManager
-			DataDecoders
+				DataDecoders
+		      ${ROOT_BASIC_LIB_LIST}
+			  artdaq_core::artdaq-core_Utilities
+			  otsdaq::DataManager
                )
 
 install_headers()

@@ -39,6 +39,7 @@ void WireChamberDataSaverConsumer::convertSpillData(const std::string& spillData
 	}
 
 	// Unpack Controller Header
+	[[maybe_unused]]
 	unsigned int words, spillLinkStatus, spillTDCStatus, spillTriggerCount, minute,
 	    second, day, hour, year, month, spillCount, totalWordCount, index;
 	unsigned int       tmpInt;

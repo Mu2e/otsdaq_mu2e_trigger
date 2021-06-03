@@ -82,6 +82,7 @@ void WireChamberDQMHistos::clear() {}
 void WireChamberDQMHistos::convertSpillData(const std::string& spillData)
 {
 	// Unpack Controller Header
+	[[maybe_unused]]
 	unsigned int words, spillLinkStatus, spillTDCStatus, spillTriggerCount, minute,
 	    second, day, hour, year, month, spillCount, totalWordCount, index;
 	unsigned int       tmpInt;
@@ -337,11 +338,11 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 	// std::map<unsigned int, std::pair<unsigned int, unsigned int> >
 	unsigned int nhit_x;
 	unsigned int wire_x[MAX_HITS];
-	unsigned int time_x[MAX_HITS];
+	//unsigned int time_x[MAX_HITS];
 
 	unsigned int nhit_y;
 	unsigned int wire_y[MAX_HITS];
-	unsigned int time_y[MAX_HITS];
+	//unsigned int time_y[MAX_HITS];
 
 	unsigned int chamber;
 	unsigned int chamberModuleNumber;  // module number within chamber, 0-3
@@ -376,7 +377,7 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 				if(nhit_x < MAX_HITS - 1)
 				{
 					wire_x[nhit_x] = chan + 64 * first_or_second;
-					time_x[nhit_x] = tdc;
+					//time_x[nhit_x] = tdc;
 					nhit_x++;
 				}
 				else
@@ -390,7 +391,7 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 				if(nhit_y < MAX_HITS - 1)
 				{
 					wire_y[nhit_y] = chan + 64 * first_or_second;
-					time_y[nhit_y] = tdc;
+					//time_y[nhit_y] = tdc;
 					nhit_y++;
 				}
 				else
@@ -410,8 +411,8 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 			for(unsigned int ix = 0; ix < nhit_x; ix++)
 			{
 				float xpos = wire_x[ix];
-				int   xtdc = time_x[ix];
-				int   xmod = xpos / 64;
+				//int   xtdc = time_x[ix];
+				//int   xmod = xpos / 64;
 
 				// Use only hits within first peak
 				if(onlygoodhits)  // && xtdc > tdcmean[xmod]+2.0*tdcsigma[xmod] )
@@ -424,8 +425,8 @@ void WireChamberDQMHistos::fill(std::string&                       buffer,
 					int ywire = wire_y[iy];
 					// invert ywire to geometric position
 					float ypos = (MAX_WIRES - 1) - ywire;
-					int   ytdc = time_y[iy];
-					int   ymod = 2 + ywire / 64;
+					//int   ytdc = time_y[iy];
+					//int   ymod = 2 + ywire / 64;
 
 					// Use only hits within first peak
 					if(onlygoodhits)  //&& ytdc > tdcmean[ymod]+2.0*tdcsigma[ymod] )
