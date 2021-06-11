@@ -141,7 +141,8 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  allPathsFile << "#include \"Trigger_epilogs/" << triggerPathPair.first<<".fcl\"" << __E__; 
 	  //we need to append the line where we instantiate the given TriggerPath
 	  //	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
-	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloDigiMaker, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  // allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloDigiMaker, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloHitMaker, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
 	  
 	  epilogFclFile.open(epilogName.c_str());
 
