@@ -142,7 +142,7 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  //we need to append the line where we instantiate the given TriggerPath
 	  //	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
 	  // allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloDigiMaker, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
-	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloHitMaker, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
 	  
 	  epilogFclFile.open(epilogName.c_str());
 
@@ -293,22 +293,21 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
 void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFclFile, std::string& EpilogsDir,
 							 std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
 {
-  std::string            singlePathPairFclName;
+  std::string     singlePathPairFclName;
   std::ofstream   subEpilogFclFile;
   
-  const int       nFilters(4);
+  const int       nFilters(5);
   std::string     varNames [nFilters] = {"LinkToDigiFilterParameterTable",
 					 "LinkToTimeClusterFilterParameterTable",
 					 "LinkToHelixFilterParameterTable",
-					 "LinkToTrackSeedFilterParameterTable"};
-  std::string     filtNames[nFilters] = {"SDCountFilter","TCFilter", "HSFilter", "TSFilter"};
+					 "LinkToTrackSeedFilterParameterTable",
+					 "NOPARAMS"};
+  std::string     filtNames[nFilters] = {"SDCountFilter","TCFilter", "HSFilter", "TSFilter","TriggerInfoMerger"};
 
   __COUT__       << "createTrackingFiltersEpilog starts..." << __E__;
 
   for (int i=0; i<nFilters; ++i)
     {
-      ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
-      
       singlePathPairFclName = EpilogsDir + "/" + TrigPath + filtNames[i]+ ".fcl";
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] << ".fcl\""<<__E__; 
   
@@ -322,17 +321,23 @@ void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFc
 	}
       else
 	{
-	  auto   filterConf = timeClusterConf.getChildren();
-	  for (auto &params: filterConf) 
-	    {
-	      __COUT__ << filtNames[i] <<" conf: " << params.first  << __E__;
-	      ots::ConfigurationTree    valName = params.second.getNode("name");
-	      __COUT__ << filtNames[i] << " param name: "    << valName << __E__;
-	      ots::ConfigurationTree    valNode = params.second.getNode("value");
-	      std::string    val =  valNode.getValue<std::string>();
-	      __COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-	      subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
-	    }
+	  if (i<nFilters-1){
+	    ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
+	    auto   filterConf = timeClusterConf.getChildren();
+	    for (auto &params: filterConf) 
+	      {
+		__COUT__ << filtNames[i] <<" conf: " << params.first  << __E__;
+		ots::ConfigurationTree    valName = params.second.getNode("name");
+		__COUT__ << filtNames[i] << " param name: "    << valName << __E__;
+		ots::ConfigurationTree    valNode = params.second.getNode("value");
+		std::string    val =  valNode.getValue<std::string>();
+		__COUT__ << filtNames[i] << " param value: "    << val<< __E__;
+		subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+	      }
+	  }
+	  else {
+	    subEpilogFclFile << "art.physics.producers."<<  TrigPath <<filtNames[i] <<" : "<< " { module_type : MergeTriggerInfo }" <<  __E__; 
+	  }
 	  subEpilogFclFile.close();
 	}
     }
@@ -347,11 +352,11 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
   std::string          singlePathPairFclName;
   std::ofstream   subEpilogFclFile;
   
-  const int       nFilters(3);
+  const int       nFilters(4);
   std::string     varNames [nFilters] = {"LinkToDigiFilterParameterTable",
 					 "LinkToTimeClusterFilterParameterTable",
-					 "LinkToHelixFilterParameterTable"};
-  std::string     filtNames[nFilters] = {"SDCountFilter", "TCFilter", "HSFilter"};
+					 "LinkToHelixFilterParameterTable","NOPARAMS"};
+  std::string     filtNames[nFilters] = {"SDCountFilter", "TCFilter", "HSFilter","TriggerInfoMerger"};
 
   __COUT__       << "createHelixFiltersEpilog starts..." << __E__;
 
@@ -359,8 +364,6 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
     {
       __COUT__ << "varName["<<i << "] = " << varNames[i] << __E__;
 
-      ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
-      
       singlePathPairFclName = EpilogsDir + "/" + TrigPath.c_str() + filtNames[i] + ".fcl";
       EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] << ".fcl\""<<__E__; 
   
@@ -374,16 +377,22 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
 	}
       else
 	{
-	  auto   filterConf = timeClusterConf.getChildren();
-	  for (auto &params: filterConf) 
+	  if (i<nFilters-1){//filter config
+	    ots::ConfigurationTree  timeClusterConf = ConfTree.getNode(varNames[i]);
+	    auto   filterConf = timeClusterConf.getChildren();
+	    for (auto &params: filterConf) 
+	      {
+		__COUT__ << filtNames[i] <<" conf: " << params.first  << __E__;
+		ots::ConfigurationTree    valName = params.second.getNode("name");
+		__COUT__ << filtNames[i] << " param name: "    << valName << __E__;
+		ots::ConfigurationTree    valNode = params.second.getNode("value");
+		std::string    val =  valNode.getValue<std::string>();
+		__COUT__ << filtNames[i] << " param value: "    << val<< __E__;
+		subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+	      }
+	  }else 
 	    {
-	      __COUT__ << filtNames[i] <<" conf: " << params.first  << __E__;
-	      ots::ConfigurationTree    valName = params.second.getNode("name");
-	      __COUT__ << filtNames[i] << " param name: "    << valName << __E__;
-	      ots::ConfigurationTree    valNode = params.second.getNode("value");
-	      std::string    val =  valNode.getValue<std::string>();
-	      __COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-	      subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+	      subEpilogFclFile << "art.physics.producers."<<  TrigPath <<filtNames[i] <<" : "<< " { module_type : MergeTriggerInfo }" <<  __E__; 
 	    }
 	  subEpilogFclFile.close();
 	}
