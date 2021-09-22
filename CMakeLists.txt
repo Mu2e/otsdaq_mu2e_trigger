@@ -55,13 +55,13 @@ find_ups_product( otsdaq v1_00_00 )
 find_ups_product( offline v10_00_00 )
 #find_ups_product( otsdaq_utilities v1_00_00 )
 #find_ups_product( otsdaq_components v1_00_00 )
-#find_ups_product( TRACE v3_03_00 )
+find_ups_product( TRACE v3_03_00 )
 #find_ups_xdaq( v11_2_7 )
 find_ups_root( v5_34_00 )
-#find_ups_boost( v1_50_0 filesystem
-#                        program_options
-#                        unit_test_framework
-# )
+find_ups_boost( v1_50_0 filesystem
+                        program_options
+                        unit_test_framework
+ )
 
 # XDAQ Extra setup
 find_ups_product( artdaq_database v1_03_07 )
