@@ -1,32 +1,32 @@
-simple_plugin(FSSRDQMHistosConsumer "processor"
+basic_plugin(FSSRDQMHistosConsumer "processor"
     FermilabTestbeamDQMHistos
     artdaq_core::artdaq-core_Utilities
     otsdaq::DataManager
     otsdaq::RootUtilities
   )
 
-simple_plugin(FSSRRawDataSaverConsumer "processor"
+basic_plugin(FSSRRawDataSaverConsumer "processor"
     FermilabTestbeamDQMHistos
     artdaq_core::artdaq-core_Utilities
     otsdaq::DataManager
     otsdaq::RootUtilities
   )
 
-simple_plugin(WireChamberDQMHistosConsumer "processor"
+basic_plugin(WireChamberDQMHistosConsumer "processor"
     FermilabTestbeamDQMHistos
     artdaq_core::artdaq-core_Utilities
     otsdaq::DataManager
     otsdaq::RootUtilities
   )
 
-simple_plugin(WireChamberDataSaverConsumer "processor"
+basic_plugin(WireChamberDataSaverConsumer "processor"
     FermilabTestbeamDQMHistos
     artdaq_core::artdaq-core_Utilities
     otsdaq::DataManager
     otsdaq::RootUtilities
   )
 
-simple_plugin(RootDQMHistosConsumer "processor"
+basic_plugin(RootDQMHistosConsumer "processor"
     FermilabTestbeamDQMHistos
     artdaq_core::artdaq-core_Utilities
     otsdaq::DataManager

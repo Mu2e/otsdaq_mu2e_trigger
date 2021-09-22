@@ -4,7 +4,7 @@
 #         ${CETLIB}
 #)
   
-simple_plugin(TopLevelTriggerTable "table"
+basic_plugin(TopLevelTriggerTable "table"
  artdaq_core::artdaq-core_Utilities
  otsdaq::ConfigurationInterface
   )

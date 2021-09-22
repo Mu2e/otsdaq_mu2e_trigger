@@ -3,7 +3,5 @@ add_subdirectory(DataDecoders)
 add_subdirectory(TablePluginDataFormats)
 add_subdirectory(DataProcessorPlugins)
 add_subdirectory(ArtModules)
-add_subdirectory(Generators)
-add_subdirectory(Overlays)
 add_subdirectory(EventBuilder)
 

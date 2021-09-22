@@ -10,18 +10,14 @@
 # use cmake 3.17 or later
 cmake_minimum_required (VERSION 3.17)
 
+find_package(cetmodules)
+set(CET_CETBUILDTOOLS_COMPAT TRUE)
+include(Compatibility)
+set(CET_WARN_DEPRECATED)
 
-find_package(cetbuildtools)
-project(otsdaq_mu2e_trigger VERSION 1.01.01)
-# cetbuildtools contains our cmake modules
-SET ( CETBUILDTOOLS_VERSION $ENV{CETBUILDTOOLS_VERSION} )
-IF (NOT CETBUILDTOOLS_VERSION)
-    MESSAGE (FATAL_ERROR "ERROR: setup cetbuildtools to get the cmake modules")
-ENDIF()
+project(otsdaq_mu2e_trigger VERSION 1.01.03)
 
 set(CMAKE_MODULE_PATH
-        $ENV{ART_DIR}/Modules
-        $ENV{CETBUILDTOOLS_DIR}/Modules
         $ENV{XDAQ_DIR}/Modules
         $ENV{ARTDAQ_UTILITIES_DIR}/Modules
         ${CMAKE_MODULE_PATH})
@@ -41,7 +37,7 @@ cet_set_compiler_flags(DIAGS VIGILANT
 #  cet_add_compiler_flags(-fsanitize=address)
 #endif()
 
-cet_report_compiler_flags()
+#cet_report_compiler_flags()
 
 # these are minimum required versions, not the actual product versions
 #find_ups_product( epics v3_15_2 )
@@ -117,9 +113,6 @@ if( $ENV{OTS_DOXY} MATCHES "DOIT" )
 	add_subdirectory(doc)
 endif()
 
-# UPS
-add_subdirectory(ups)
-
 # Data
 #FILE(COPY ConfigurationDataExamples DESTINATION Data)
 #INSTALL(DIRECTORY ConfigurationDataExamples DESTINATION ${product}/${version}/Data)
@@ -154,5 +147,4 @@ add_subdirectory(ups)
 #INSTALL(DIRECTORY DESTINATION ${product}/${version}/Data/ServiceData/LogbookData/logbooks)
 #INSTALL(DIRECTORY DESTINATION ${product}/${version}/Data/ServiceData/LogbookData/previews)
 
-# packaging utility
-include(UseCPack)
+cet_cmake_config()
