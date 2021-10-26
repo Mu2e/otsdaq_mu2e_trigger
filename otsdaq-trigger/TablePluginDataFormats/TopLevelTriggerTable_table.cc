@@ -114,6 +114,8 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
       auto triggerPaths = topLevelPair.second.getNode("LinkToTriggerPathsTable").getChildren();
       size_t children_map_size = triggerPaths.size();
       size_t counter(0);
+      std::vector<int> list_of_pathIDs;
+
       for (auto &triggerPathPair : triggerPaths)
 	{
 	  __COUT__       << "internal LOOP" << __E__;		
@@ -134,6 +136,8 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 
 
 	  std::string  triggerType = triggerPathPair.second.getNode("TriggerType").getValue<std::string>();
+	  int          pathID      = triggerPathPair.second.getNode("PathID").getValue<int>();
+
 	  __COUT__       << "Trigger Type '" << triggerType << "'" << __E__;
 	  
 	  //create the fcl housing the trigger-path configurations
@@ -142,9 +146,19 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  //we need to append the line where we instantiate the given TriggerPath
 	  //	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
 	  // allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloDigiMaker, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
-	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
+	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]" << __E__; 
+	  allPathsFile << "art.physics.trigger_paths["<< pathID <<"] : " << triggerPathPair.first  << "_trigger \n"<< __E__; 
 	  
 	  epilogFclFile.open(epilogName.c_str());
+
+	  //check if the pathID is already usd by another trigger chain
+	  for (auto & id : list_of_pathIDs){
+	    if (id == pathID){
+	      __SS__ << "Attempt to use twice the same PathID : "<< pathID << std::endl;
+	      __COUT_ERR__ << ss.str() << std::endl;
+	      __SS_THROW__;
+	    }
+	  }
 
 	  //create the directory that will house all the epilogs of a given triggerPath
 	  std::string               singlePathEpilogsDir, singlePathPairFclName;
@@ -154,7 +168,7 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  __COUT__       << "single path epilogs dir " << singlePathEpilogsDir << __E__; 
 
 	  //set the general prescale factor at the beginning of the path
-	  createPrescaleEpilog         (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, singlePath);
+	  createPrescaleEpilog         (epilogFclFile, singlePathEpilogsDir, triggerPathPair.first, triggerPathPair.second); //singlePath);
 
 	  if (triggerType == "TrackSeed")
 	    {
@@ -249,42 +263,33 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
 						   std::string&   TrigPath     , ots::ConfigurationTree  ConfTree)
 {
   std::string     singlePathPairFclName;
-  std::ofstream   subEpilogFclFile;
-
-  int             nFilters(2);
-  
-  if (TrigPath == "unbiased") nFilters = 1;
-  
-  std::string     varNames [2] = {"HighLevelPrescaleFactor",
-				  "LowLevelPrescaleFactor"};
+  std::ofstream   subEpilogFclFile;  
+  std::string     varName = "PrescaleFactor";
   __COUT__     << "createPrescaleEpilog starts..." << __E__;
 
-  std::string     filtNames[2] = {"EventPrescale", "Prescale"};
+  std::string     filtName = "EventPrescale";
 
-  for (int i=0; i<nFilters; ++i)
+  int             prescaleFactor = ConfTree.getNode(varName).getValue<int>();
+  __COUT__  << "node: " << prescaleFactor << __E__;
+  __COUTV__(prescaleFactor);
+      
+  singlePathPairFclName = EpilogsDir+"/"+ TrigPath+ filtName+".fcl";
+  EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtName <<".fcl\""<<__E__; 
+      
+  __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
+
+  subEpilogFclFile.open(singlePathPairFclName);
+      
+  if (!subEpilogFclFile.is_open())
     {
-      auto   prescalerConf  = ConfTree.getNode(varNames[i]);
-      int                     prescaleFactor = (int)prescalerConf.getValue<int>();
-      __COUT__  << "node: " << prescaleFactor << __E__;
-      __COUTV__(prescaleFactor);
-      
-      singlePathPairFclName = EpilogsDir+"/"+ TrigPath+ filtNames[i]+".fcl";
-      EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtNames[i] <<".fcl\""<<__E__; 
-      
-      __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
-
-      subEpilogFclFile.open(singlePathPairFclName);
-      
-      if (!subEpilogFclFile.is_open())
-	{
-	  __COUT__       << "file: " <<singlePathPairFclName << " not opened" << __E__;
-	}
-      else
-	{
-	  subEpilogFclFile << "art.physics.filters."<<  TrigPath << filtNames[i] << ".nPrescale : " <<  prescaleFactor  << __E__; 
-	  subEpilogFclFile.close();
-	}
+      __COUT__       << "file: " <<singlePathPairFclName << " not opened" << __E__;
     }
+  else
+    {
+      subEpilogFclFile << "art.physics.filters."<<  TrigPath << filtName << ".nPrescale : " <<  prescaleFactor  << __E__; 
+      subEpilogFclFile.close();
+    }
+  
 }
 
 //---------------------------------------------------------------------------------------------------------
