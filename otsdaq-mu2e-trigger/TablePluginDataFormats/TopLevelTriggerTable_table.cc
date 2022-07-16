@@ -1,4 +1,4 @@
-#include "otsdaq-trigger/TablePluginDataFormats/TopLevelTriggerTable.h"
+#include "otsdaq-mu2e-trigger/TablePluginDataFormats/TopLevelTriggerTable.h"
 #include "otsdaq/Macros/TablePluginMacros.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
 

@@ -4,8 +4,8 @@
 #include <stdint.h>
 #include <queue>
 #include <string>
-#include "otsdaq-trigger/DataDecoders/DataDecoder.h"
-#include "otsdaq-trigger/EventBuilder/VirtualEventBuilder.h"
+#include "otsdaq-mu2e-trigger/DataDecoders/DataDecoder.h"
+#include "otsdaq-mu2e-trigger/EventBuilder/VirtualEventBuilder.h"
 
 namespace ots
 {

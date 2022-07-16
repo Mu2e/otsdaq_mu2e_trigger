@@ -1,7 +1,7 @@
-#include "otsdaq-trigger/EventBuilder/AssociativeMemoryEventBuilder.h"
+#include "otsdaq-mu2e-trigger/EventBuilder/AssociativeMemoryEventBuilder.h"
 #include "otsdaq/Macros/CoutMacros.h"
 #include "otsdaq/MessageFacility/MessageFacility.h"
-#include "otsdaq-trigger/EventBuilder/Event.h"
+#include "otsdaq-mu2e-trigger/EventBuilder/Event.h"
 
 #include <iostream>
 

@@ -1,8 +1,8 @@
 # ======================================================================
-#  otsdaq-trigger main build file
+#  otsdaq-mu2e-trigger main build file
 #
 #  cd .../path/to/build/directory
-#  source .../path/to/otsdaq-trigger/ups/setup_for_development
+#  source .../path/to/otsdaq-mu2e-trigger/ups/setup_for_development
 #  buildtool
 # ======================================================================
 
@@ -100,7 +100,7 @@ include(BuildPlugins)
 include(CetTest)
 
 # Code
-add_subdirectory(otsdaq-trigger)
+add_subdirectory(otsdaq-mu2e-trigger)
 
 # Useful scripts
 add_subdirectory(tools)

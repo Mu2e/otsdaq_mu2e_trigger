@@ -1,7 +1,7 @@
-#include "otsdaq-trigger/EventBuilder/EventDataSaver.h"
+#include "otsdaq-mu2e-trigger/EventBuilder/EventDataSaver.h"
 #include "otsdaq/Macros/CoutMacros.h"
 #include "otsdaq/MessageFacility/MessageFacility.h"
-#include "otsdaq-trigger/EventBuilder/Event.h"
+#include "otsdaq-mu2e-trigger/EventBuilder/Event.h"
 
 #include <cassert>
 #include <iostream>

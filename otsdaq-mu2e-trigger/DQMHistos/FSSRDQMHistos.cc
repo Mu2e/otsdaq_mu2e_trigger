@@ -1,6 +1,6 @@
-#include "otsdaq-trigger/DQMHistos/FSSRDQMHistos.h"
-#include "otsdaq-trigger/DataDecoders/FSSRData.h"
-//#include "otsdaq-trigger/DataDecoders/VIPICData.h"
+#include "otsdaq-mu2e-trigger/DQMHistos/FSSRDQMHistos.h"
+#include "otsdaq-mu2e-trigger/DataDecoders/FSSRData.h"
+//#include "otsdaq-mu2e-trigger/DataDecoders/VIPICData.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationTree.h"
 #include "otsdaq/NetworkUtilities/NetworkConverters.h"
 

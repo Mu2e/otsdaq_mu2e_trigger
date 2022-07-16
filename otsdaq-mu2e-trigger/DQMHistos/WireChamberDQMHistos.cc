@@ -1,4 +1,4 @@
-#include "otsdaq-trigger/DQMHistos/WireChamberDQMHistos.h"
+#include "otsdaq-mu2e-trigger/DQMHistos/WireChamberDQMHistos.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationTree.h"
 
 #include <iostream>

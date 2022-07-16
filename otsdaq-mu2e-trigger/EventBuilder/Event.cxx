@@ -1,4 +1,4 @@
-#include "otsdaq-trigger/EventBuilder/Event.h"
+#include "otsdaq-mu2e-trigger/EventBuilder/Event.h"
 #include "otsdaq/Macros/CoutMacros.h"
 #include "otsdaq/MessageFacility/MessageFacility.h"
 

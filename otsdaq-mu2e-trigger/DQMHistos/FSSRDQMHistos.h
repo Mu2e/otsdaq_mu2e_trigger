@@ -5,7 +5,7 @@
 #include <queue>
 #include <string>
 #include "otsdaq/RootUtilities/DQMHistosBase.h"
-#include "otsdaq-trigger/DataDecoders/DataDecoder.h"
+#include "otsdaq-mu2e-trigger/DataDecoders/DataDecoder.h"
 // ROOT documentation
 // http://root.cern.ch/root/html/index.html
 

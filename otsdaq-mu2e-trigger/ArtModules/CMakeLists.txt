@@ -1,5 +1,5 @@
 art_make( BASENAME_ONLY
- LIBRARY_NAME otsdaq-trigger_ArtModules
+ LIBRARY_NAME otsdaq-mu2e-trigger_ArtModules
  SUBDIRS detail
  NO_PLUGINS
  EXCLUDE anatka.C 
