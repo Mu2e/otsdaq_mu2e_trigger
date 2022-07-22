@@ -1,5 +1,5 @@
-#ifndef mu2e_artdaq_core_Overlays_Offline_detail_Subsystem_hh
-#define mu2e_artdaq_core_Overlays_Offline_detail_Subsystem_hh
+#ifndef otsdaq_mu2e_trigger_ArtModules_detail_Subsystem_hh
+#define otsdaq_mu2e_trigger_ArtModules_detail_Subsystem_hh
 
 namespace mu2e {
 namespace detail {

@@ -1,7 +1,7 @@
 # The parent line must be the first non-comment line in the file
 # This line defines the product name and version
 parent otsdaq_mu2e_trigger
-defaultqual	e20:s114
+defaultqual     e20:s114
 
 # These optional lines define the installed directories where
 # headers, libraries, and executables will be found
@@ -25,9 +25,9 @@ end_product_list
 
 # -nq- here means there is no qualifier
 # a "-" here means the dependent product is not required by the parent and will not be setup
-qualifier		otsdaq_mu2e		offline				notes
-e20:s116:prof	e20:s116:prof	e20:trig:s116:prof	-std=c++17
-e20:s116:debug	e20:s116:debug	e20:trig:s116:debug	-std=c++17
+qualifier       otsdaq_mu2e     offline                 notes
+e20:s116:prof   e20:s116:prof   e20:trig:s116:prof      -std=c++17
+e20:s116:debug  e20:s116:debug  e20:trig:s116:debug     -std=c++17
 
 end_qualifier_list
 
