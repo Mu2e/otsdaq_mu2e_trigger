@@ -24,6 +24,9 @@ public:
 	void   createTrackingFiltersEpilog   (std::ofstream& EpilogFclFile, std::string& EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
 	void   createHelixFiltersEpilog      (std::ofstream& EpilogFclFile, std::string& EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
 	void   createDigiCountFiltersEpilog  (std::ofstream& EpilogFclFile, std::string& EpilogDir, std::string& TrigPath, ots::ConfigurationTree  ConfTree);
+	
+	std::string GetModuleNameFromPath    (std::string &TrigPath);
+
 
 private:
 	bool 	isFirstAppInContext_;

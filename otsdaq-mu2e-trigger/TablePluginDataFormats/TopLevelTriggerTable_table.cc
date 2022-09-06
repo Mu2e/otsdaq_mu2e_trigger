@@ -6,6 +6,7 @@
 #include <fstream>      // std::fstream
 #include <stdio.h>
 #include <sys/stat.h> 	//for mkdir
+#include <regex>
 
 using namespace ots;
 
@@ -256,6 +257,49 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 }
 
 
+//----------------------------------------------------------------------------------------------------
+// this function creates a string usde to set the module names in a given trigPath
+//----------------------------------------------------------------------------------------------------
+std::string TopLevelTriggerTable::GetModuleNameFromPath(std::string &TrigPath)
+{
+  std::string del("_");
+  std::string name(TrigPath);
+  std::string newName = "";
+  __COUT__     << "TrigPath = " << TrigPath << __E__;
+  
+  auto pos = name.find(del);
+  if(pos == std::string::npos) {
+    newName = name;
+  }else {
+    newName = name.substr(0,pos);
+    name.erase(0, pos+del.length());
+    __COUT__     << "newName = " <<newName << ", name = "<< name<< __E__;
+    
+    
+    //while(name.length() >0)
+    do
+      {
+	auto pos = name.find(del);
+	std::string token = name.substr(0, pos);
+	if ( (pos == std::string::npos) && (name.length()>0)){
+	  token = name;
+	  name  = "";
+	}
+	if ( (newName != "") && (token.find("timing") == std::string::npos) ) //convert to upper case the first letter
+	  {
+	    token[0] = token[0] - 32;
+	    newName += token;
+	  }
+	name.erase(0, pos+del.length());
+	__COUT__     << "[while ] newName = " <<newName << ", name = "<< name<< __E__;
+
+      }     while(name.length() >0); //name.find(del) != std::string::npos);
+  }
+  return newName;
+}
+
+
+
 //--------------------------------------------------------------------------------------------------------
 // this function creates the epilog for the Prescaler module used at the end of each path
 //--------------------------------------------------------------------------------------------------------
@@ -277,6 +321,7 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
   EpilogFclFile << "#include \"Trigger_epilogs/" << TrigPath<<"/" << TrigPath << filtName <<".fcl\""<<__E__; 
       
   __COUT__       << "singlePathPairFclName: "<< singlePathPairFclName <<  __E__; 
+  std::string     moduleNameHeader = GetModuleNameFromPath(TrigPath);
 
   subEpilogFclFile.open(singlePathPairFclName);
       
@@ -286,7 +331,7 @@ void   TopLevelTriggerTable::createPrescaleEpilog (std::ofstream& EpilogFclFile,
     }
   else
     {
-      subEpilogFclFile << "art.physics.filters."<<  TrigPath << filtName << ".nPrescale : " <<  prescaleFactor  << __E__; 
+      subEpilogFclFile << "art.physics.filters."<<  moduleNameHeader << filtName << ".nPrescale : " <<  prescaleFactor  << __E__; 
       subEpilogFclFile.close();
     }
   
@@ -310,6 +355,8 @@ void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFc
   std::string     filtNames[nFilters] = {"SDCountFilter","TCFilter", "HSFilter", "TSFilter","TriggerInfoMerger"};
 
   __COUT__       << "createTrackingFiltersEpilog starts..." << __E__;
+
+  std::string     moduleNameHeader = GetModuleNameFromPath(TrigPath);
 
   for (int i=0; i<nFilters; ++i)
     {
@@ -337,11 +384,11 @@ void   TopLevelTriggerTable::createTrackingFiltersEpilog(std::ofstream& EpilogFc
 		ots::ConfigurationTree    valNode = params.second.getNode("value");
 		std::string    val =  valNode.getValue<std::string>();
 		__COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-		subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+		subEpilogFclFile << "art.physics.filters."<<  moduleNameHeader <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
 	      }
 	  }
 	  else {
-	    subEpilogFclFile << "art.physics.producers."<<  TrigPath <<filtNames[i] <<" : "<< " { module_type : MergeTriggerInfo }" <<  __E__; 
+	    subEpilogFclFile << "art.physics.producers."<<  moduleNameHeader <<filtNames[i] <<" : "<< " { module_type : MergeTriggerInfo }" <<  __E__; 
 	  }
 	  subEpilogFclFile.close();
 	}
@@ -364,6 +411,7 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
   std::string     filtNames[nFilters] = {"SDCountFilter", "TCFilter", "HSFilter","TriggerInfoMerger"};
 
   __COUT__       << "createHelixFiltersEpilog starts..." << __E__;
+  std::string     moduleNameHeader = GetModuleNameFromPath(TrigPath);
 
   for (int i=0; i<nFilters; ++i)
     {
@@ -393,11 +441,11 @@ void   TopLevelTriggerTable::createHelixFiltersEpilog(std::ofstream& EpilogFclFi
 		ots::ConfigurationTree    valNode = params.second.getNode("value");
 		std::string    val =  valNode.getValue<std::string>();
 		__COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-		subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+		subEpilogFclFile << "art.physics.filters."<<  moduleNameHeader <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
 	      }
 	  }else 
 	    {
-	      subEpilogFclFile << "art.physics.producers."<<  TrigPath <<filtNames[i] <<" : "<< " { module_type : MergeTriggerInfo }" <<  __E__; 
+	      subEpilogFclFile << "art.physics.producers."<<  moduleNameHeader <<filtNames[i] <<" : "<< " { module_type : MergeTriggerInfo }" <<  __E__; 
 	    }
 	  subEpilogFclFile.close();
 	}
@@ -417,6 +465,7 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
   std::string     filtNames[nFilters] = {"SDCountFilter"};
 
   __COUT__       << "createDigiCountiltersEpilog starts..." << __E__;
+  std::string     moduleNameHeader = GetModuleNameFromPath(TrigPath);
 
   for (int i=0; i<nFilters; ++i)
     {
@@ -448,7 +497,7 @@ void   TopLevelTriggerTable::createDigiCountFiltersEpilog(std::ofstream& EpilogF
 	      ots::ConfigurationTree    valNode = params.second.getNode("value");
 	      std::string    val =  valNode.getValue<std::string>();
 	      __COUT__ << filtNames[i] << " param value: "    << val<< __E__;
-	      subEpilogFclFile << "art.physics.filters."<<  TrigPath <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
+	      subEpilogFclFile << "art.physics.filters."<<  moduleNameHeader <<filtNames[i] <<"."<< valName<<" : " <<  val  << __E__; 
 	    }
 	  subEpilogFclFile.close();
 	}
