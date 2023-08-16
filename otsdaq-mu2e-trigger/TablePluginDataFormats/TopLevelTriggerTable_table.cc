@@ -21,6 +21,8 @@ using namespace ots;
 #define PUSHCOMMENT				commentStr += "# "
 #define POPCOMMENT				commentStr.resize(commentStr.size()-2)
 
+#undef __COUT__
+#define __COUT__ 			__COUT_TYPE__(TLVL_DEBUG+10)
 
 //========================================================================================================================
 TopLevelTriggerTable::TopLevelTriggerTable(void)
