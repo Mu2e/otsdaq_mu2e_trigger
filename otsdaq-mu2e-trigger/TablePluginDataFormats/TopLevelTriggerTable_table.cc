@@ -22,7 +22,7 @@ using namespace ots;
 #define POPCOMMENT				commentStr.resize(commentStr.size()-2)
 
 #undef __COUT__
-#define __COUT__ 			__COUT_TYPE__(TLVL_DEBUG+10)
+#define __COUT__ 			__COUT_TYPE__(TLVL_DEBUG+10) << __COUT_HDR__
 
 //========================================================================================================================
 TopLevelTriggerTable::TopLevelTriggerTable(void)
