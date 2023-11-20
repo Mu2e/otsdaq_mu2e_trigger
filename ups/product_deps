@@ -28,13 +28,9 @@ end_product_list
 qualifier       otsdaq_mu2e     Offline                 notes
 e28:s126:prof	e28:s126:prof	e28:trig:s126:prof	-std=c++20
 e28:s126:debug	e28:s126:debug	e28:trig:s126:debug	-std=c++20
-e20:s126:prof	e20:s126:prof	e20:trig:s126:prof	-std=c++17
-e20:s126:debug	e20:s126:debug	e20:trig:s126:debug	-std=c++17
 
 e28:s124:prof	e28:s124:prof	e28:trig:s124:prof	-std=c++20
 e28:s124:debug	e28:s124:debug	e28:trig:s124:debug	-std=c++20
-e20:s124:prof	e20:s124:prof	e20:trig:s124:prof	-std=c++17
-e20:s124:debug	e20:s124:debug	e20:trig:s124:debug	-std=c++17
 
 end_qualifier_list
 
