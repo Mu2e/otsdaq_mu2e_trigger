@@ -18,14 +18,21 @@ fcldir      fq_dir      fcl
 
 #
 product			version		optional
-otsdaq_mu2e		v1_03_02
-offline			d10_22_02
-cetmodules		v3_21_02	-	only_for_build
+otsdaq_mu2e		v1_04_00
+Offline			v11_00_00
+cetmodules		v3_22_02	-	only_for_build
 end_product_list
 
 # -nq- here means there is no qualifier
 # a "-" here means the dependent product is not required by the parent and will not be setup
-qualifier       otsdaq_mu2e     offline                 notes
+qualifier       otsdaq_mu2e     Offline                 notes
+e28:s126:prof	e28:s126:prof	e28:trig:s126:prof	-std=c++20
+e28:s126:debug	e28:s126:debug	e28:trig:s126:debug	-std=c++20
+e20:s126:prof	e20:s126:prof	e20:trig:s126:prof	-std=c++17
+e20:s126:debug	e20:s126:debug	e20:trig:s126:debug	-std=c++17
+
+e28:s124:prof	e28:s124:prof	e28:trig:s124:prof	-std=c++20
+e28:s124:debug	e28:s124:debug	e28:trig:s124:debug	-std=c++20
 e20:s124:prof	e20:s124:prof	e20:trig:s124:prof	-std=c++17
 e20:s124:debug	e20:s124:debug	e20:trig:s124:debug	-std=c++17
 
