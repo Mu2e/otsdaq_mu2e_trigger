@@ -10,7 +10,7 @@ cmake_minimum_required (VERSION 3.19 FATAL_ERROR)
 
 find_package(cetmodules 3.16.00 REQUIRED)
 
-project(otsdaq_mu2e_trigger VERSION 1.04.00)
+project(otsdaq_mu2e_trigger VERSION 3.00.00)
 
 include(CetCMakeEnv)
 cet_cmake_env()
@@ -32,8 +32,8 @@ cet_set_compiler_flags(DIAGS VIGILANT
 find_package(otsdaq_mu2e 1.02.00 REQUIRED)
 
 # Mu2e Offline Extra setup
-include_directories($ENV{OFFLINE_INC} $ENV{BTRK_INC} $ENV{KINKAL_INC})
-link_directories($ENV{OFFLINE_LIB})
+include_directories($ENV{BTRK_INC} $ENV{KINKAL_INC})
+link_directories($ENV{BTRK_LIB} $ENV{KINKAL_LIB})
 
  # XDAQ Extra setup
  include_directories($ENV{XDAQ_INC} $ENV{XDAQ_INC}/linux)
