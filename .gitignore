@@ -19,3 +19,5 @@ products
 setupARTDAQOTS
 *.vcxproj*
 CMakePresets.json
+build-linux-*
+spack-build-* 
