@@ -149,7 +149,13 @@ void TopLevelTriggerTable::init(ConfigurationManager* configManager)
 	  //we need to append the line where we instantiate the given TriggerPath
 	  //	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
 	  // allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, CaloDigiMaker, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]\n" << __E__; 
-	  allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ makeSD, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]" << __E__; 
+	  //allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ dtcEventVerifier, artFragFromDTCEvents, makeSD, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]" << __E__; 
+	  if (triggerType!="Unbiased"){
+	    allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ artFragFromDTCEvents, makeSD, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]" << __E__; 
+	  }
+	  else {
+	    allPathsFile << "art.physics." << triggerPathPair.first  << "_trigger  : [ artFragFromDTCEvents, @sequence::Trigger.paths."<< triggerPathPair.first<< " ]" << __E__; 	  
+	  }
 	  allPathsFile << "art.physics.trigger_paths["<< pathID <<"] : " << triggerPathPair.first  << "_trigger \n"<< __E__; 
 	  
 	  epilogFclFile.open(epilogName.c_str());
