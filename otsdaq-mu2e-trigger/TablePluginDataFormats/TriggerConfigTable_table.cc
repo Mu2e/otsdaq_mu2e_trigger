@@ -1,4 +1,4 @@
-#include "otsdaq-mu2e-trigger/TablePluginDataFormats/TriggerTableFromJSON.h"
+#include "otsdaq-mu2e-trigger/TablePluginDataFormats/TriggerConfigTable.h"
 #include "otsdaq/Macros/TablePluginMacros.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
 //#include "otsdaq/tools/otsdaq_load_json_document.cc"
@@ -26,23 +26,23 @@ using namespace ots;
 #define __COUT__ 			__COUT_TYPE__(TLVL_DEBUG+10) << __COUT_HDR__
 
 //========================================================================================================================
-TriggerTableFromJSON::TriggerTableFromJSON(void)
-  : TableBase("TriggerTableFromJSON")
+TriggerConfigTable::TriggerConfigTable(void)
+  : TableBase("TriggerConfigTable")
 {
   //////////////////////////////////////////////////////////////////////
   //WARNING: the names used in C++ MUST match the Table INFO  //
   //////////////////////////////////////////////////////////////////////
-  __COUT__ <<"[TriggerTableFromJSON::TriggerTableFromJSON] Initializing the TriggerTableFromJSON plugin..." << __E__;
+  __COUT__ <<"[TriggerConfigTable::TriggerConfigTable] Initializing the TriggerConfigTable plugin..." << __E__;
   //  exit(0);
   __COUT__ << StringMacros::stackTrace() << __E__;
 } //end constructor
 
 //========================================================================================================================
-TriggerTableFromJSON::~TriggerTableFromJSON(void)
+TriggerConfigTable::~TriggerConfigTable(void)
 {}
 
 //========================================================================================================================
-void TriggerTableFromJSON::init(ConfigurationManager* configManager)
+void TriggerConfigTable::init(ConfigurationManager* configManager)
 {
   isFirstAppInContext_ = configManager->isOwnerFirstAppInContext();
 	
@@ -57,22 +57,34 @@ void TriggerTableFromJSON::init(ConfigurationManager* configManager)
   trigEpilogsDir = ARTDAQ_FCL_PATH + fcl_dir;
   mkdir(trigEpilogsDir.c_str(), 0755);
 
+  auto childrenMap = configManager->__SELF_NODE__.getChildren();
+  __COUT__ <<"printing children content"<<__E__;
+  __COUT__ <<"children map size"<<childrenMap.size() << __E__;
+
+  
+  auto & topLevelPair = childrenMap.at(0);
+  __COUT__       << "Main table name '" << topLevelPair.first << "'" << __E__;
+  auto triggerMenuName    = topLevelPair.second.getNode("TriggerDocName").getValue();
+  auto triggerMenuVersion = topLevelPair.second.getNode("TriggerConfigTag").getValue();
+  
+    
   //now download from MONGO-Db the trigger table to be used
   std::string    getTableFromMongoDb = "otsdaq_load_json_document ";
-  std::string    triggerTableName    = " testTriggerDoc ";
-  std::string    triggerTableVersion = " 0 ";
-  std::string    outputFileName      = ARTDAQ_FCL_PATH + "trigger_table.json";
+  std::string    triggerTableName    = triggerMenuName; //" testTriggerDoc ";
+  std::string    triggerTableVersion = triggerMenuVersion;//" 6 ";
+  std::string    outputFileName      = ARTDAQ_FCL_PATH + "/physMenu.json";
   
-  getTableFromMongoDb += triggerTableName + triggerTableVersion + triggerTableVersion + outputFileName;
+  getTableFromMongoDb += triggerTableName + " "+ triggerTableVersion + " " + outputFileName;
+  __COUT__ << "otsdaq_load_json command: " << getTableFromMongoDb << __E__;;
   system(getTableFromMongoDb.c_str());
   
 
   __COUT__ << StringMacros::stackTrace() << __E__;
 
-  std::string      command  = "python mu2e_trig_config/python/generateMenuFromJSON.py";
-  std::string      menuFile = " -mf " + outputFileName;//"mu2e_trig_config/data/physMenu.json";
+  std::string      command  = "python ${SPACK_ENV}/mu2e-trig-config/python/generateMenuFromJSON.py";
+  std::string      menuFile = " -mf " + outputFileName;
   std::string      output   = " -o " + trigEpilogsDir;
-  std::string      evtMode  = " -evtMode All";
+  std::string      evtMode  = " -evtMode all";
   
   command += menuFile + output + evtMode;
   system(command.c_str());
@@ -229,7 +241,7 @@ void TriggerTableFromJSON::init(ConfigurationManager* configManager)
 //----------------------------------------------------------------------------------------------------
 // this function creates a string usde to set the module names in a given trigPath
 //----------------------------------------------------------------------------------------------------
-std::string TriggerTableFromJSON::GetModuleNameFromPath(std::string &TrigPath)
+std::string TriggerConfigTable::GetModuleNameFromPath(std::string &TrigPath)
 {
   std::string del("_");
   std::string name(TrigPath);
@@ -268,4 +280,4 @@ std::string TriggerTableFromJSON::GetModuleNameFromPath(std::string &TrigPath)
 }
 
 
-DEFINE_OTS_TABLE(TriggerTableFromJSON)
+DEFINE_OTS_TABLE(TriggerConfigTable)

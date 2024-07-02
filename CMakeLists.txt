@@ -29,11 +29,13 @@ cet_set_compiler_flags(DIAGS VIGILANT
 #cet_report_compiler_flags()
 
 # these are minimum required versions, not the actual product versions
-find_package(otsdaq_mu2e 1.02.00 REQUIRED)
+#find_package(otsdaq_mu2e 1.02.00 REQUIRED)
+find_package(XMLRPC COMPONENTS c++2 client abyss-server REQUIRED EXPORT)
+find_package(otsdaq 2.08.00 REQUIRED)
 
 # Mu2e Offline Extra setup
-include_directories($ENV{BTRK_INC} $ENV{KINKAL_INC})
-link_directories($ENV{BTRK_LIB} $ENV{KINKAL_LIB})
+#include_directories($ENV{BTRK_INC} $ENV{KINKAL_INC})
+#link_directories($ENV{BTRK_LIB} $ENV{KINKAL_LIB})
 
  # XDAQ Extra setup
  include_directories($ENV{XDAQ_INC} $ENV{XDAQ_INC}/linux)
