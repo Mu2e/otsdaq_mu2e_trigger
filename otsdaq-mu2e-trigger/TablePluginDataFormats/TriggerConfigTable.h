@@ -1,5 +1,5 @@
-#ifndef _ots_TriggerTableFromJSON_h_
-#define _ots_TriggerTableFromJSON_h_
+#ifndef _ots_TriggerConfigTable_h_
+#define _ots_TriggerConfigTable_h_
 
 #include "otsdaq/TableCore/TableBase.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
@@ -10,13 +10,13 @@
 namespace ots
 {
 
-  class TriggerTableFromJSON : public TableBase
+  class TriggerConfigTable : public TableBase
 {
 
 public:
 
-	TriggerTableFromJSON(void);
-	virtual ~TriggerTableFromJSON(void);
+	TriggerConfigTable(void);
+	virtual ~TriggerConfigTable(void);
 
 	//Methods
 	void   init                          (ConfigurationManager *configManager);
