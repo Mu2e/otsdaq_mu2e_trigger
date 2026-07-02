@@ -1,5 +1,6 @@
 #include "otsdaq-mu2e-trigger/TablePlugins/TriggerConfigTable.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
+#include "otsdaq/Macros/StringMacros.h"
 #include "otsdaq/Macros/TablePluginMacros.h"
 //#include "otsdaq/tools/otsdaq_load_json_document.cc"
 
@@ -90,6 +91,17 @@ void TriggerConfigTable::initPrereqsForARTDAQ(const ConfigurationManager* config
 		          "and tag!"
 		       << __E__;
 		__SS_THROW__;
+	}
+
+	// Seed artdaq system variable defaults for trigger menu fields
+	// so ${OTS.artdaq.triggerMenuName} and ${OTS.artdaq.triggerMenuTag}
+	// resolve to empty if not set by the user via the web GUI.
+	{
+		auto& ns = StringMacros::systemVariables_["artdaq"];
+		if(ns.find("triggerMenuName") == ns.end())
+			ns["triggerMenuName"] = "";
+		if(ns.find("triggerMenuTag") == ns.end())
+			ns["triggerMenuTag"] = "";
 	}
 
 	auto& topLevelPair = childrenMap.at(0);
