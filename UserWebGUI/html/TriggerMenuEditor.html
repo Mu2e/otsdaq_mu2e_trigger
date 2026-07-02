@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Trigger Menu Editor</title>
+
+    <link href='/WebPath/css/fonts.css?family=Comfortaa:700,400&subset=latin,greek' rel='stylesheet' type='text/css'>
+    <link href='/WebPath/css/fonts.css?family=Inconsolata:400' rel='stylesheet' type='text/css'>
+
+    <script type="text/JavaScript" src="/WebPath/js/Globals.js"></script>
+    <script type="text/JavaScript" src="/WebPath/js/Debug.js"></script>
+    <script type="text/JavaScript" src="/WebPath/js/DesktopContent.js"></script>
+
+    <script type="text/JavaScript" src="TriggerMenuEditor.js"></script>
+
+    <style type="text/css">
+
+        body {
+            background-color: transparent;
+            font-family: 'Comfortaa', serif;
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+
+        #mainContainer {
+            position: absolute;
+            padding: 15px;
+            text-align: left;
+            color: #4D2600;
+            box-shadow: inset rgba(255,254,255,0.6) 0 0.3em .3em, inset rgba(0,0,0,0.15) 0 -0.1em .3em,
+                rgba(200, 200, 200,0.6) 0 .1em 3px, rgba(200, 200, 200,0.6) 0 .1em 1px,
+                rgba(0,0,0,0.2) 0 .5em 5px;
+            border-radius: 3px;
+            overflow-y: auto;
+        }
+
+        h2 {
+            font-family: 'Comfortaa', serif;
+            font-size: 18px;
+            margin: 0 0 4px 0;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-bottom: 15px;
+        }
+
+        .sectionHeader {
+            font-family: 'Comfortaa', serif;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 0 8px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(0,0,0,0.15);
+        }
+
+        .sectionPanel {
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+            box-shadow: inset rgba(255,254,255,0.4) 0 0.2em .2em, inset rgba(0,0,0,0.1) 0 -0.05em .2em,
+                rgba(200, 200, 200,0.4) 0 .05em 2px, rgba(200, 200, 200,0.4) 0 .05em 1px,
+                rgba(0,0,0,0.1) 0 .3em 3px;
+            background-color: rgba(255,255,255,0.15);
+        }
+
+        .tme-hint {
+            font-size: 11px;
+            opacity: 0.6;
+            margin-bottom: 10px;
+        }
+
+        .tme-hint code {
+            font-family: 'Inconsolata', monospace;
+            padding: 1px 3px;
+            border-radius: 2px;
+            background-color: rgba(0,0,0,0.08);
+        }
+
+        .tme-row {
+            display: flex;
+            align-items: center;
+            margin: 6px 0;
+            gap: 8px;
+        }
+
+        .tme-row label {
+            min-width: 140px;
+            font-family: 'Inconsolata', monospace;
+            font-size: 13px;
+        }
+
+        .tme-row input[type="text"] {
+            flex: 1;
+            padding: 4px 6px;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 3px;
+            font-family: 'Inconsolata', monospace;
+            font-size: 13px;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        .tme-row input[type="text"]:focus {
+            border-color: rgb(80, 120, 200);
+            outline: none;
+            background-color: rgba(255,255,255,0.8);
+        }
+
+        .tme-row select {
+            flex: 1;
+            padding: 4px 6px;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 3px;
+            font-family: 'Inconsolata', monospace;
+            font-size: 13px;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        button, select, input, option {
+            font-family: 'Comfortaa', serif;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4D2600;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a.disabledLink {
+            opacity: 0.4;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .tme-btn {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: 'Comfortaa', serif;
+            cursor: pointer;
+            border: 1px solid rgba(0,0,0,0.2);
+            background-color: rgba(255,255,255,0.3);
+            color: #4D2600;
+            box-shadow: inset rgba(255,254,255,0.4) 0 0.1em .1em,
+                rgba(0,0,0,0.1) 0 .1em 2px;
+            user-select: none;
+        }
+
+        .tme-btn:hover {
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        .tme-btn:disabled {
+            opacity: 0.4;
+            cursor: default;
+        }
+
+        #statusBar {
+            text-align: center;
+            margin-top: 8px;
+            font-size: 12px;
+            min-height: 16px;
+        }
+
+        #statusBar.success { color: rgb(30, 140, 60); }
+        #statusBar.error   { color: rgb(200, 40, 40); }
+        #statusBar.info    { color: rgb(35, 108, 176); }
+
+        #tme-menu-browser {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        #tme-menu-browser table,
+        #tme-path-table table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: 'Inconsolata', monospace;
+            font-size: 13px;
+        }
+
+        #tme-menu-browser th,
+        #tme-path-table th {
+            text-align: left;
+            padding: 3px 6px;
+            font-size: 11px;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            font-family: 'Comfortaa', serif;
+        }
+
+        #tme-menu-browser td,
+        #tme-path-table td {
+            padding: 3px 6px;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        #tme-path-table {
+            max-height: 400px;
+            overflow-y: auto;
+            transition: background-color 0.2s ease;
+        }
+
+        #tme-path-table.dirty {
+            background-image: repeating-linear-gradient(
+                45deg,
+                rgba(255, 180, 60, 0.25),
+                rgba(255, 180, 60, 0.25) 10px,
+                rgba(255, 220, 150, 0.25) 10px,
+                rgba(255, 220, 150, 0.25) 20px
+            );
+        }
+
+        #tme-path-table input[type="number"] {
+            width: 60px;
+            padding: 2px 4px;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 3px;
+            font-family: 'Inconsolata', monospace;
+            font-size: 12px;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        #tme-path-table input[type="number"].dirty {
+            border-color: rgb(200, 140, 30);
+            background-color: rgba(255, 230, 180, 0.5);
+        }
+
+        .tme-enabled-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-family: 'Comfortaa', serif;
+            font-size: 11px;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+        }
+
+        .tme-enabled-badge.tme-enabled-on {
+            background-color: rgba(40, 160, 70, 0.2);
+            color: rgb(20, 110, 45);
+        }
+
+        .tme-enabled-badge.tme-enabled-off {
+            background-color: rgba(200, 40, 40, 0.15);
+            color: rgb(160, 30, 30);
+        }
+
+        .tme-enabled-badge:hover {
+            opacity: 0.75;
+        }
+
+        .tme-enabled-badge.dirty {
+            border-color: rgb(200, 140, 30);
+        }
+
+        .tme-streams {
+            font-size: 10px;
+            opacity: 0.6;
+        }
+
+        #tme-current-doc {
+            font-family: 'Inconsolata', monospace;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #tme-current-doc .tme-doc-label {
+            font-family: 'Comfortaa', serif;
+            font-weight: normal;
+            font-size: 11px;
+            opacity: 0.6;
+            margin-right: 4px;
+        }
+
+        #tme-current-doc .tme-doc-sep {
+            margin: 0 10px;
+            opacity: 0.4;
+        }
+
+        #tme-raw-json-toggle {
+            font-family: 'Comfortaa', serif;
+            font-weight: bold;
+        }
+
+        #tme-raw-json {
+            max-height: 400px;
+            overflow: auto;
+            margin: 8px 0 0 0;
+            padding: 8px;
+            font-family: 'Inconsolata', monospace;
+            font-size: 12px;
+            white-space: pre;
+            background-color: rgba(0,0,0,0.05);
+            border-radius: 3px;
+        }
+
+    </style>
+
+
+    <script>
+
+    //=====================================================================================
+    //init ~~
+    //  init called once body has loaded
+    function init()
+    {
+        var styleEl = document.getElementsByTagName('style')[0];
+        var str = styleEl.innerHTML;
+        str = str.replace(/#4D2600/g, DesktopContent.getDefaultDesktopColor());
+        styleEl.innerHTML = str;
+
+        document.body.style.backgroundColor = DesktopContent.getDefaultWindowColor();
+
+        window.onresize = redrawWindow;
+        redrawWindow();
+
+        TriggerMenuEditor.init();
+
+        document.body.style.display = "block";
+    } //end init()
+
+    //=====================================================================================
+    function redrawWindow()
+    {
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        var margin = 10;
+
+        var el = document.getElementById("mainContainer");
+        el.style.left   = margin + "px";
+        el.style.top    = margin + "px";
+        el.style.width  = (w - margin*2 - 30) + "px";
+        el.style.height = (h - margin*2 - 30) + "px";
+    } //end redrawWindow()
+
+    </script>
+</head>
+
+
+<body onload='//init() called by DesktopContent.js'>
+
+<div id="mainContainer">
+
+    <h2>Trigger Menu Editor</h2>
+    <div class="subtitle">Browse, inspect, and edit Mu2e trigger menu documents</div>
+
+    <div class="sectionPanel">
+        <div class="sectionHeader">System Variables</div>
+        <div class="tme-hint">
+            Used by <code>TriggerConfigTable</code> at Configure time via
+            <code>${OTS.artdaq.*}</code> substitution.
+        </div>
+
+        <div class="tme-row">
+            <label>outputBaseDir</label>
+            <input type="text" id="tme-outputBaseDir" placeholder="/path/to/output">
+            <a class="tme-btn" onclick="TriggerMenuEditor.saveVariable('outputBaseDir', 'tme-outputBaseDir')">Save</a>
+        </div>
+
+        <div class="tme-row">
+            <label>triggerMenuName</label>
+            <select id="tme-triggerMenuName" onchange="TriggerMenuEditor.onMenuNameVarChange()"></select>
+            <a class="tme-btn" onclick="TriggerMenuEditor.saveVariable('triggerMenuName', 'tme-triggerMenuName')">Save</a>
+        </div>
+
+        <div class="tme-row">
+            <label>triggerMenuTag</label>
+            <select id="tme-triggerMenuTag"></select>
+            <a class="tme-btn" onclick="TriggerMenuEditor.saveVariable('triggerMenuTag', 'tme-triggerMenuTag')">Save</a>
+        </div>
+
+        <div id="statusBar"></div>
+    </div>
+
+    <div class="sectionPanel">
+        <div class="sectionHeader">Trigger Menu Browser</div>
+        <div class="tme-hint">
+            Click a version to load its trigger paths below.
+        </div>
+        <div id="tme-menu-browser">Loading...</div>
+        <div style="margin-top:8px;">
+            <a onclick="TriggerMenuEditor.loadJsonDocuments()">Refresh</a>
+        </div>
+    </div>
+
+    <div class="sectionPanel">
+        <div class="sectionHeader">Trigger Paths</div>
+        <div class="tme-hint">
+            Prescale <code>-1</code> means the path is off for that event mode.
+        </div>
+        <div id="tme-current-doc">No menu loaded.</div>
+        <div id="tme-path-table"></div>
+        <div style="margin-top:10px;">
+            <a class="tme-btn disabledLink" id="tme-save-btn" onclick="TriggerMenuEditor.saveAsNewVersion()">Save as New Version</a>
+        </div>
+    </div>
+
+    <div class="sectionPanel">
+        <div class="sectionHeader">
+            <a id="tme-raw-json-toggle" onclick="TriggerMenuEditor.toggleRawJson()">&#9656; Raw JSON</a>
+        </div>
+        <pre id="tme-raw-json" style="display:none;">No menu loaded.</pre>
+    </div>
+
+</div>
+
+</body>
+</html>
