@@ -10,25 +10,106 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 	var _currentDoc = null;
 	var _dirty = false;
 
+	// default outputBaseDir choices always present in the dropdown
+	var OUTPUT_BASE_DIR_DEFAULTS = [
+		"/data/DAQ/dropbox",
+		"/data/mu2e/DAQ/debug"
+	];
+
 	//=====================================================================================
 	TriggerMenuEditor.init = function() {
 		Debug.log("TriggerMenuEditor.init() localUrnLid=" + DesktopContent._localUrnLid +
 			" localOrigin=" + DesktopContent._localOrigin);
+		initOutputBaseDirSelect();
 		TriggerMenuEditor.loadVariables();
 		TriggerMenuEditor.loadJsonDocuments();
 	}; //end init()
 
 	//=====================================================================================
-	TriggerMenuEditor.loadVariables = function() {
-		DesktopContent.XMLHttpRequest(
-			"Request?RequestType=getArtdaqSystemVariables",
-			"",
-			function(req) {
-				if (!req) {
-					showStatus("Error loading variables", "error");
-					return;
-				}
+	// outputBaseDir is a dropdown of known paths plus an "Edit" button that
+	// swaps to a free-text field for entering a new custom path. Any value
+	// that isn't already an option (loaded from the server, or typed by the
+	// user) gets added to the dropdown and selected.
 
+	function initOutputBaseDirSelect() {
+		var sel = document.getElementById("tme-outputBaseDir-select");
+		if (!sel) return;
+		sel.innerHTML = "";
+		for (var i = 0; i < OUTPUT_BASE_DIR_DEFAULTS.length; i++)
+			addOutputBaseDirOption(OUTPUT_BASE_DIR_DEFAULTS[i]);
+	} //end initOutputBaseDirSelect()
+
+	//=====================================================================================
+	// Ensures value exists as an option in the dropdown (adding it if needed)
+	// and selects it. No-op for empty values.
+	function setOutputBaseDir(value) {
+		var sel = document.getElementById("tme-outputBaseDir-select");
+		if (!sel || !value) return;
+		addOutputBaseDirOption(value);
+		sel.value = value;
+	} //end setOutputBaseDir()
+
+	//=====================================================================================
+	function addOutputBaseDirOption(value) {
+		var sel = document.getElementById("tme-outputBaseDir-select");
+		if (!sel) return;
+		for (var i = 0; i < sel.options.length; i++)
+			if (sel.options[i].value === value)
+				return; // already present
+		var opt = document.createElement("option");
+		opt.value = value;
+		opt.textContent = value;
+		sel.appendChild(opt);
+	} //end addOutputBaseDirOption()
+
+	//=====================================================================================
+	// The current outputBaseDir value: the text field if in edit mode,
+	// otherwise the selected dropdown option.
+	function getOutputBaseDir() {
+		var edit = document.getElementById("tme-outputBaseDir-edit");
+		if (edit && edit.style.display !== "none")
+			return edit.value;
+		var sel = document.getElementById("tme-outputBaseDir-select");
+		return sel ? sel.value : "";
+	} //end getOutputBaseDir()
+
+	//=====================================================================================
+	// "Edit" button: swap the dropdown for a free-text input (prefilled with
+	// the current selection). "Done": commit the typed value back into the
+	// dropdown (adding it if new) and swap back.
+	TriggerMenuEditor.toggleOutputBaseDirEdit = function() {
+		var sel  = document.getElementById("tme-outputBaseDir-select");
+		var edit = document.getElementById("tme-outputBaseDir-edit");
+		var btn  = document.getElementById("tme-outputBaseDir-editbtn");
+		if (!sel || !edit || !btn) return;
+
+		var editing = edit.style.display !== "none";
+		if (!editing) {
+			// switch to free-text entry
+			edit.value = sel.value;
+			sel.style.display = "none";
+			edit.style.display = "";
+			btn.textContent = "Done";
+			edit.focus();
+		} else {
+			// commit typed value back into the dropdown and save it
+			var val = edit.value.trim();
+			edit.style.display = "none";
+			sel.style.display = "";
+			btn.textContent = "Edit";
+			if (val) {
+				setOutputBaseDir(val);
+				saveVariable("outputBaseDir", val);
+			}
+		}
+	}; //end toggleOutputBaseDirEdit()
+
+	//=====================================================================================
+	TriggerMenuEditor.loadVariables = function() {
+		otsRequest(
+			"Request?RequestType=getArtdaqSystemVariables",
+			null,
+			function(req) {
 				var dataEl = req.responseXML.getElementsByTagName("DATA")[0];
 				if (!dataEl) return;
 
@@ -45,32 +126,54 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 					vars[varName] = value;
 				}
 
-				var outputBaseDirInput = document.getElementById("tme-outputBaseDir");
-				if (outputBaseDirInput && vars.outputBaseDir !== undefined) {
-					outputBaseDirInput.value = vars.outputBaseDir;
-				}
+				if (vars.outputBaseDir !== undefined)
+					setOutputBaseDir(vars.outputBaseDir);
 
 				// stash desired selections; applied once the dropdowns are populated
 				TriggerMenuEditor._pendingMenuName = vars.triggerMenuName || "";
 				TriggerMenuEditor._pendingMenuTag  = vars.triggerMenuTag  || "";
 
 				applyPendingSelections();
-			},
-			undefined, undefined, true,
-			true
+			}
 		);
 	}; //end loadVariables()
 
 	//=====================================================================================
+	// key -> function returning the value to save. outputBaseDir reads from
+	// the dropdown/edit-field combo; the others read their <select>.
 	var ARTDAQ_VARIABLE_FIELDS = [
-		{ key: "outputBaseDir",   inputId: "tme-outputBaseDir" },
-		{ key: "triggerMenuName", inputId: "tme-triggerMenuName" },
-		{ key: "triggerMenuTag",  inputId: "tme-triggerMenuTag" }
+		{ key: "outputBaseDir",   getValue: getOutputBaseDir },
+		{ key: "triggerMenuName", getValue: function() { return selectValue("tme-triggerMenuName"); } },
+		{ key: "triggerMenuTag",  getValue: function() { return selectValue("tme-triggerMenuTag"); } }
 	];
+
+	function selectValue(id) {
+		var el = document.getElementById(id);
+		return el ? el.value : "";
+	} //end selectValue()
 
 	TriggerMenuEditor.saveAllVariables = function() {
 		saveVariablesSequentially(ARTDAQ_VARIABLE_FIELDS.slice(), []);
 	}; //end saveAllVariables()
+
+	//=====================================================================================
+	// Saves one artdaq system variable. callback(errStr) is invoked with an
+	// error string on failure, or null on success.
+	function saveVariable(key, value, callback) {
+		otsRequest(
+			"Request?RequestType=setArtdaqSystemVariable",
+			{ data: "key=" + encodeURIComponent(key) +
+			        "&value=" + encodeURIComponent(value) },
+			function(/*req*/) {
+				if (callback) callback(null);
+				else showStatus("Saved " + key + ".", "success");
+			},
+			function(msg) {
+				if (callback) callback(msg);
+				else showStatus(msg, "error");
+			}
+		);
+	} //end saveVariable()
 
 	//=====================================================================================
 	function saveVariablesSequentially(remaining, errors) {
@@ -83,25 +186,10 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 		}
 
 		var field = remaining.shift();
-		var input = document.getElementById(field.inputId);
-		var value = input ? input.value : "";
-
-		DesktopContent.XMLHttpRequest(
-			"Request?RequestType=setArtdaqSystemVariable",
-			"key=" + encodeURIComponent(field.key) +
-			"&value=" + encodeURIComponent(value),
-			function(req) {
-				if (!req) {
-					errors.push("Error saving " + field.key + ".");
-				} else {
-					var errStr = DesktopContent.getXMLValue(req, "Error");
-					if (errStr) errors.push(errStr);
-				}
-				saveVariablesSequentially(remaining, errors);
-			},
-			undefined, undefined, true,
-			true
-		);
+		saveVariable(field.key, field.getValue(), function(errStr) {
+			if (errStr) errors.push(errStr);
+			saveVariablesSequentially(remaining, errors);
+		});
 	} //end saveVariablesSequentially()
 
 	//=====================================================================================
@@ -109,15 +197,10 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 		var container = document.getElementById("tme-menu-browser");
 		if (!container) return;
 
-		DesktopContent.XMLHttpRequest(
+		otsRequest(
 			"Request?RequestType=getJsonDocuments",
-			"",
+			null,
 			function(req) {
-				if (!req) {
-					container.innerHTML = "Error loading documents.";
-					return;
-				}
-
 				var dataEl = req.responseXML.getElementsByTagName("DATA")[0];
 				if (!dataEl) {
 					container.innerHTML = "No JSON documents found.";
@@ -159,8 +242,9 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 
 				renderMenuNameDropdown();
 			},
-			undefined, undefined, true,
-			true
+			function(/*msg*/) {
+				container.innerHTML = "Error loading documents.";
+			}
 		);
 	}; //end loadJsonDocuments()
 
@@ -225,22 +309,12 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 	TriggerMenuEditor.loadMenuContent = function(docName, docVersion) {
 		if (_dirty && !confirm("Discard unsaved prescale edits?")) return;
 
-		DesktopContent.XMLHttpRequest(
+		otsRequest(
 			"Request?RequestType=getJsonDocumentContent" +
 			"&docName=" + encodeURIComponent(docName) +
 			"&docVersion=" + encodeURIComponent(docVersion),
-			"",
+			null,
 			function(req) {
-				if (!req) {
-					showStatus("Error loading menu content", "error");
-					return;
-				}
-				var errStr = DesktopContent.getXMLValue(req, "Error");
-				if (errStr) {
-					showStatus(errStr, "error");
-					return;
-				}
-
 				var content = DesktopContent.getXMLValue(req, "content");
 				var json;
 				try {
@@ -260,9 +334,7 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 				updateRawJson();
 
 				showStatus("Loaded " + docName + " v" + docVersion, "success");
-			},
-			undefined, undefined, true,
-			true
+			}
 		);
 	}; //end loadMenuContent()
 
@@ -355,7 +427,6 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 
 	var _codeEditorUrn;                 // cached once resolved
 	var _fclFileCache = {};             // relativePath -> file content string
-	var _filterProducerFilesPromise;    // cached list of filters/producers fcl paths
 
 	TriggerMenuEditor.toggleSequence = function(pathName, rowId) {
 		var row = document.getElementById(rowId);
@@ -521,50 +592,49 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 
 	//=====================================================================================
 	// Fetches trigFilters.fcl and trigProducers.fcl, extracts their
-	// "#include mu2e-trig-config/..." lines, and returns that path list
-	// (cached after first call) -- so the index stays correct even if
-	// mu2e-trig-config adds/removes a filter or producer file.
+	// "#include mu2e-trig-config/..." lines, and calls back with that path
+	// list -- so the index stays correct even if mu2e-trig-config adds or
+	// removes a filter/producer file. The result is fetched once and cached;
+	// any calls that arrive while the fetch is in flight are queued and all
+	// resolved together (avoids duplicate concurrent fetches).
+	var _fpIndex = null;          // { paths, err } once resolved
+	var _fpIndexWaiters = null;   // non-null while a fetch is in flight
+
 	function fetchFilterProducerFiles(callback) {
-		if (_filterProducerFilesPromise) {
-			_filterProducerFilesPromise(callback);
+		if (_fpIndex) {                       // already resolved
+			callback(_fpIndex.paths, _fpIndex.err);
+			return;
+		}
+		if (_fpIndexWaiters) {                // fetch in flight -> queue
+			_fpIndexWaiters.push(callback);
 			return;
 		}
 
-		var resultPaths = null;
-		var resultErr   = null;
-		var pending     = [];
-
-		_filterProducerFilesPromise = function(cb) {
-			if (resultPaths || resultErr) {
-				cb(resultPaths, resultErr);
-				return;
-			}
-			pending.push(cb);
-		};
-		_filterProducerFilesPromise(callback);
-
+		_fpIndexWaiters = [callback];
 		fetchAllFcl([TRIGGER_FILTERS_INDEX_PATH, TRIGGER_PRODUCERS_INDEX_PATH],
 			function(contents, errStr) {
-				if (errStr) {
-					resultErr = errStr;
-				}
-				else {
-					var paths = [];
-					for (var i = 0; i < contents.length; i++) {
-						var m;
-						MU2E_TRIG_CONFIG_INCLUDE_RE.lastIndex = 0;
-						while ((m = MU2E_TRIG_CONFIG_INCLUDE_RE.exec(contents[i])) !== null)
-							paths.push(m[1]);
-					}
-					resultPaths = paths;
-				}
-
-				var callbacks = pending;
-				pending = [];
-				callbacks.forEach(function(cb) { cb(resultPaths, resultErr); });
+				_fpIndex = { paths: errStr ? null : parseIncludePaths(contents),
+				             err: errStr || null };
+				var waiters = _fpIndexWaiters;
+				_fpIndexWaiters = null;
+				waiters.forEach(function(cb) { cb(_fpIndex.paths, _fpIndex.err); });
 			}
 		);
 	} //end fetchFilterProducerFiles()
+
+	//=====================================================================================
+	// Extracts all "#include mu2e-trig-config/..." paths from the given fcl
+	// file contents (an array of strings).
+	function parseIncludePaths(contents) {
+		var paths = [];
+		for (var i = 0; i < contents.length; i++) {
+			var m;
+			MU2E_TRIG_CONFIG_INCLUDE_RE.lastIndex = 0;
+			while ((m = MU2E_TRIG_CONFIG_INCLUDE_RE.exec(contents[i])) !== null)
+				paths.push(m[1]);
+		}
+		return paths;
+	} //end parseIncludePaths()
 
 	//=====================================================================================
 	// Fetches multiple fcl files (via fetchFclFile, so each is individually
@@ -607,66 +677,50 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 			return;
 		}
 
-		function withUrn(urn) {
-			DesktopContent.XMLHttpRequest(
+		withCodeEditorUrn(function(urn, urnErr) {
+			if (urnErr) {
+				callback(null, urnErr);
+				return;
+			}
+			otsRequest(
 				"Request?RequestType=codeEditor" +
 				"&option=getFhiclFileContent" +
 				"&path=" + encodeURIComponent(relativePath),
-				"",
+				{ urn: urn },
 				function(req) {
-					if (!req) {
-						callback(null, "Error fetching " + relativePath);
-						return;
-					}
-					var errStr = DesktopContent.getXMLValue(req, "Error");
-					if (errStr) {
-						callback(null, errStr);
-						return;
-					}
-
 					var content = DesktopContent.getXMLValue(req, "content");
 					_fclFileCache[relativePath] = content;
 					callback(content, null);
 				},
-				undefined, undefined, true,
-				true, undefined, undefined, undefined,
-				urn
+				function(msg) { callback(null, msg); }
 			);
-		} //end withUrn()
+		});
+	} //end fetchFclFile()
 
+	//=====================================================================================
+	// Resolves (and caches) the Code Editor supervisor's URN, needed to route
+	// getFhiclFileContent requests to it from this page. callback(urn, errStr).
+	function withCodeEditorUrn(callback) {
 		if (_codeEditorUrn) {
-			withUrn(_codeEditorUrn);
+			callback(_codeEditorUrn, null);
 			return;
 		}
-
-		DesktopContent.XMLHttpRequest(
+		otsRequest(
 			"Request?RequestType=getAppUrnByClass" +
 			"&className=" + encodeURIComponent(CODE_EDITOR_SUPERVISOR_CLASS),
-			"",
+			null,
 			function(req) {
-				if (!req) {
-					callback(null, "Error looking up Code Editor application");
-					return;
-				}
-				var errStr = DesktopContent.getXMLValue(req, "Error");
-				if (errStr) {
-					callback(null, errStr);
-					return;
-				}
-
 				var urn = DesktopContent.getXMLValue(req, "urn");
 				if (!urn) {
 					callback(null, "Code Editor application URN not found.");
 					return;
 				}
-
 				_codeEditorUrn = urn;
-				withUrn(urn);
+				callback(urn, null);
 			},
-			undefined, undefined, true,
-			true
+			function(msg) { callback(null, msg); }
 		);
-	} //end fetchFclFile()
+	} //end withCodeEditorUrn()
 
 	//=====================================================================================
 	// Parses a "<name>: [ item1, item2, ... ]" fhicl array out of raw fcl
@@ -835,21 +889,11 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 
 		var content = JSON.stringify(_currentDoc.json);
 
-		DesktopContent.XMLHttpRequest(
+		otsRequest(
 			"Request?RequestType=saveJsonDocumentContent",
-			"docName=" + encodeURIComponent(_currentDoc.name) +
-			"&content=" + encodeURIComponent(content),
+			{ data: "docName=" + encodeURIComponent(_currentDoc.name) +
+			        "&content=" + encodeURIComponent(content) },
 			function(req) {
-				if (!req) {
-					showStatus("Error saving menu", "error");
-					return;
-				}
-				var errStr = DesktopContent.getXMLValue(req, "Error");
-				if (errStr) {
-					showStatus(errStr, "error");
-					return;
-				}
-
 				var newVersion = DesktopContent.getXMLValue(req, "newVersion");
 				showStatus("Saved as version " + newVersion, "success");
 
@@ -858,11 +902,43 @@ var TriggerMenuEditor = TriggerMenuEditor || {};
 
 				TriggerMenuEditor.loadJsonDocuments();
 				TriggerMenuEditor.loadMenuContent(savedName, newVersion);
-			},
-			undefined, undefined, true,
-			true
+			}
 		);
 	}; //end saveAsNewVersion()
+
+	//=====================================================================================
+	// Thin wrapper around DesktopContent.XMLHttpRequest that centralizes the
+	// repeated "check req, then check for a server-side Error element" dance.
+	//   url       - "Request?RequestType=...&..." (GET-style params in the url)
+	//   opts      - { data: postBody, urn: targetUrnOverride } (both optional)
+	//   onSuccess - function(req) called only on a valid, error-free response
+	//   onError   - function(message) called on transport failure or a server
+	//               Error element (optional; defaults to showStatus(..,"error"))
+	function otsRequest(url, opts, onSuccess, onError) {
+		opts = opts || {};
+		onError = onError || function(msg) { showStatus(msg, "error"); };
+
+		DesktopContent.XMLHttpRequest(
+			url,
+			opts.data || "",
+			function(req) {
+				if (!req) {
+					onError("Request failed (no response).");
+					return;
+				}
+				var errStr = DesktopContent.getXMLValue(req, "Error");
+				if (errStr) {
+					onError(errStr);
+					return;
+				}
+				onSuccess(req);
+			},
+			undefined /*reqParam*/, undefined /*progressHandler*/,
+			true /*callHandlerOnErr*/, true /*doNotShowLoadingOverlay*/,
+			undefined /*targetGatewaySupervisor*/, undefined /*ignoreSystemBlock*/,
+			undefined /*doNotOfferSequenceChange*/, opts.urn /*targetUrnOverride*/
+		);
+	} //end otsRequest()
 
 	//=====================================================================================
 	function showStatus(message, type) {

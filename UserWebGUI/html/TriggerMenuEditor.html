@@ -58,11 +58,12 @@
         .sectionPanel {
             padding: 12px;
             margin-bottom: 15px;
-            border-radius: 3px;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.5);
             box-shadow: inset rgba(255,254,255,0.4) 0 0.2em .2em, inset rgba(0,0,0,0.1) 0 -0.05em .2em,
                 rgba(200, 200, 200,0.4) 0 .05em 2px, rgba(200, 200, 200,0.4) 0 .05em 1px,
                 rgba(0,0,0,0.1) 0 .3em 3px;
-            background-color: rgba(255,255,255,0.15);
+            background-color: rgba(255,255,255,0.45);
         }
 
         .tme-hint {
@@ -94,27 +95,27 @@
         .tme-row input[type="text"] {
             flex: 1;
             padding: 4px 6px;
-            border: 1px solid rgba(0,0,0,0.2);
+            border: 1px solid rgba(0,0,0,0.25);
             border-radius: 3px;
             font-family: 'Inconsolata', monospace;
             font-size: 13px;
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(255,255,255,0.85);
         }
 
         .tme-row input[type="text"]:focus {
             border-color: rgb(80, 120, 200);
             outline: none;
-            background-color: rgba(255,255,255,0.8);
+            background-color: rgba(255,255,255,1);
         }
 
         .tme-row select {
             flex: 1;
             padding: 4px 6px;
-            border: 1px solid rgba(0,0,0,0.2);
+            border: 1px solid rgba(0,0,0,0.25);
             border-radius: 3px;
             font-family: 'Inconsolata', monospace;
             font-size: 13px;
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(255,255,255,0.85);
         }
 
         button, select, input, option {
@@ -146,8 +147,8 @@
             font-size: 12px;
             font-family: 'Comfortaa', serif;
             cursor: pointer;
-            border: 1px solid rgba(0,0,0,0.2);
-            background-color: rgba(255,255,255,0.3);
+            border: 1px solid rgba(0,0,0,0.25);
+            background-color: rgba(255,255,255,0.6);
             color: #4D2600;
             box-shadow: inset rgba(255,254,255,0.4) 0 0.1em .1em,
                 rgba(0,0,0,0.1) 0 .1em 2px;
@@ -155,7 +156,7 @@
         }
 
         .tme-btn:hover {
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(255,255,255,0.85);
         }
 
         .tme-btn:disabled {
@@ -221,16 +222,16 @@
         #tme-path-table input[type="number"] {
             width: 60px;
             padding: 2px 4px;
-            border: 1px solid rgba(0,0,0,0.2);
+            border: 1px solid rgba(0,0,0,0.25);
             border-radius: 3px;
             font-family: 'Inconsolata', monospace;
             font-size: 12px;
-            background-color: rgba(255,255,255,0.5);
+            background-color: rgba(255,255,255,0.85);
         }
 
         #tme-path-table input[type="number"].dirty {
             border-color: rgb(200, 140, 30);
-            background-color: rgba(255, 230, 180, 0.5);
+            background-color: rgba(255, 230, 180, 0.85);
         }
 
         .tme-enabled-badge {
@@ -268,11 +269,17 @@
             padding: 8px 6px 8px 24px !important;
         }
 
-        .tme-seq-source-line {
-            text-align: right;
+        /* source-file labels: -line is the block above a top-level list,
+           -inline is right-aligned on a nested item's own flex row */
+        .tme-seq-source-line,
+        .tme-seq-source-inline {
             font-size: 10px;
             opacity: 0.55;
             font-style: italic;
+        }
+
+        .tme-seq-source-line {
+            text-align: right;
         }
 
         .tme-seq-content {
@@ -299,9 +306,6 @@
         .tme-seq-source-inline {
             margin-left: auto;
             padding-left: 12px;
-            font-size: 10px;
-            opacity: 0.55;
-            font-style: italic;
             white-space: nowrap;
         }
 
@@ -372,7 +376,10 @@
     {
         var styleEl = document.getElementsByTagName('style')[0];
         var str = styleEl.innerHTML;
-        str = str.replace(/#4D2600/g, DesktopContent.getDefaultDesktopColor());
+        //use the (reliably dark) dashboard color for text so it stays high
+        //  contrast against the light window background regardless of theme
+        //  (getDefaultDesktopColor can be a mid-tone blue in some themes)
+        str = str.replace(/#4D2600/g, DesktopContent.getDefaultDashboardColor());
         styleEl.innerHTML = str;
 
         document.body.style.backgroundColor = DesktopContent.getDefaultWindowColor();
@@ -418,7 +425,11 @@
 
         <div class="tme-row">
             <label>outputBaseDir</label>
-            <input type="text" id="tme-outputBaseDir" placeholder="/path/to/output">
+            <select id="tme-outputBaseDir-select"></select>
+            <input type="text" id="tme-outputBaseDir-edit" placeholder="/path/to/output"
+                   autocomplete="off" style="display:none;">
+            <a class="tme-btn" id="tme-outputBaseDir-editbtn"
+               onclick="TriggerMenuEditor.toggleOutputBaseDirEdit()">Edit</a>
         </div>
 
         <div class="tme-row">
