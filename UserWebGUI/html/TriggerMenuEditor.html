@@ -263,6 +263,61 @@
             border-color: rgb(200, 140, 30);
         }
 
+        .tme-seq-row td {
+            background-color: rgba(0,0,0,0.04);
+            padding: 8px 6px 8px 24px !important;
+        }
+
+        .tme-seq-source-line {
+            text-align: right;
+            font-size: 10px;
+            opacity: 0.55;
+            font-style: italic;
+        }
+
+        .tme-seq-content {
+            font-family: 'Inconsolata', monospace;
+            font-size: 12px;
+        }
+
+        .tme-seq-list {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .tme-seq-list li {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            padding: 1px 0;
+        }
+
+        .tme-seq-list li > .tme-seq-content {
+            flex-basis: 100%;
+        }
+
+        .tme-seq-source-inline {
+            margin-left: auto;
+            padding-left: 12px;
+            font-size: 10px;
+            opacity: 0.55;
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        .tme-seq-nested {
+            margin: 3px 0 3px 6px;
+            padding: 4px 8px;
+            border-left: 2px solid rgba(0,0,0,0.15);
+        }
+
+        .tme-seq-fcl {
+            margin: 0;
+            white-space: pre-wrap;
+            font-family: 'Inconsolata', monospace;
+            font-size: 11px;
+        }
+
         .tme-streams {
             font-size: 10px;
             opacity: 0.6;
@@ -356,28 +411,28 @@
     <div class="subtitle">Browse, inspect, and edit Mu2e trigger menu documents</div>
 
     <div class="sectionPanel">
-        <div class="sectionHeader">System Variables</div>
+        <div class="sectionHeader">Artdaq System Variables</div>
         <div class="tme-hint">
-            Used by <code>TriggerConfigTable</code> at Configure time via
-            <code>${OTS.artdaq.*}</code> substitution.
+            Can be used via <code>${OTS.artdaq.*}</code> substitution.
         </div>
 
         <div class="tme-row">
             <label>outputBaseDir</label>
             <input type="text" id="tme-outputBaseDir" placeholder="/path/to/output">
-            <a class="tme-btn" onclick="TriggerMenuEditor.saveVariable('outputBaseDir', 'tme-outputBaseDir')">Save</a>
         </div>
 
         <div class="tme-row">
             <label>triggerMenuName</label>
             <select id="tme-triggerMenuName" onchange="TriggerMenuEditor.onMenuNameVarChange()"></select>
-            <a class="tme-btn" onclick="TriggerMenuEditor.saveVariable('triggerMenuName', 'tme-triggerMenuName')">Save</a>
         </div>
 
         <div class="tme-row">
             <label>triggerMenuTag</label>
             <select id="tme-triggerMenuTag"></select>
-            <a class="tme-btn" onclick="TriggerMenuEditor.saveVariable('triggerMenuTag', 'tme-triggerMenuTag')">Save</a>
+        </div>
+
+        <div style="margin-top:8px;">
+            <a class="tme-btn" onclick="TriggerMenuEditor.saveAllVariables()">Save Variables</a>
         </div>
 
         <div id="statusBar"></div>
