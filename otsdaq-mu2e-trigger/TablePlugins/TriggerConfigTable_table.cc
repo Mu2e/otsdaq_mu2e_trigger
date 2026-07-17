@@ -113,6 +113,18 @@ void TriggerConfigTable::initPrereqsForARTDAQ(const ConfigurationManager* config
 	std::string triggerTableVersion =
 	    topLevelPair.second.getNode("TriggerConfigTag").getValue();  //" 6 ";
 
+	if(triggerTableName.empty() || triggerTableVersion.empty())
+	{
+		__SS__ << "Empty trigger menu name '" << triggerTableName << "' and/or tag '"
+		       << triggerTableVersion << "' from the '" << topLevelPair.first
+		       << "' record fields TriggerDocName/TriggerConfigTag! If these fields "
+		          "reference system variables like ${OTS.artdaq.triggerMenuName}, "
+		          "select the trigger menu via the Trigger Menu Editor web GUI "
+		          "before configuring."
+		       << __E__;
+		__SS_THROW__;
+	}
+
 	generateTriggerEpilogs(triggerTableName, triggerTableVersion);
 
 	prereqsGenerated_ = true;
