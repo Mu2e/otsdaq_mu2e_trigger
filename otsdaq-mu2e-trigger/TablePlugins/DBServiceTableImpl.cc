@@ -1,5 +1,5 @@
-#include "otsdaq-mu2e-trigger/TablePlugins/DBServiceTable.h"
 #include "otsdaq-mu2e-trigger/TablePlugins/DBServiceCIDTable.h"
+#include "otsdaq-mu2e-trigger/TablePlugins/DBServiceTable.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
 
 #include <stdio.h>
@@ -43,8 +43,8 @@ DBServiceTable::DBServiceTable(void) : TableBase("DBServiceTable")
 DBServiceTable::DBServiceTable(const std::string& tableName) : TableBase(tableName)
 {
 	__COUTS__(10) << "[DBService::DBService] Initializing the "
-	                 "DBServiceTable plugin (as " << tableName << ")..."
-	              << __E__;
+	                 "DBServiceTable plugin (as "
+	              << tableName << ")..." << __E__;
 	__COUTS__(10) << StringMacros::stackTrace() << __E__;
 }  // end constructor (with table name)
 
@@ -223,9 +223,8 @@ std::string DBServiceTable::getStructureAsJSON(const ConfigurationManager* confi
 }  // end getStructureAsJSON()
 
 //========================================================================================================================
-DBServiceCIDTable::DBServiceCIDTable(void) : DBServiceTable("DBServiceCIDTable")
-{
-}  // end constructor
+DBServiceCIDTable::DBServiceCIDTable(void)
+    : DBServiceTable("DBServiceCIDTable") {}  // end constructor
 
 //========================================================================================================================
 DBServiceCIDTable::~DBServiceCIDTable(void) {}
