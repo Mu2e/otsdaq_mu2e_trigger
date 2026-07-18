@@ -1,5 +1,6 @@
 #include "otsdaq-mu2e-trigger/TablePlugins/TriggerConfigTable.h"
 #include "otsdaq/ConfigurationInterface/ConfigurationManager.h"
+#include "otsdaq/Macros/StringMacros.h"
 #include "otsdaq/Macros/TablePluginMacros.h"
 //#include "otsdaq/tools/otsdaq_load_json_document.cc"
 
@@ -92,6 +93,17 @@ void TriggerConfigTable::initPrereqsForARTDAQ(const ConfigurationManager* config
 		__SS_THROW__;
 	}
 
+	// Seed artdaq system variable defaults for trigger menu fields
+	// so ${OTS.artdaq.triggerMenuName} and ${OTS.artdaq.triggerMenuTag}
+	// resolve to empty if not set by the user via the web GUI.
+	{
+		auto& ns = StringMacros::systemVariables_["artdaq"];
+		if(ns.find("triggerMenuName") == ns.end())
+			ns["triggerMenuName"] = "";
+		if(ns.find("triggerMenuTag") == ns.end())
+			ns["triggerMenuTag"] = "";
+	}
+
 	auto& topLevelPair = childrenMap.at(0);
 	__COUTS__(10) << "Main table name '" << topLevelPair.first << "'" << __E__;
 
@@ -100,6 +112,18 @@ void TriggerConfigTable::initPrereqsForARTDAQ(const ConfigurationManager* config
 	    topLevelPair.second.getNode("TriggerDocName").getValue();  //" testTriggerDoc ";
 	std::string triggerTableVersion =
 	    topLevelPair.second.getNode("TriggerConfigTag").getValue();  //" 6 ";
+
+	if(triggerTableName.empty() || triggerTableVersion.empty())
+	{
+		__SS__ << "Empty trigger menu name '" << triggerTableName << "' and/or tag '"
+		       << triggerTableVersion << "' from the '" << topLevelPair.first
+		       << "' record fields TriggerDocName/TriggerConfigTag! If these fields "
+		          "reference system variables like ${OTS.artdaq.triggerMenuName}, "
+		          "select the trigger menu via the Trigger Menu Editor web GUI "
+		          "before configuring."
+		       << __E__;
+		__SS_THROW__;
+	}
 
 	generateTriggerEpilogs(triggerTableName, triggerTableVersion);
 

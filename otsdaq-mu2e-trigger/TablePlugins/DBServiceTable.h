@@ -1,5 +1,5 @@
-#ifndef _ots_TriggerConfigTable_h_
-#define _ots_TriggerConfigTable_h_
+#ifndef _ots_DBServiceTable_h_
+#define _ots_DBServiceTable_h_
 
 #include <fstream>  // std::fstream
 #include <iostream>
@@ -15,6 +15,9 @@ class DBServiceTable : public TableBase
   public:
 	DBServiceTable(void);
 	virtual ~DBServiceTable(void);
+
+  protected:
+	DBServiceTable(const std::string& tableName);
 
 	// Methods
 	void 				init							(ConfigurationManager* configManager);
