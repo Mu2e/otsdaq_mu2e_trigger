@@ -1,14 +1,4 @@
 
-cet_build_plugin(LumiStreamFilter art::module
-  LIBRARIES REG
-  fhiclcpp::types
-  Offline::DAQ
-  Offline::RecoDataProducts
-  artdaq-core-mu2e::Data
-  artdaq-core-mu2e::Data_dict
-  artdaq::DAQdata
-)
-
 cet_build_plugin(Mu2ePrescaler art::module
   LIBRARIES REG
   fhiclcpp::types
